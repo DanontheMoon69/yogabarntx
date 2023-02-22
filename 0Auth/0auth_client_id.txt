@@ -1,0 +1,9 @@
+
+0AUTH 
+
+CLIENT ID
+
+546172067668-k8ias8talmmao6kb8kepu98gl9c4qmcs.apps.googleusercontent.com
+
+CLIENT SECRET
+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
