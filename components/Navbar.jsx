@@ -84,7 +84,7 @@ const Navbar = () => {
               <button
                 type="button"
                 className=" ease-in transform hover:scale-105 transition duration-100 text-xs sm:text-sm mt-1 text-white font-semibold hover:text-gray-200"
-                // onClick={() => setShowCart(true)}
+                
               >
                 Pricing
               </button>
@@ -105,7 +105,7 @@ const Navbar = () => {
             {/* <button
               type="button"
               className="text-sm text-gray-500 font-semibold hover:text-blue-700"
-              onClick={() => setShowCart(true)}
+              
             >
               Cart
               <span className="cart-item-qty mr-2 mt-2">{totalQuantities}</span>
