@@ -12,56 +12,33 @@ import {
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 
-import { Cart } from "./";
-import { useStateContext } from "../context/StateContext";
-import { Schedule } from "./";
-import { Login } from "../pages/Login";
 import Image from "next/image";
 import Link from "next/link";
 
-import ybLogo from "./assets/images/YB_Logo.png";
+import ybLogo from "./assets/images/YB_LogoWhite.png";
 
 const Navbar = () => {
   const [user, loading] = useAuthState(auth);
-  const [userInfo, setUserInfo] = useState([]);
-
-  const {
-    showCart,
-    setShowCart,
-    totalQuantities,
-    showSchedule,
-    setShowSchedule,
-    showLogin,
-    setShowLogin,
-  } = useStateContext();
 
   return (
-    <div className="flex g-white navbar-container ml-2 rounded-xl">
-      {showSchedule && <Schedule />}
-      {showCart && <Cart />}
-      {showLogin && <Login />}
-      <div className="flex w-1/4 items-center align-middle ">
+    <div className="flex bg-gradient-to-b from-teal-500 to-teal-600 navbar-container  rounded-xl shadow-md m-2">
+      <div className="flex w-1/4 py-1 items-center align-middle ml-2 ease-in transform hover:scale-105 transition duration-100 ">
         <Link href={"/"}>
-          <Image
-            src={ybLogo}
-            width="120"
-            alt="Yoga Barn"
-            className="bg-white "
-          />
+          <Image src={ybLogo} width="120" alt="Yoga Barn" className="" />
         </Link>
       </div>
 
       <div className=" w-2/3 ">
         <div className="my-2">
           {!user && (
-            <div className="flex gap-1 font-semibold text-xs mx-2 bg-white justify-end ">
+            <div className="flex gap-1 font-semibold text-xs mx-2  justify-end ">
               <Link href="/signUpPage">
-                <button className="text-antialiased flex visible  py-2 px-4  bg-gray-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg">
+                <button className="ease-in transform hover:scale-105 transition duration-100 text-xs flex visible  py-2 px-4  bg-gray-200 hover:bg-gray-300   text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg">
                   Join
                 </button>
               </Link>
               <Link href="/Login">
-                <button className="flex text-hairline py-2 px-4  bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg">
+                <button className="ease-in transform hover:scale-105 transition duration-100 flex text-xs py-2 px-4  bg-white hover:bg-gray-200  text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg">
                   Sign-In
                 </button>
               </Link>
@@ -70,15 +47,16 @@ const Navbar = () => {
           <div className="flex gap-2 items-center text-sm font-semibold justify-end">
             {user && (
               <>
-                <img
-                  className="hidden sm:flex rounded-full w-5 h-5 my-2 bg-white text-antialiased "
-                  src={user.photoURL}
-                  alt={user.displayName}
-                />
-                <div className="my-2 bg-white">{user.displayName}</div>
+                <div className=" text-white">
+                  {" "}
+                  <span className="flex justify-center text-xs font-semibold text-gray-100">
+                    Welcome
+                  </span>
+                  {user.displayName}
+                </div>
                 <button
                   type="submit"
-                  className="text-xs sm:text-sm py-2 px-4   bg-blue-600 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
+                  className="text-xs sm:text-sm py-2 px-4   bg-white  text-emerald-600 mr-2 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg "
                   onClick={() => auth.signOut()}
                 >
                   Logout
@@ -89,44 +67,40 @@ const Navbar = () => {
         </div>
 
         <div className=" px-4 my-2  ">
-          <div className="flex gap-2 mt-1 items-center justify-end mr-0">
-            <Link href="/Contact">
-              <button
-                type="button"
-                className="text-xs sm:text-sm text-gray-500 font-semibold hover:text-blue-700 "
-              >
-                Contact
-              </button>
-            </Link>
+          <div className="flex gap-3 sm:gap-4 mt-1 items-center justify-end mr-0">
             <Link href="/Calendar">
               <button
                 type="button"
-                className="text-xs sm:text-sm sm:text-sm text-gray-500 font-semibold hover:text-blue-700"
+                className="ease-in transform hover:scale-105 transition duration-100 text-xs sm:text-sm sm:text-sm text-white font-semibold hover:text-gray-200"
               >
                 Schedule
               </button>
             </Link>
+            <div className="text-xs flex items-center text-gray-200   ml-1 mr-1">
+              {" | "}
+            </div>
+
             <Link href="/Pricing">
               <button
                 type="button"
-                className="text-xs sm:text-sm mt-1 text-gray-500 font-semibold hover:text-blue-700"
+                className=" ease-in transform hover:scale-105 transition duration-100 text-xs sm:text-sm mt-1 text-white font-semibold hover:text-gray-200"
                 // onClick={() => setShowCart(true)}
               >
                 Pricing
               </button>
             </Link>
-            <div className="hidden sm:flex text-gray-500 font-semibold hover:text-blue-700">
-              {user && (
-                <Link href={"/UserProfile"}>
-                  <button
-                    type="button"
-                    className="text-xs sm:text-sm text-gray-500 font-semibold hover:text-blue-700"
-                  >
-                    Account
-                  </button>
-                </Link>
-              )}
+            <div className="text-xs flex items-bottom justify-center text-gray-200 ml-1 mr-1">
+              {" | "}
             </div>
+
+            <Link href="/Contact">
+              <button
+                type="button"
+                className="ease-in transform hover:scale-105 transition duration-100 text-xs sm:text-sm text-white font-semibold hover:text-gray-200 "
+              >
+                Contact
+              </button>
+            </Link>
 
             {/* <button
               type="button"
