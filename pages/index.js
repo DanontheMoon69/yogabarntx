@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { send } from "emailjs-com";
 import {
   Product,
   FooterBanner,
@@ -9,89 +9,85 @@ import {
 } from "../components";
 import Schedule from "../components/Schedule";
 import { client } from "../lib/client";
+import luckOfTheYogi from "../components/assets/images/LuckOfTheYogi_2023_APP.png";
+import Image from "next/image";
+import Link from "next/link";
+import marchCal from "components/assets/images/YogaBarn_ClassCalendar_March2023.png";
 
 const Home = ({ products, bannerData }) => {
+  // Subscribe Logic
+
+  const [toSend, setToSend] = useState({
+    email: "",
+  });
+
+  // const handleChange = (e) => {
+  //   setToSend({ ...toSend, [e.target.name]: e.target.value });
+  // };
+
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   send("service_g0cucze", "template_jfb1v6e", toSend, "HYY8JDeeZmiQZ-f79")
+  //     .then((response) => {
+  //       console.log("SUCCESS!", response.status, response.text);
+  //       alert("You've subscribed!");
+  //     })
+  //     .catch((err) => {
+  //       console.log("FAILED...", err);
+  //       alert(err);
+  //     });
+  // };
+
   return (
     <>
       <HeroBanner />
 
-      {/* <div className="products-heading">
-        <h2>Yoga For Everyone</h2>
-        <span> Welcome</span>
-        <div className="products-container">
-          {products?.map((product) => (
-            <div className="w-30">
-              <Product key={product._id} product={product} />
-            </div>
-          ))}
-        </div>
-      </div>
-      <div className="lg: flex xl: flex md: flex-wrap justify-center">
-        <div className="flex justify-center m-5">
-          <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-            <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
-              Zen Pack
-            </h5>
-            <p className="text-gray-700 text-base mb-4">
-              Our Zen Pack included 5 Classes at the Yoga Barn.
-            </p>
-            <button
-              type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-            >
-              Buy Plan
+      {/* SUBSCRIBE BOX  */}
+
+      {/* <div className="flex bg-teal-600 px-4 py-2 rounded-xl">
+        <form className="flex-col justify-center " onSubmit={onSubmit}>
+          {" "}
+          <label className="text-white font-semibold" htmlFor="subscribe">
+            Stay up to date! Subscribe to our Newsletter!
+          </label>
+          <div className="flex items-center mt-2">
+            <input
+              className="rounded-lg"
+              type="text"
+              placeholder="Enter your Email Address"
+              name="name"
+              onChange={handleChange}
+            />
+            <button className="flex ml-3 justify-center bg-white text-emerald-600 rounded-full py-1 px-4 mt-2 animate-pulse">
+              Subscribe
             </button>
           </div>
-        </div>
-        <div className="flex justify-center m-5">
-          <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-            <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
-              Warrior Pack
-            </h5>
-            <p className="text-gray-700 text-base mb-4">
-              Our Warrior Pack included 10 Classes at the Yoga Barn.
-            </p>
-            <button
-              type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-            >
-              Buy Plan
-            </button>
-          </div>
-        </div>
-        <div className="flex justify-center m-5">
-          <div className="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
-            <h5 className="text-gray-900 text-xl leading-tight font-medium mb-2">
-              Enlightened Pack
-            </h5>
-            <p className="text-gray-700 text-base mb-4">
-              Our Enlightened Pack includes Unlimited Monthly Classes at the
-              Yoga Barn. Also includes access to our Virtual Yoga Classes.
-            </p>
-            <button
-              type="button"
-              className=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-            >
-              Buy Plan
-            </button>
-          </div>
-        </div>
+        </form>
       </div> */}
 
-      {/* <FooterBanner footerBanner={bannerData && bannerData[0]} /> */}
+      <div className="flex-wrap justify-center items-center md:flex   w-full  py-2">
+        <div className="flex-1 justify-center   sm:w-1/2 mt-3  p-4">
+          <Link href="/Calendar">
+            <Image src={marchCal} alt="Yoga Barn - March 2023 Schedule" />
+          </Link>
+        </div>
+        <div className="flex-1 justify-center  sm:w-1/2 mt-4 ml-3 mr-3 -100 p-2">
+          <Image src={luckOfTheYogi} width="" />
+        </div>
+      </div>
     </>
   );
 };
 
-export const getServerSideProps = async () => {
-  const query = '*[_type == "product"]';
-  const products = await client.fetch(query);
+// export const getServerSideProps = async () => {
+//   const query = '*[_type == "product"]';
+//   const products = await client.fetch(query);
 
-  const bannerQuery = '*[_type == "banner"]';
-  const bannerData = await client.fetch(bannerQuery);
+//   const bannerQuery = '*[_type == "banner"]';
+//   const bannerData = await client.fetch(bannerQuery);
 
-  return {
-    props: { products, bannerData },
-  };
-};
+//   return {
+//     props: { products, bannerData },
+//   };
+// };
 export default Home;
