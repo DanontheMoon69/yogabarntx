@@ -77,7 +77,7 @@ const Login = () => {
                 <img
                   src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
                   className="w-full"
-                  alt="Sample image"
+                  alt="Yoga Barn Login"
                 />
               </div>
               <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
@@ -90,7 +90,7 @@ const Login = () => {
                       type="button"
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
-                      className="flex align-center justify-center gap-2 p-3 bg-blue-600 text-white font-medium text-xs leading-tight  rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out mx-1"
+                      className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white font-medium text-xs leading-tight  rounded-full shadow-md ease-in transform hover:scale-105 transition duration-100 mx-1"
                       onClick={GoogleLogin}
                     >
                       <GrGoogle /> Sign In With Google
@@ -145,7 +145,7 @@ const Login = () => {
                   <div className="text-center lg:text-left">
                     <button
                       type="button"
-                      className="inline-block px-7 py-3 bg-blue-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                      className="inline-block px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md ease-in transform hover:scale-105 transition duration-100"
                       onClick={signIn}
                     >
                       Login
@@ -155,7 +155,7 @@ const Login = () => {
                       Don&apos;t have an account?
                       <a
                         href="/signUpPage"
-                        className="text-red-600 hover:text-red-700 focus:text-red-700 transition duration-200 ease-in-out"
+                        className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
                       >
                         {" "}
                         Register
