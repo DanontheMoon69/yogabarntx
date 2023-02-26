@@ -256,7 +256,7 @@ export default function Calendar() {
             Start the week of strong! Challenge yourself in this evening class.
             Grow your practice both in mind and body. You will quickly build
             heat moving through more challenging poses and transitions. Leave
-            feeling cleansed and renewd, ready to start your week! Experienced
+            feeling cleansed and renewed, ready to start your week! Experienced
             yogis welcome or ones wanting to challenge their practice.
           </p>
           {/* <h1 className=" font-semibold">
