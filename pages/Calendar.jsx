@@ -159,7 +159,7 @@ export default function Calendar() {
           <p className="text-xs mt-1 text-gray-500  pb-2">
             Can&apos;t fit an hour class into your schedule? Well this 30 minute
             class is just right for you. Wake up, get in, sweat and go! This is
-            a quick 30 minuite power flow. All levels welcome but this will
+            a quick 30 minute power flow. All levels welcome but this will
             challenge you. No savasana but we will finish with a 5 minute
             meditation that you can take any way you like, whether it&apos;s
             laying down, sitting up or whatever feels good! If you give anything
@@ -194,7 +194,7 @@ export default function Calendar() {
           </p>
           <p className="flex text-xs font-bold text-gray-900">
             {" "}
-            6:30am - 7:30am
+            6:30pm - 7:30pm
           </p>
           <p className="text-xs font-semibold mt-2 text-gray-500">
             Class Description:
