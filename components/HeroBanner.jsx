@@ -12,7 +12,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 // import { urlFor } from "../lib/client";
 import egg from "../components/assets/images/YogaBarn_Egg.png";
 import coffee from "../components/assets/images/coffee_yoga.png";
-import sun from "../components/assets/images/sun.svg";
+import sun from "../components/assets/images/sun.png";
 
 import Schedule from "./Schedule";
 
