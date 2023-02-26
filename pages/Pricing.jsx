@@ -19,7 +19,7 @@ function PricingPage() {
             <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
               <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
             </div>
-            Fill Your Cup @ Combs' Coffee
+            Fill Your Cup @ Combs&apos; Coffee
           </div>
           <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
             Join Becca from Yoga Barn at the downtown Gainesville coffee shop
