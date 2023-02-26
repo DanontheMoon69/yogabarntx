@@ -349,7 +349,7 @@ function PricingPage() {
               This is a very well loved and nurtured organic starter. Make your
               sourdough journey an easy one by grabbing a kit and getting
               started with a very active healthy starter. Great gift for those
-              you love. It's the gift that keeps giving.
+              you love. It&apos;s the gift that keeps giving.
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
               <div>
