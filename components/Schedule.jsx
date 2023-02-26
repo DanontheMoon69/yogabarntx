@@ -1,44 +1,35 @@
 import React, { useRef } from "react";
 
 import { AiOutlineLeft } from "react-icons/ai";
-import FullCalendar from "@fullcalendar/react"; // must go before plugins
-import dayGridPlugin from "@fullcalendar/daygrid"; // a plugin!
+import marchCal from "components/assets/images/YogaBarn_ClassCalendar_March2023.png";
 
 import { useStateContext } from "../context/StateContext";
+import Link from "next/link";
+import Image from "next/image";
 
 const Schedule = () => {
   const { setShowSchedule, setShowMemberLoginButton } = useStateContext();
   const cartRef = useRef();
   return (
-    <div className="cart-wrapper" ref={cartRef}>
-      <div className="cart-container">
-        <button
-          type="button"
-          className="cart-heading"
-          onClick={() => {
-            setShowSchedule(false);
-            setShowMemberLoginButton(true);
-          }}
-        >
-          <AiOutlineLeft /> Back
-        </button>
-        <div className="schedule-container">
-          Available Classes for March 2023
-          {/* <FullCalendar
-            plugins={[dayGridPlugin]}
-            width={400}
-            maxWidth={90}
-            initialView="dayGridPlugin"
-            weekends={true}
-            hiddenDays={[2, 4]}
-            events={[
-              { title: "Rise & Shine", date: "2023-02-01" },
-              { title: "Power 30", date: "2023-02-15" },
-            ]}
-          /> */}
+    <>
+      <div className="flex justify-center w-full bg-gray-200  p-2">
+        <div className="bg-white  w-full sm:w-3/4 mt-10 px-2 py-2 opacity-100 rounded-xl">
+          <div className="flex mb-3">
+            <button
+              type="button"
+              className="flex font-semibold text-sm text-white items-center animate-pulse bg-teal-600 rounded-full px-4 py-1"
+              onClick={() => {
+                setShowSchedule(false);
+              }}
+            >
+              <AiOutlineLeft /> Close Calendar
+              <span className="text-white font-bold ml-1"></span>
+            </button>
+          </div>
+          <Image src={marchCal} alt="Yoga Barn - March 2023 Schedule" />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

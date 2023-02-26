@@ -64,17 +64,6 @@ const Home = ({ products, bannerData }) => {
           </div>
         </form>
       </div> */}
-
-      <div className="flex-wrap justify-center items-center md:flex   w-full  py-2">
-        <div className="flex-1 justify-center   sm:w-1/2 mt-3  p-4">
-          <Link href="/Calendar">
-            <Image src={marchCal} alt="Yoga Barn - March 2023 Schedule" />
-          </Link>
-        </div>
-        <div className="flex-1 justify-center  sm:w-1/2 mt-4 ml-3 mr-3 -100 p-2">
-          <Image src={luckOfTheYogi} width="" />
-        </div>
-      </div>
     </>
   );
 };

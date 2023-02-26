@@ -17,6 +17,7 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
+import Link from "next/link";
 
 const SignupPage = () => {
   const googleProvider = new GoogleAuthProvider();
@@ -119,7 +120,20 @@ const SignupPage = () => {
             >
               <p className="capitalize text-white font-normal">Create Account</p>
             </button>
+
           </div>
+          <div className="flex justify-center">
+            <p className="text-sm font-semibold mt-2 pt-1 mb-10">
+                      Already have an account?
+                      <Link
+                        href="/Login"
+                        className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
+                      >
+                        {" "}
+                        Login
+                      </Link>
+                    </p>
+                    </div>
         </form>
       </FormProvider>
     </div>

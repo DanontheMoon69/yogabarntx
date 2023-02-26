@@ -15,6 +15,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useStateContext } from "../context/StateContext";
 import { GrGoogle } from "react-icons/gr";
 import UserProfile from "./UserProfile";
+import Link from "next/link";
 
 const Login = () => {
   const [user, loading] = useAuthState(auth);
@@ -153,13 +154,13 @@ const Login = () => {
 
                     <p className="text-sm font-semibold mt-2 pt-1 mb-10">
                       Don&apos;t have an account?
-                      <a
+                      <Link
                         href="/signUpPage"
                         className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
                       >
                         {" "}
                         Register
-                      </a>
+                      </Link>
                     </p>
                   </div>
                 </form>

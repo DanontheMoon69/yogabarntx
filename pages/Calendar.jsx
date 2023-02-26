@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import cn from "./util/cn";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import Link from "next/link";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../utils/firebase";
 
 const schedule = [
   {
@@ -16,6 +18,7 @@ const schedule = [
 ];
 
 export default function Calendar() {
+  const [user, loading] = useAuthState(auth);
   const days = ["S", "M", "T", "W", "T", "F", "S"];
   const currentDate = dayjs();
   const [today, setToday] = useState(currentDate);
@@ -35,35 +38,102 @@ export default function Calendar() {
           </h1>
 
           {/* FILL YOUR CUP - COMBS' COFFE - GAINESVILLE*/}
+          <div>
+            <h1 className="text-2xl font-semibold text-gray-600 mt-4">
+              Saturday March 18th
+            </h1>
+            <p className="flex text-md mt-2 font-semibold text-gray-700">
+              Fill Your Cup:
+            </p>
+            <p className="flex text-xs font-bold text-gray-900">
+              {" "}
+              11:00am - 12:30pm. Hosted at Combs&apos; Coffee.
+              <span className="flex text-gray-600">
+                Address: 701 E Broadway St Gainesville, TX 76240
+              </span>
+            </p>
+            <p className="text-xs font-semibold mt-2 text-gray-500">
+              Class Description:
+            </p>
+            <p className="text-xs mt-1 text-gray-500  pb-2">
+              Join Becca from Yoga Barn at the downtown Gainesville coffee shop
+              Combs&apos; Coffee for a fun yoga flow and a coffee tasting. Leave
+              with your body energized while understanding and loving coffee in
+              a much deeper way. <br />
+              <br />
+              Experience coffee cupping in our new CQI certified cupping lab,
+              which consists of objective measures in order to evaluate and
+              qualify specialty grade coffee. We will cover many technical and
+              procedurdal aspects of the evaluation process, while keeping the
+              process fun and easy. We will smell and taste our way through a
+              few unique coffees, while explaining how the ten cupping
+              attributes are used to evaluate, score and describe each specialty
+              grade coffee. This is geared towards beginners but a great
+              opportunity to try a flight of World Class Coffees. In the end,
+              you should feel more confident in your ability to decipher which
+              varieties and processing methods you prefer. (and those that you
+              may dislike).
+              <br />
+              <br />
+              Workshop is $25 - Space is limited purchase tickets as soon as
+              possible!
+            </p>
+            {user && (
+              <Link href="https://buy.stripe.com/6oE03nfvm3FMbKg00b">
+                <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Buy Ticket
+                </button>
+              </Link>
+            )}
+            {!user && (
+              <Link href="/signUpPage">
+                <button className="ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Sign-Up to Purchase
+                </button>
+              </Link>
+            )}
+          </div>
+          <div className="border-b-2 border-gray-200 mt-4"></div>
 
-          <h1 className="text-2xl font-semibold text-gray-600 mt-4">
-            Saturday March 18th
-          </h1>
-          <p className="flex text-md mt-2 font-semibold text-gray-700">
-            Fill Your Cup:
-          </p>
-          <p className="flex text-xs font-bold text-gray-900">
-            {" "}
-            11:00am - 12:30pm. Hosted at Combs&apos; Coffee.
-            <span className="flex text-gray-600">
-              Address: 701 E Broadway St Gainesville, TX 76240
-            </span>
-          </p>
-          <p className="text-xs font-semibold mt-2 text-gray-500">
-            Class Description:
-          </p>
-          <p className="text-xs mt-1 text-gray-500  pb-2">
-            Join Becca from Yoga Barn at the downtown Gainesville coffee shop
-            Combs&apos; Coffee for a fun yoga flow and a demonstration of
-            beautifully roasted coffee. Leave with your body energized and
-            understanding and loving coffee so much more. Workshop is $20 -
-            Space is limited purchase tickets as soon as possible!
-          </p>
-          <Link href="https://buy.stripe.com/bIY5nHbf65NUdSo4gi">
-            <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8  text-white rounded-full">
-              Buy Ticket
-            </button>
-          </Link>
+          {/* Blessings of Spring Equinox */}
+
+          <div>
+            <h1 className="text-2xl font-semibold text-gray-600 mt-4">
+              Saturday March 25th
+            </h1>
+            <p className="flex text-md mt-2 font-semibold text-gray-700">
+              Blessings of Spring Equinox:
+            </p>
+            <p className="flex text-xs font-bold text-gray-900">
+              {" "}
+              9:00am - 11:00am. Yoga Barn, Whitesboro, TX.
+            </p>
+            <p className="text-xs font-semibold mt-2 text-gray-500">
+              Class Description:
+            </p>
+            <p className="text-xs mt-1 text-gray-500  pb-2">
+              Welcome Spring Equinox at the Yoga Barn. We will be moving through
+              108 Sun Salutations to welcome this new season. This is a very
+              challenging practice that help strenghten body and mind. Leave
+              feeling refreshed and ready for what ever life offers you in this
+              new season. Mat, Water and Small Towel recommended. Workshop is
+              $25 - Space is limited purchase tickets as soon as possible!
+            </p>
+            {user && (
+              <Link href="https://buy.stripe.com/9AQ8zTdneekqg0w5kw">
+                <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Buy Ticket
+                </button>
+              </Link>
+            )}
+            {!user && (
+              <Link href="/signUpPage">
+                <button className="ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Sign-Up to Purchase
+                </button>
+              </Link>
+            )}
+          </div>
         </div>
 
         <div className="w-full ml-25 mr-25 sm: px-5 sm:max-w-lg ">

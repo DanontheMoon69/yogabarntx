@@ -83,7 +83,7 @@ const Navbar = () => {
             <Link href="/Pricing">
               <button
                 type="button"
-                className="text-xs sm:text-sm mt-1 text-gray-500 font-semibold hover:text-blue-700"
+                className="ease-in transform hover:scale-105 transition duration-100 text-xs sm:text-sm text-white font-semibold hover:text-gray-200 "
                 // onClick={() => setShowCart(true)}
               >
                 Pricing
