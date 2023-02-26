@@ -12,7 +12,7 @@ import relativeTime from "dayjs/plugin/relativeTime";
 // import { urlFor } from "../lib/client";
 import egg from "../components/assets/images/YogaBarn_Egg.png";
 import coffee from "../components/assets/images/coffee_yoga.png";
-import sun from "../components/assets/images/sun.png";
+//import sun from "../components/assets/images/sun.png";
 
 import Schedule from "./Schedule";
 
@@ -100,7 +100,7 @@ const HeroBanner = ({ props }) => {
             {/* BLESSINGS OF SPRING EQUINOX */}
             <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
               <div className="flex justify-center text-md font-bold">
-                <Image src={sun} width="30" height="30" className="mr-2" />{" "}
+               // <Image src={sun} width="30" height="30" className="mr-2" />{" "}
                 Blessing of Spring Equinox
               </div>
               <div className="flex justify-center text-sm font-bold text-center text-gray-500 ">
