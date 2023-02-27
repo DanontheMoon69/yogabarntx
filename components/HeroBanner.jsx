@@ -56,7 +56,7 @@ const HeroBanner = ({ props }) => {
     formattedStartDays
   );
   return (
-    <>
+    
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
@@ -194,7 +194,7 @@ const HeroBanner = ({ props }) => {
           </div>
         </>
       )}
-    </>
+   
   );
 };
 
