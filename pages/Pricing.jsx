@@ -175,7 +175,7 @@ function PricingPage() {
               Single Class/Drop-In
             </div>
             <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
-              One single class at the yoga Barn - Expires after 30 days
+              One single class at the Yoga Barn - Expires after 30 days
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
               <div> $20</div>
