@@ -71,7 +71,7 @@ export default function Calendar() {
               grade coffee. This is geared towards beginners but a great
               opportunity to try a flight of World Class Coffees. In the end,
               you should feel more confident in your ability to decipher which
-              varieties and processing methods you prefer. (and those that you
+              varieties and processing methods you prefer (and those that you
               may dislike).
               <br />
               <br />
@@ -113,8 +113,7 @@ export default function Calendar() {
             </p>
             <p className="text-xs mt-1 text-gray-500  pb-2">
               Welcome Spring Equinox at the Yoga Barn. We will be moving through
-              108 Sun Salutations to welcome this new season. This is a very
-              challenging practice that help strengthen body and mind. Leave
+              108 Sun Salutations to welcome this new season. This is a challenging practice that helps strengthen body and mind. Leave
               feeling refreshed and ready for what ever life offers you in this
               new season. Mat, Water and Small Towel recommended. Workshop is
               $25 - Space is limited purchase tickets as soon as possible!
@@ -160,9 +159,7 @@ export default function Calendar() {
             Can&apos;t fit an hour class into your schedule? Well this 30 minute
             class is just right for you. Wake up, get in, sweat and go! This is
             a quick 30 minute power flow. All levels welcome but this will
-            challenge you. No savasana but we will finish with a 5 minute
-            meditation that you can take any way you like, whether it&apos;s
-            laying down, sitting up or whatever feels good! If you give anything
+            challenge you. If you give anything
             to yourself in a day, let it be 30 minutes of activity.
           </p>
           <div className="border-b-2 border-gray-100 mt-4"></div>
@@ -200,7 +197,7 @@ export default function Calendar() {
             Class Description:
           </p>
           <p className="text-xs mt-1 text-gray-500  pb-2">
-            Finish out your week at the studio moving through a warm flow that has you leaving feeling both replenished and relaxed. This is an All Levels class that helps you build our own heat and finish with a relaxing savasana.
+            Finish out your week at the studio moving through a warm flow that has you leaving feeling both replenished and relaxed. This is an All Levels class that helps you build your own heat and finish with a relaxing savasana.
           </p>
           <div className="border-b-2 border-gray-100 mt-4"></div>
           <p className="flex text-md mt-2 font-semibold text-gray-700">
@@ -215,7 +212,7 @@ export default function Calendar() {
           </p>
           <p className="text-xs mt-1 text-gray-500  pb-2">
             Finish out your week feeling strong and empowered. This class is 45 minutes of building up your strength and finishing with a 5 minute savasana. This is a class meant to challenge yogis and leave you feeling cleansed and renewed.
-            savasana.
+            
           </p>
           <div className="border-b-4 mt-4"></div>
 
@@ -235,7 +232,7 @@ export default function Calendar() {
             Class Description:
           </p>
           <p className="text-xs mt-1 text-gray-500  pb-2">
-            Start the week off slow and steady. Our slow flow is a vinyasa Flow
+            Start the week off slow and steady. Our slow flow is a Vinyasa Flow
             that focuses on stretching and lengthening the body. We may linger
             in poses longer and slow things down when needed. All levels
             welcome.
@@ -255,8 +252,7 @@ export default function Calendar() {
             Start the week of strong! Challenge yourself in this evening class.
             Grow your practice both in mind and body. You will quickly build
             heat moving through more challenging poses and transitions. Leave
-            feeling cleansed and renewed, ready to start your week! Experienced
-            yogis welcome or ones wanting to challenge their practice.
+            feeling cleansed and renewed, ready to start your week! Best for yogis who are wanting to challenge their practice.
           </p>
           {/* <h1 className=" font-semibold">
             Schedule for {selectDate.toDate().toDateString()}
