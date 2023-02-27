@@ -114,7 +114,7 @@ export default function Calendar() {
             <p className="text-xs mt-1 text-gray-500  pb-2">
               Welcome Spring Equinox at the Yoga Barn. We will be moving through
               108 Sun Salutations to welcome this new season. This is a very
-              challenging practice that help strenghten body and mind. Leave
+              challenging practice that help strengthen body and mind. Leave
               feeling refreshed and ready for what ever life offers you in this
               new season. Mat, Water and Small Towel recommended. Workshop is
               $25 - Space is limited purchase tickets as soon as possible!
@@ -200,7 +200,7 @@ export default function Calendar() {
             Class Description:
           </p>
           <p className="text-xs mt-1 text-gray-500  pb-2">
-            Candle Lit Flow Decription
+            Finish out your week at the studio moving through a warm flow that has you leaving feeling both replenished and relaxed. This is an All Levels class that helps you build our own heat and finish with a relaxing savasana.
           </p>
           <div className="border-b-2 border-gray-100 mt-4"></div>
           <p className="flex text-md mt-2 font-semibold text-gray-700">
@@ -208,14 +208,13 @@ export default function Calendar() {
           </p>
           <p className="flex text-xs font-bold text-gray-900">
             {" "}
-            6:45pm - 8:30pm
+            7:45pm - 8:30pm
           </p>
           <p className="text-xs font-semibold mt-2 text-gray-500">
             Class Description:
           </p>
           <p className="text-xs mt-1 text-gray-500  pb-2">
-            Finish out your week feeling strong and empowered. This class is 45
-            min of building up your strength and finishing with a 5 min
+            Finish out your week feeling strong and empowered. This class is 45 minutes of building up your strength and finishing with a 5 minute savasana. This is a class meant to challenge yogis and leave you feeling cleansed and renewed.
             savasana.
           </p>
           <div className="border-b-4 mt-4"></div>
