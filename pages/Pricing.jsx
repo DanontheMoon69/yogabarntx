@@ -12,13 +12,13 @@ function PricingPage() {
     <>
       {/* WORKSHOPS */}
 
-      <div className="flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600  w-3/4 ">
+      <div className="flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600  w-3/4 mr-3 ">
         Yoga Workshops
       </div>
 
       {/* FILL YOUR CUP @ COMBS */}
       <div className="flex-wrap sm:flex ">
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mb-3 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mb-3 mr-3 ">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -71,7 +71,7 @@ function PricingPage() {
         </div>
         {/* BLESSINGS OF SPRING EQUINOX */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3 ">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -130,7 +130,7 @@ function PricingPage() {
       <div className="flex-wrap gap-3 sm:flex justify-center">
         {/* NEW STUDENT SPECIAL */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3 ">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -165,7 +165,7 @@ function PricingPage() {
 
         {/* SINGLE CLASS/DROP IN */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3 ">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -211,7 +211,7 @@ function PricingPage() {
 
         {/* ZEN PACK*/}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -257,7 +257,7 @@ function PricingPage() {
         </div>
 
         {/* ENLIGHTENED PACK */}
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex items-center mb-1">
               {" "}
@@ -305,7 +305,7 @@ function PricingPage() {
 
         {/* WARRIOR PACK */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -348,21 +348,21 @@ function PricingPage() {
           </div>
         </div>
 
-        {/* FAMILY PACK */}
+        {/* ENLIGHTENED FAMILY PACK */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
               <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                 <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
               </div>
-              Family Pack
+              Enlightened Family Pack
             </div>
             <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
               Bring a friend or family member with you to enjoy your monthly
               unlimited classes with. - Includes 2 Members and expires after 30
-              days from first attended class
+              days from first attended class. Each Additional member is $40
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
               <div> $140</div>
@@ -397,7 +397,7 @@ function PricingPage() {
 
         {/* MAT RENTAL */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex">
               {" "}
@@ -440,7 +440,7 @@ function PricingPage() {
       <div className="flex-wrap gap-3 sm:flex justify-center">
         {/* ELDERBERRY */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex items-center">
               {" "}
@@ -492,7 +492,7 @@ function PricingPage() {
 
         {/* SOURDOUGH */}
 
-        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+        <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
           <div className="p-2 text-lg font-bold">
             <div className="flex items-center">
               {" "}
