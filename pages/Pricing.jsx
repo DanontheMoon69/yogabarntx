@@ -113,13 +113,13 @@ function PricingPage() {
       <div className="flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600  w-3/4 ">
         Yoga Class Packages
       </div>
-      <div className="flex text-sm font-semibold mt-1 text-gray-500 justify-center">
+      <div className="flex text-sm font-semibold mt-1 text-gray-600 justify-center">
         Virtual yoga coming soon!
       </div>
-      <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500">
+      <div className="flex justify-center text-center text-xs mb-2 font-semibold text-gray-500 mt-1">
         Private Yoga Sessions Available. Please Inquire using our Contact Form.
       </div>
-      <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500">
+      <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500 mt-1">
         Ages 55 and up qualify for Senior Discount.
       </div>
 
