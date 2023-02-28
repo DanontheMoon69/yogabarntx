@@ -116,7 +116,7 @@ function PricingPage() {
       <div className="flex text-sm font-semibold mt-1 text-gray-600 justify-center">
         Virtual yoga coming soon!
       </div>
-      <div className="flex justify-center text-center text-xs mb-2 font-semibold text-gray-500 mt-1 mr-1">
+      <div className="flex justify-center text-center text-xs mb-2 font-semibold text-gray-500 mt-1 mr-2">
         Private Yoga Sessions Available. Please Inquire using our Contact Form.
       </div>
       <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500 mt-1">
@@ -429,7 +429,7 @@ function PricingPage() {
       <div className="text-xl flex justify-center font-bold mt-10 sm:mt-10 text-gray-600  w-3/4 text-center ">
         Four Clover Farms Products
       </div>
-      <span className="flex justify-center text-xs font-semibold mt-1 text-gray-500 text-center">
+      <span className="flex justify-center text-xs font-semibold mt-1 text-gray-500 text-center mr-2">
         All Items will include shipping. For Local Pick Up, Enter code at
         checkout for $5 Off
       </span>
