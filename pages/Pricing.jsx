@@ -113,18 +113,14 @@ function PricingPage() {
       <div className="flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600  w-3/4 ">
         Yoga Class Packages
       </div>
-      <div className="flex text-xs font-semibold mt-1 text-gray-500 justify-center">
+      <div className="flex text-sm font-semibold mt-1 text-gray-500 justify-center">
         Virtual yoga coming soon!
       </div>
       <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500">
-        Private Yoga Sessions Available.
-        <Link href="/Contact">
-          <span className="cursor-pointer font-bold mr-1 ml-1   rounded-lg text-emerald-600">
-            {" "}
-            Click Here{" "}
-          </span>
-        </Link>
-        to ask about pricing.
+        Private Yoga Sessions Available. Please Inquire using our Contact Form.
+      </div>
+      <div className="flex justify-center text-xs mb-2 font-semibold text-gray-500">
+        Ages 55 and up qualify for Senior Discount.
       </div>
 
       <div className="flex-wrap gap-3 sm:flex justify-center">
@@ -463,20 +459,13 @@ function PricingPage() {
                   + Shipping: $5
                 </div>
               </div>
-              {user && (
-                <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
-                    Pay
-                  </button>
-                </Link>
-              )}
-              {!user && (
-                <Link href="/signUpPage">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
-                    Sign-Up to Purchase
-                  </button>
-                </Link>
-              )}
+
+              <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
+                <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Pay
+                </button>
+              </Link>
+
               <div className="flex-col ml-3 justify-center">
                 <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
                   Local Pick-Up Available
@@ -515,20 +504,13 @@ function PricingPage() {
                   + Shipping: $5
                 </div>
               </div>
-              {user && (
-                <Link href="https://buy.stripe.com/bIYg2l2IAb8e3dK8wG">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
-                    Pay
-                  </button>
-                </Link>
-              )}
-              {!user && (
-                <Link href="/signUpPage">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
-                    Sign-Up to Purchase
-                  </button>
-                </Link>
-              )}
+
+              <Link href="https://buy.stripe.com/bIYg2l2IAb8e3dK8wG">
+                <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  Pay
+                </button>
+              </Link>
+
               <div className="flex-col ml-3 justify-center">
                 <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
                   Local Pick-Up Available
