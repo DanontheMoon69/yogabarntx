@@ -110,7 +110,7 @@ function PricingPage() {
 
       {/* YOGA CLASSES */}
 
-      <div className="flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600  w-3/4 ">
+      <div className="flex justify-center text-xl  font-bold mt-6 sm:mt-10 text-gray-600  w-3/4 ">
         Yoga Class Packages
       </div>
       <div className="flex text-sm font-semibold mt-1 text-gray-600 justify-center">
