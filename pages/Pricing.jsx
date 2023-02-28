@@ -429,7 +429,7 @@ function PricingPage() {
       <div className="text-xl flex justify-center font-bold mt-10 sm:mt-10 text-gray-600  w-3/4 text-center ">
         Four Clover Farms Products
       </div>
-      <span className="flex justify-center text-xs font-semibold mt-1 text-gray-500">
+      <span className="flex justify-center text-xs font-semibold mt-1 text-gray-500 text-center">
         All Items will include shipping. For Local Pick Up, Enter code at
         checkout for $5 Off
       </span>
