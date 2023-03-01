@@ -67,7 +67,7 @@ const HeroBanner = ({ props }) => {
           <div className="flex-wrap justify-center sm:flex   pb-2 pr-2">
             {/* FILL YOUR CUP @ COMBS */}
             <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
-              <div className="flex justify-center items-center text-md font-bold">
+              <div className="flex justify-center items-center text-sm font-bold sm:text-md">
                 <Image src={coffee} width="30" height="30" className="mr-2" />
                 Fill Your Cup @ Combs&apos; Coffee
               </div>
@@ -100,7 +100,6 @@ const HeroBanner = ({ props }) => {
             {/* BLESSINGS OF SPRING EQUINOX */}
             <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
               <div className="flex justify-center text-md font-bold">
-               
                 Blessings of Spring Equinox
               </div>
               <div className="flex justify-center text-sm font-bold text-center text-gray-500 ">
