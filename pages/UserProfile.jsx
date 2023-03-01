@@ -44,6 +44,8 @@ function UserProfile() {
     limitationsCheck: "",
     limitations: "",
     pregnant: "",
+    howHear: "",
+    howHearOther: "",
     emergencyContact: "",
     emergencyPh: "",
     reltoContact: "",
@@ -350,6 +352,30 @@ function UserProfile() {
                         <option>No</option>
                         <option>Yes</option>
                       </select>
+                    </div>
+                    <div className=" relative ">
+                      <label className="block text-xs pb-2" htmlFor="howHear">
+                        How did you hear about us?
+                      </label>
+                      <select
+                        name="howHear"
+                        onChange={handleChange}
+                        className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                      >
+                        <option></option>
+                        <option>Facebook</option>
+                        <option>Instagram</option>
+                        <option>Flyer</option>
+                        <option>Word of mouth</option>
+                        <option>Other</option>
+                      </select>
+                      <input
+                        type="text"
+                        name="howHearOther"
+                        onChange={handleChange}
+                        className="mt-2 rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                        placeholder="If other, tell us here"
+                      />
                     </div>
 
                     <div className=" relative ">
