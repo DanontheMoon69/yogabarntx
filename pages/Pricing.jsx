@@ -82,10 +82,10 @@ function PricingPage() {
             </div>
             <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
               Welcome Spring Equinox at the Yoga Barn. We will be moving through
-              108 Sun Salutations to welcome this new season. This is a very
-              challenging practice that help strengthen body and mind. Leave
+              108 Sun Salutations to welcome this new season. This is a challenging practice that helps strengthen body and mind. Leave
               feeling refreshed and ready for what ever life offers you in this
-              new season. Mat, Water and Small Towel recommended
+              new season. Mat, Water and Small Towel recommended. Workshop is
+              $25 - Space is limited purchase tickets as soon as possible!
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
               <div> $25</div>
