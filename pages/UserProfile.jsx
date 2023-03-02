@@ -35,7 +35,8 @@ function UserProfile() {
   // const [liability, setLiability] = useState("checked");
 
   const [toSend, setToSend] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: user?.email,
     address: "",
     city: "",
@@ -192,17 +193,31 @@ function UserProfile() {
                       </h2>
                     </div>
                     <div className=" relative ">
-                      <label className="block text-xs pb-2" htmlFor="name">
-                        Display Name
+                      <label className="block text-xs pb-2" htmlFor="firstName">
+                        First Name
                       </label>
                       <input
                         type="text"
-                        name="name"
+                        name="firstName"
                         // value="name"
                         onChange={handleChange}
                         // onChange={formik.handleChange}
                         className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
-                        placeholder="Name"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div className=" relative ">
+                      <label className="block text-xs pb-2" htmlFor="lastName">
+                        Last Name
+                      </label>
+                      <input
+                        type="text"
+                        name="lastName"
+                        // value="name"
+                        onChange={handleChange}
+                        // onChange={formik.handleChange}
+                        className=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent"
+                        placeholder="Last Name"
                       />
                     </div>
 
@@ -344,7 +359,7 @@ function UserProfile() {
 
                     <div className=" relative ">
                       <label className="block text-xs pb-2" htmlFor="pregnant">
-                        Pregnant or Postpartum?
+                        Pregnant?
                       </label>
                       <select
                         name="pregnant"
@@ -369,7 +384,7 @@ function UserProfile() {
                         <option>Facebook</option>
                         <option>Instagram</option>
                         <option>Flyer</option>
-                        <option>Word of mouth</option>
+                        <option>Friend or Family</option>
                         <option>Other</option>
                       </select>
                       <input
