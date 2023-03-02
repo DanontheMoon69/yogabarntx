@@ -150,7 +150,7 @@ function UserProfile() {
                     {!user.photoURL && (
                       <div className="w-10 h-10 bg-emerald-600 rounded-full ">
                         <h2 className="flex mt-3 justify-center object-center text-white text-xs text-center font-semibold">
-                          Pic
+                          Img
                         </h2>
                       </div>
                     )}
