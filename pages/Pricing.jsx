@@ -53,7 +53,7 @@ function PricingPage() {
             <div className="flex p-2 items-center text-2xl font-black">
               <div> $25</div>
               {user && (
-                <Link href="https://buy.stripe.com/6oE03nfvm3FMbKg00b">
+                <Link href="https://buy.stripe.com/9AQaI1fvmdgm8y49AO">
                   <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
                     Pay
                   </button>
@@ -90,7 +90,7 @@ function PricingPage() {
             <div className="flex p-2 items-center text-2xl font-black">
               <div> $25</div>
               {user && (
-                <Link href="https://buy.stripe.com/9AQ8zTdneekqg0w5kw">
+                <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
                   <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
                     Pay
                   </button>
