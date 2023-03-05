@@ -81,7 +81,7 @@ const HeroBanner = ({ props }) => {
                   </button>
                 </Link>
                 {user && (
-                  <Link href="https://buy.stripe.com/6oE03nfvm3FMbKg00b">
+                  <Link href="https://buy.stripe.com/9AQaI1fvmdgm8y49AO">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-emerald-600 py-1 px-4 text-white rounded-full mt-2 ml-2">
                       Buy
                     </button>
@@ -112,7 +112,7 @@ const HeroBanner = ({ props }) => {
                   </button>
                 </Link>
                 {user && (
-                  <Link href="https://buy.stripe.com/9AQ8zTdneekqg0w5kw">
+                  <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-emerald-600 py-1 px-4 text-white rounded-full mt-2 ml-2">
                       Buy
                     </button>
