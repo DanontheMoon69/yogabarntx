@@ -31,7 +31,7 @@ export default function Calendar() {
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <div className="text-xl font-bold mt-5  text-gray-600">
+          <div className="text-xl font-bold mt-5  text-gray-600  ">
             Yoga Barn Scheduled Classes
           </div>
           <div className="flex justify-center">
@@ -44,11 +44,11 @@ export default function Calendar() {
               View Full March Calendar
             </button>
           </div>
-          <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10">
+          <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
             {/* WORKSHOP CONTAINER */}
 
-            <div className="w-full ml-25 mr-25 sm: px-5 py-5 sm:max-w-lg bg-gray-100 rounded-xl pt-3 shadow-sm">
-              <h1 className="flex justify-center text-xl font-bold text-gray-700 border-b-2">
+            <div className="w-full ml-25 mr-10 sm: px-5 py-5 sm:max-w-lg bg-gray-100 rounded-xl pt-3 shadow-sm">
+              <h1 className="flex justify-center text-xl font-bold text-gray-700 border-b-2 mr-15">
                 Scheduled Workshops for March 2023
               </h1>
 
@@ -152,7 +152,7 @@ export default function Calendar() {
               </div>
             </div>
 
-            <div className="w-full ml-25 mr-25 sm: px-5 sm:max-w-lg ">
+            <div className="w-full ml-25 mr-12 sm: px-5 sm:max-w-lg ">
               <h1 className="flex justify-center text-xl font-bold text-gray-700 border-b-2">
                 Scheduled Classes for March 2023
               </h1>
