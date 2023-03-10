@@ -12,8 +12,8 @@ const Schedule = () => {
   const cartRef = useRef();
   return (
     <>
-      <div className="flex justify-center w-full bg-gray-200  p-2">
-        <div className="bg-white  w-full sm:w-3/4 mt-10 px-2 py-2 opacity-100 rounded-xl">
+      <div className="flex justify-center w-screen bg-gray-200  p-2 mr-5">
+        <div className="bg-white  sm:w-3/4 mt-10 px-2 py-2 opacity-100 rounded-xl">
           <div className="flex mb-3">
             <button
               type="button"

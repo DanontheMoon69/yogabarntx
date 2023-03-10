@@ -11,22 +11,14 @@ import relativeTime from "dayjs/plugin/relativeTime";
 
 // import { urlFor } from "../lib/client";
 import egg from "../components/assets/images/YogaBarn_Egg.png";
-// import coffee from "../components/assets/images/coffee_yoga.png";
-// import sun from "../components/assets/images/sun.png";
+import coffee from "../components/assets/images/coffee_yoga.png";
+//import sun from "../components/assets/images/sun.png";
 
 import Schedule from "./Schedule";
 
 const HeroBanner = ({ props }) => {
   const [user, loading] = useAuthState(auth);
-  const {
-    showCart,
-    showSchedule,
-    setShowSchedule,
-    showLogin,
-    setShowLogin,
-    showMemberLoginButton,
-    setShowMemberLoginButton,
-  } = useStateContext();
+  const { showSchedule, setShowSchedule } = useStateContext();
 
   dayjs.extend(relativeTime);
 
@@ -66,10 +58,10 @@ const HeroBanner = ({ props }) => {
           </div>
           <div className="flex-wrap justify-center sm:flex   pb-2 pr-2">
             {/* FILL YOUR CUP @ COMBS */}
-            <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
-              <div className="flex justify-center items-center text-md font-bold">
-                {/* <Image src={coffee} width="30" height="30" className="mr-2" /> */}
-                Fill Your Cup @ Combs&apos;
+            <div className="items-center justify-center bg-white rounded-xl mt-3 py-2 px-4 shadow-md">
+              <div className="flex justify-center items-center text-sm font-bold sm:text-md">
+                <Image src={coffee} width="30" height="30" className="mr-2" />
+                Fill Your Cup @ Combs&apos; Coffee
               </div>
               <div className="flex justify-center text-sm font-bold text-center text-gray-500 ">
                 March 18th @ Combs&apos; Coffee, Gainesville, Tx
@@ -81,7 +73,7 @@ const HeroBanner = ({ props }) => {
                   </button>
                 </Link>
                 {user && (
-                  <Link href="https://buy.stripe.com/6oE03nfvm3FMbKg00b">
+                  <Link href="https://buy.stripe.com/9AQaI1fvmdgm8y49AO">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-emerald-600 py-1 px-4 text-white rounded-full mt-2 ml-2">
                       Buy
                     </button>
@@ -98,9 +90,8 @@ const HeroBanner = ({ props }) => {
             </div>
 
             {/* BLESSINGS OF SPRING EQUINOX */}
-            <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
+            <div className="items-center justify-center bg-white rounded-xl   mt-3 py-2 px-4 shadow-md">
               <div className="flex justify-center text-md font-bold">
-                {/* <Image src={sun} width="30" height="30" className="mr-2" />  */}
                 Blessings of Spring Equinox
               </div>
               <div className="flex justify-center text-sm font-bold text-center text-gray-500 ">
@@ -113,7 +104,7 @@ const HeroBanner = ({ props }) => {
                   </button>
                 </Link>
                 {user && (
-                  <Link href="https://buy.stripe.com/9AQ8zTdneekqg0w5kw">
+                  <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-emerald-600 py-1 px-4 text-white rounded-full mt-2 ml-2">
                       Buy
                     </button>
@@ -134,7 +125,7 @@ const HeroBanner = ({ props }) => {
               onClick={() => {
                 setShowSchedule(true);
               }}
-              className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 ml-2 animate-pulse"
+              className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2  animate-pulse"
             >
               View March Calendar
             </button>

@@ -77,7 +77,7 @@ const SignupPage = () => {
             <input
               type="email"
               {...register("email", { required: "Email is required" })}
-              className={`border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
+              className={`bg-gray-100 border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
             />
             {errors.email && <p className="text-red-400">{errors.email.message}</p>}
           </div>
@@ -91,7 +91,7 @@ const SignupPage = () => {
             <input
               type="password"
               {...register("password", { required: "Password is required" })}
-              className={`border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
+              className={`bg-gray-100 border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
             />
             {errors.password && <p className="text-red-400">{errors.password.message}</p>}
           </div>
@@ -107,7 +107,7 @@ const SignupPage = () => {
               {...register("password_confirm", {
                 required: "Verify your password",
               })}
-              className={`border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
+              className={`bg-gray-100 border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
             />
             {errors.password_confirm && (
               <p className="text-red-400">{errors.password_confirm.message}</p>

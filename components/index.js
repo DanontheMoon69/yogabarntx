@@ -6,3 +6,4 @@ export { default as HeroBanner } from "./HeroBanner";
 export { default as FooterBanner } from "./FooterBanner";
 export { default as Schedule } from "./Schedule";
 export { default as Login } from "../pages/Login";
+export { default as Calendar } from "../pages/Calendar";

@@ -12,8 +12,6 @@ export const StateContext = ({ children }) => {
   const [showSchedule, setShowSchedule] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showMemberLoginButton, setShowMemberLoginButton] = useState(true);
-  let foundProduct;
-  let index;
 
   const onAdd = (product, quantity) => {
     const checkProductInCart = cartItems.find(
