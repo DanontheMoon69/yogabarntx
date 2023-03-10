@@ -18,15 +18,7 @@ import Schedule from "./Schedule";
 
 const HeroBanner = ({ props }) => {
   const [user, loading] = useAuthState(auth);
-  const {
-    showCart,
-    showSchedule,
-    setShowSchedule,
-    showLogin,
-    setShowLogin,
-    showMemberLoginButton,
-    setShowMemberLoginButton,
-  } = useStateContext();
+  const { showSchedule, setShowSchedule } = useStateContext();
 
   dayjs.extend(relativeTime);
 
@@ -66,7 +58,9 @@ const HeroBanner = ({ props }) => {
           </div>
           <div className="flex-wrap justify-center sm:flex   pb-2 pr-2">
             {/* FILL YOUR CUP @ COMBS */}
-            <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
+
+            <div className="items-center justify-center bg-white rounded-xl mt-3 py-2 px-4 shadow-md">
+
               <div className="flex justify-center items-center text-sm font-bold sm:text-md">
                 <Image src={coffee} width="30" height="30" className="mr-2" />
                 Fill Your Cup @ Combs&apos; Coffee
@@ -98,7 +92,7 @@ const HeroBanner = ({ props }) => {
             </div>
 
             {/* BLESSINGS OF SPRING EQUINOX */}
-            <div className="items-center justify-center bg-white rounded-xl  ml-2 mt-3 py-2 px-4 shadow-md">
+            <div className="items-center justify-center bg-white rounded-xl   mt-3 py-2 px-4 shadow-md">
               <div className="flex justify-center text-md font-bold">
                 Blessings of Spring Equinox
               </div>
@@ -133,7 +127,7 @@ const HeroBanner = ({ props }) => {
               onClick={() => {
                 setShowSchedule(true);
               }}
-              className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 ml-2 animate-pulse"
+              className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2  animate-pulse"
             >
               View March Calendar
             </button>
