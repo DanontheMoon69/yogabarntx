@@ -144,7 +144,9 @@ export default function Calendar() {
                 )}
                 {!user && (
                   <Link href="/signUpPage">
+
                     <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+
                       Sign-Up to Purchase
                     </button>
                   </Link>
