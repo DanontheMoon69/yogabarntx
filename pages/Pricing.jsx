@@ -338,7 +338,7 @@ function PricingPage() {
               </div>
             </div>
             <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
-              Monthly Unlimited Auto-Renewal with 3 Month Commitment - Includes
+              Monthly Unlimited Auto-Renewal with 4 Month Commitment - Includes
               Virtual Yoga
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
