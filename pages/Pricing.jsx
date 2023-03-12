@@ -248,7 +248,7 @@ function PricingPage() {
               5 Classes at Yoga Barn - Expires after 30 Days
             </p>
             <div className="flex p-2 items-center text-2xl font-black">
-              <div> $65</div>
+              <div> $75</div>
               {user && (
                 <Link href="https://buy.stripe.com/eVa7vP3MEa4adSodR9">
                   <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
