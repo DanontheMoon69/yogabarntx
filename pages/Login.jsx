@@ -39,6 +39,7 @@ const Login = () => {
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
+        alert(errorMessage);
       });
   };
 
@@ -71,27 +72,20 @@ const Login = () => {
   return (
     <>
       {!user && (
-        <section className="h-screen">
-          <div className="px-6 h-full text-gray-800">
-            <div className="flex xl:justify-center lg:justify-between justify-center items-center flex-wrap h-full g-6">
-              <div className="grow-0 shrink-1 md:shrink-0 basis-auto xl:w-6/12 lg:w-6/12 md:w-9/12 mb-12 md:mb-0">
-                <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                  className="w-full"
-                  alt="Yoga Barn Login"
-                />
-              </div>
-              <div className="xl:ml-20 xl:w-5/12 lg:w-5/12 md:w-8/12 mb-12 md:mb-0">
-                <div className="flex text-xl font-bold mb-10 items-center justify-center">
-                  Login to the Yoga Barn
+        <section className="h-screen pt-24">
+          <div className=" text-gray-800">
+            <div className="flex justify-center  items-center flex-wrap h-full g-6">
+              <div className="">
+                <div className="flex text-xl font-thin mb-10 items-center justify-center tracking-wide">
+                  LOGIN TO THE YOGA BARN
                 </div>
                 <form>
-                  <div className="flex flex-row items-center justify-center lg:justify-start">
+                  <div className="flex flex-row items-center justify-center ">
                     <button
                       type="button"
                       data-mdb-ripple="true"
                       data-mdb-ripple-color="light"
-                      className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white font-medium text-xs leading-tight  rounded-full shadow-md ease-in transform hover:scale-105 transition duration-100 mx-1"
+                      className="flex items-center justify-center gap-2 p-3 bg-teal-600 text-white font-medium text-xs leading-tight  rounded-full shadow-md ease-in transform hover:scale-105 transition duration-100 mx-1 tracking-wide"
                       onClick={GoogleLogin}
                     >
                       <GrGoogle /> Sign In With Google
@@ -128,25 +122,28 @@ const Login = () => {
                     <div className="form-group form-check">
                       <input
                         type="checkbox"
-                        className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+                        className="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-teal-600 checked:border-teal-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
                         id="exampleCheck2"
                       />
                       <label
-                        className="text-sm form-check-label inline-block text-gray-800"
+                        className="text-sm form-check-label inline-block text-gray-800 font-thin tracking-wide"
                         for="exampleCheck2"
                       >
                         Remember me
                       </label>
                     </div>
-                    <a href="#!" className="text-xs text-gray-800">
+                    <a
+                      href="#!"
+                      className="text-sm font-thin tracking-wide text-gray-600"
+                    >
                       Forgot password?
                     </a>
                   </div>
 
-                  <div className="text-center lg:text-left">
+                  <div className="text-center ">
                     <button
                       type="button"
-                      className="inline-block px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md ease-in transform hover:scale-105 transition duration-100"
+                      className="inline-block px-7 py-3 bg-teal-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md ease-in transform hover:scale-105 transition tracking-widest duration-100"
                       onClick={signIn}
                     >
                       Login
@@ -156,7 +153,7 @@ const Login = () => {
                       Don&apos;t have an account?
                       <Link
                         href="/signUpPage"
-                        className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
+                        className="text-teal-600 hover:text-teal-700 ease-in transform hover:scale-105 transition duration-100"
                       >
                         {" "}
                         Register
