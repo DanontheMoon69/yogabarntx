@@ -52,9 +52,9 @@ const SignupPage = () => {
   };
 
   return (
-    <div className="pt-24">
-      <div className=" flex justify-center text-xl  font-thin   text-gray-600 tracking-wider">
-        CREATE AN ACCOUNT
+    <div className="">
+      <div className=" flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600">
+        Create an Account
       </div>
 
       <FormProvider {...methods}>
@@ -63,7 +63,7 @@ const SignupPage = () => {
             type="button"
             data-mdb-ripple="true"
             data-mdb-ripple-color="light"
-            className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white transform hover:scale-105  font-medium text-xs leading-tight  rounded-full shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mx-1 mt-5"
+            className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white ease-in transform hover:scale-105 transition duration-100 font-medium text-xs leading-tight  rounded-full shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mx-1 mt-5"
             onClick={GoogleLogin}
           >
             <GrGoogle /> Create Account using Google
@@ -127,7 +127,7 @@ const SignupPage = () => {
           <div className="flex justify-center pt-8">
             <button
               type="submit"
-              className={`flex px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-emerald-600 hover:shadow-lg transform hover:scale-105  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out`}
+              className={`flex px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-emerald-600 hover:shadow-lg ease-in transform hover:scale-105 transition duration-100 focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out`}
             >
               <p className="capitalize text-white font-normal">
                 Create Account
