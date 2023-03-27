@@ -16,7 +16,7 @@ function PricingPage() {
   return (
     <>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-teal-600">
-        PRICING
+        PRICING TEST 1
         <div className="relative w-full pt-4">
           <Image src={inhale} alt="Yoga Barn" className=" object-cover h-48 " />
         </div>
