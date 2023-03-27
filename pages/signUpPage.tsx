@@ -44,7 +44,6 @@ const SignupPage = () => {
       const result = await signInWithPopup(auth, googleProvider);
       console.log(result);
       router.push("/UserProfile");
-
     } catch (error) {
       console.log(error);
     }
@@ -52,21 +51,27 @@ const SignupPage = () => {
 
   return (
     <div className="">
-      <div className=" flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600">Create an Account</div>
-      
+      <div className=" flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600">
+        Create an Account
+      </div>
+
       <FormProvider {...methods}>
-      <div className="flex items-center justify-center">
-        <button
-                        type="button"
-                        data-mdb-ripple="true"
-                        data-mdb-ripple-color="light"
-                        className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white ease-in transform hover:scale-105 transition duration-100 font-medium text-xs leading-tight  rounded-full shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mx-1 mt-5"
-                        onClick={GoogleLogin}
-                      >
-                        <GrGoogle /> Create Account using Google
-                      </button>
-                      </div>
-        <form action="" className="w-80 mx-auto pb-12 px-4" onSubmit={handleSubmit(onSubmit)}>
+        <div className="flex items-center justify-center">
+          <button
+            type="button"
+            data-mdb-ripple="true"
+            data-mdb-ripple-color="light"
+            className="flex align-center justify-center gap-2 p-3 bg-emerald-600 text-white  transform hover:scale-105  font-medium text-xs leading-tight  rounded-full shadow-md  hover:shadow-lg  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out mx-1 mt-5"
+            onClick={GoogleLogin}
+          >
+            <GrGoogle /> Create Account using Google
+          </button>
+        </div>
+        <form
+          action=""
+          className="w-80 mx-auto pb-12 px-4"
+          onSubmit={handleSubmit(onSubmit)}
+        >
           <div className="mt-8">
             <div className="flex items-center justify-between">
               <label htmlFor="" className="block mb-3 font-sans text-gray-900">
@@ -79,7 +84,9 @@ const SignupPage = () => {
               {...register("email", { required: "Email is required" })}
               className={`bg-gray-100 border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
             />
-            {errors.email && <p className="text-red-400">{errors.email.message}</p>}
+            {errors.email && (
+              <p className="text-red-400">{errors.email.message}</p>
+            )}
           </div>
           <div className="mt-8">
             <div className="flex items-center justify-between">
@@ -93,7 +100,9 @@ const SignupPage = () => {
               {...register("password", { required: "Password is required" })}
               className={`bg-gray-100 border border-solid rounded-lg ring:0 focus:ring-0 focus:outline-none border-gray-400 text-gray-500 text-normal py-3 h-12 px-6 text-lg w-full flex items-center`}
             />
-            {errors.password && <p className="text-red-400">{errors.password.message}</p>}
+            {errors.password && (
+              <p className="text-red-400">{errors.password.message}</p>
+            )}
           </div>
           <div className="mt-8">
             <div className="flex items-center justify-between">
@@ -116,24 +125,25 @@ const SignupPage = () => {
           <div className="flex justify-center pt-8">
             <button
               type="submit"
-              className={`flex px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-emerald-600 hover:shadow-lg ease-in transform hover:scale-105 transition duration-100 focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out`}
+              className={`flex px-7 py-3 bg-emerald-600 text-white font-medium text-sm leading-snug uppercase rounded-full shadow-md hover:bg-emerald-600 hover:shadow-lg  transform hover:scale-105  focus:shadow-lg focus:outline-none focus:ring-0  active:shadow-lg transition duration-150 ease-in-out`}
             >
-              <p className="capitalize text-white font-normal">Create Account</p>
+              <p className="capitalize text-white font-normal">
+                Create Account
+              </p>
             </button>
-
           </div>
           <div className="flex justify-center">
             <p className="text-sm font-semibold mt-2 pt-1 mb-10">
-                      Already have an account?
-                      <Link
-                        href="/Login"
-                        className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
-                      >
-                        {" "}
-                        Login
-                      </Link>
-                    </p>
-                    </div>
+              Already have an account?
+              <Link
+                href="/Login"
+                className="text-emerald-600 hover:text-emerald-700 ease-in transform hover:scale-105 transition duration-100"
+              >
+                {" "}
+                Login
+              </Link>
+            </p>
+          </div>
         </form>
       </FormProvider>
     </div>
