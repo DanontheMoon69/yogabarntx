@@ -236,19 +236,19 @@ const Home = () => {
           </div>
         </div>
         <div className=" text-xs flex justify-center w-full  gap-2 text-gray-400 font-thin tracking-wide pt-2">
-          <a href="#item1" className=" hover:text-gray-500">
+          <a href="#item1" className=" hover:text-gray-500 p-1">
             TUESDAYS
           </a>
-          <a href="#item2" className=" hover:text-gray-500">
+          <a href="#item2" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
-          <a href="#item3" className="hover:text-gray-500">
+          <a href="#item3" className="hover:text-gray-500 p-1">
             THURSDAYS
           </a>
-          <a href="#item4" className=" hover:text-gray-500">
+          <a href="#item4" className=" hover:text-gray-500 p-1">
             FRIDAYS
           </a>
-          <a href="#item5" className="hover:text-gray-500">
+          <a href="#item5" className="hover:text-gray-500 p-1">
             SUNDAYS
           </a>
         </div>
