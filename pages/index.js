@@ -80,13 +80,13 @@ const Home = () => {
           AVAILABLE CLASSES
         </div>
         <div className="relative carousel w-full bg-teal-600 pt-8">
-          <div id="item1" className=" carousel-item w-full text-center z-20">
+          <div id="item1" className=" carousel-item w-full text-center">
             <div
               className="absolute left-1/2 -top-12 transform -translate-x-1/2 
- font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45 z-10 text-white "
+ font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45  text-white "
             ></div>
             <div className="text-center w-full ">
-              <div className="relative z-30 flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <div className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 TUESDAY MORNINGS
               </div>
               <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
