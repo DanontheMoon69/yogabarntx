@@ -20,7 +20,7 @@ const HeroBanner = ({ props }) => {
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <div className="flex justify-center w-screen">
+          <div className="flex justify-center">
             <div className=" relative pt-24 ">
               <div className="relative ">
                 <Image
@@ -29,7 +29,7 @@ const HeroBanner = ({ props }) => {
                   className=" object-cover h-full max-h-96   "
                 />
               </div>
-              <div className="absolute top-1/2 left-10 lg:left-48  transform  -translate-y-1/2 text-teal-500  w-full ">
+              <div className="absolute top-1/2 left-10 lg:left-48  transform  -translate-y-1/2 text-teal-500   ">
                 <div className="font-thin tracking-widest text-2xl pt-12 sm:text-3xl">
                   NEW STUDENT SPECIAL
                 </div>
