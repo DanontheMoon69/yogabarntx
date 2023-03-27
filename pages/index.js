@@ -113,7 +113,7 @@ const Home = () => {
           <div id="item2" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -144,7 +144,7 @@ const Home = () => {
           <div id="item3" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -175,7 +175,7 @@ const Home = () => {
           <div id="item4" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -206,7 +206,7 @@ const Home = () => {
           <div id="item5" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
