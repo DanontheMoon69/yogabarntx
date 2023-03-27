@@ -6,21 +6,21 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="footer-container text-teal-600 margin-top:auto">
-      <div className="flex justify-center w-20">
+      <div className="flex justify-center w-20 h-14">
         <Image src={YBLogo} alt="Yoga Barn Logo" />{" "}
       </div>
       <ul className="flex gap-3 text-xs font-thin tracking-widest">
         <Link href="/">
-          <li className="">HOME</li>
+          <li className="px-1">HOME</li>
         </Link>
         <Link href="/Calendar">
-          <li className="">SCHEDULE</li>
+          <li className="px-1">SCHEDULE</li>
         </Link>
         <Link href="/Pricing">
-          <li className="">PRICING</li>
+          <li className="px-1">PRICING</li>
         </Link>
         <Link href="/Contact">
-          <li className="">CONTACT</li>
+          <li className="px-1">CONTACT</li>
         </Link>
       </ul>
 
