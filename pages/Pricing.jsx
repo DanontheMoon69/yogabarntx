@@ -19,7 +19,9 @@ function PricingPage() {
       {/* FILL YOUR CUP @ COMBS */}
       <div className="flex-wrap sm:flex ">
         <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mb-3 mr-3 ">
+
           <div className="p-2 text-lg font-bold text-black">
+
             <div className="flex">
               {" "}
               <div className="flex justify-end ml-3 mx-3 max-w-1/2  ">
@@ -83,8 +85,10 @@ function PricingPage() {
         {/* BLESSINGS OF SPRING EQUINOX */}
 
         <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3 ">
+
           <div className="p-2 text-lg font-bold text-black">
             <div className="flex ">
+
               {" "}
               <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                 <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
@@ -505,7 +509,9 @@ function PricingPage() {
         {/* ELDERBERRY */}
 
         <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
+
           <div className="p-2 text-lg font-bold text-black">
+
             <div className="flex items-center">
               {" "}
               <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -550,7 +556,9 @@ function PricingPage() {
         {/* SOURDOUGH */}
 
         <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
+
           <div className="p-2 text-lg font-bold text-black">
+
             <div className="flex items-center">
               {" "}
               <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
