@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yogabarntx.com
+
+# Sitemaps
+Sitemap: https://yogabarntx.com/sitemap.xml
