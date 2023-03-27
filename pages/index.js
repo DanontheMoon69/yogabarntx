@@ -66,7 +66,7 @@ const Home = () => {
             <Link href="/Calendar">
               <button
                 type="button"
-                className="hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 py-2 px-6  hover:bg-gray-400 bg-gray-200   text-gray-800 hover:text-gray-200 w-full transition ease-in duration-200 text-center text-sm font-thin shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg tracking-wide "
+                className="hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 py-2 px-6  hover:bg-gray-400 bg-gray-200   text-gray-800 hover:text-gray-200 w-full transition ease-in duration-200 text-center text-sm font-thin shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg tracking-wide ml-2"
               >
                 View Schedule
               </button>
