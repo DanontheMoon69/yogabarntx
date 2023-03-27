@@ -16,7 +16,7 @@ function PricingPage() {
   return (
     <>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-teal-600">
-        PRICING TEST 1
+        PRICING
         <div className="relative w-full pt-4">
           <Image src={inhale} alt="Yoga Barn" className=" object-cover h-48 " />
         </div>
@@ -26,9 +26,6 @@ function PricingPage() {
         >
           <div className=" text-3xl font-thin tracking-wide text-white ">
             Virtual yoga coming soon!
-          </div>
-          <div className=" text-gray-100 font-thin text-base">
-            Ages 55 and up qualify for Senior Discount.
           </div>
         </div>
       </div>
@@ -212,6 +209,9 @@ function PricingPage() {
       {/*  */}
       {/* SINGLE CLASS */}
       {/*  */}
+      <div className=" text-gray-700 text-xs font-thin text-center pt-3">
+        Ages 55 and up qualify for Senior Discount.
+      </div>
       <div className="flex justify-center">
         <div className="text-3xl text-center font-bold    w-full   pt-16 px-3">
           <div className="flex justify-center">
