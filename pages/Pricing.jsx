@@ -27,9 +27,6 @@ function PricingPage() {
           <div className=" text-3xl font-thin tracking-wide text-white ">
             Virtual yoga coming soon!
           </div>
-          <div className=" text-gray-100 font-thin text-base">
-            Ages 55 and up qualify for Senior Discount.
-          </div>
         </div>
       </div>
       {/*  */}
@@ -39,7 +36,7 @@ function PricingPage() {
       <div className=" flex justify-center">
         <div className="text-3xl text-center font-bold   w-full   pt-16 px-3">
           <div className="flex justify-center">
-            <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+            <Image src={YBIcon} alt="Yoga Barn Icon" className="  w-16 h-14" />
           </div>
           <div className="flex justify-center tracking-widest items-center text-4xl font-thin text-teal-600  px-4  rounded-2xl pt-2">
             WORKSHOPS
@@ -115,7 +112,7 @@ function PricingPage() {
       {/*  */}
       <div className=" pt-16  px-3">
         <div className="flex justify-center">
-          <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+          <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
         <div className="flex justify-center tracking-wider items-center text-4xl font-thin text-teal-600  px-4 rounded-2xl text-center pt-2">
           SPECIALS & EXTRAS
@@ -212,10 +209,13 @@ function PricingPage() {
       {/*  */}
       {/* SINGLE CLASS */}
       {/*  */}
+      <div className=" text-gray-700 text-xs font-thin text-center pt-3">
+        Ages 55 and up qualify for Senior Discount.
+      </div>
       <div className="flex justify-center">
         <div className="text-3xl text-center font-bold    w-full   pt-16 px-3">
           <div className="flex justify-center">
-            <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+            <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
           <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4  rounded-2xl">
             SINGLE CLASS
@@ -282,7 +282,7 @@ function PricingPage() {
       {/* BLISS PACK */}
       <div className="pt-16  px-3">
         <div className="flex justify-center">
-          <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+          <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
         <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
           MONTHLY PACKS
@@ -449,7 +449,7 @@ function PricingPage() {
 
       <div className="py-4  px-3 pt-16">
         <div className="flex justify-center">
-          <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+          <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
         <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl">
           CLASS PACKS
@@ -553,7 +553,7 @@ function PricingPage() {
 
       <div className="pt-16  px-3">
         <div className="flex justify-center">
-          <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+          <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
         <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
           PRIVATE SESSIONS
@@ -678,9 +678,9 @@ function PricingPage() {
       {/*  */}
       <div className="pt-16  px-3">
         <div className="flex justify-center">
-          <Image src={fcLogo} alt="Yoga Barn Icon" className=" w-24" />
+          <Image src={fcLogo} alt="Yoga Barn Icon" className=" w-24 h-18" />
         </div>
-        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
+        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl text-center ">
           Four Clovers Products
         </div>
       </div>

@@ -5,7 +5,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="layout bg-gray-50 w-full">
+    <div className=" bg-gray-50 w-full">
       <Head>
         <title>Yoga Barn - Whitesboro, Tx</title>
         <meta

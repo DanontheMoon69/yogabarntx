@@ -31,7 +31,7 @@ export default function Calendar() {
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <div className="flex justify-center text-2xl font-thin tracking-wider pt-24  text-teal-600  ">
+          <div className="flex justify-center text-2xl font-thin tracking-wider pt-24  text-black  ">
             SCHEDULED CLASSES
           </div>
           <div className="flex justify-center">
@@ -48,8 +48,8 @@ export default function Calendar() {
             {/* WORKSHOP CONTAINER */}
 
             <div className="w-full   px-5 py-5 sm:max-w-lg rounded-xl pt-3 shadow-sm">
-              <h1 className="flex justify-center text-2xl font-thin tracking-wider text-teal-500 border-b-2 pb-2">
-                Workshops for April 2023
+              <h1 className="flex justify-center text-2xl font-thin tracking-wider text-black border-b-2 pb-2">
+                Upcoming Workshops
               </h1>
 
               {/* Blessings of Spring Equinox */}
@@ -95,26 +95,26 @@ export default function Calendar() {
             </div>
 
             <div className="w-full sm: px-5 sm:max-w-lg ">
-              <h1 className="flex justify-center text-2xl font-thin tracking-wide text-teal-500 border-b-2 pb-2">
+              <h1 className="flex justify-center text-3xl font-thin tracking-wide text-black border-b-2 pb-2 pt-6">
                 Weekly Classes
               </h1>
 
               {/* Tuesdays and Thursdays */}
 
-              <h1 className="text-2xl font-thin text-teal-500 mt-4">
+              <h1 className="text-2xl font-thin text-black mt-4">
                 Tuesdays and Thursdays: Mornings
               </h1>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Power 30:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 6:00am - 6:30am
               </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
+              <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Can&apos;t fit an hour class into your schedule? Well this 30
                 minute class is just right for you. Wake up, get in, sweat and
                 go! This is a quick 30 minute power flow. All levels welcome but
@@ -122,17 +122,17 @@ export default function Calendar() {
                 day, let it be 30 minutes of activity.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Rise & Shine:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 6:45am - 7:45am
               </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
+              <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Start your day right. Whether it&apos;s before work, a day
                 running the kids around, or before household chores, start your
                 day at the studio. This is an All Levels class that you will
@@ -143,37 +143,37 @@ export default function Calendar() {
 
               {/* Fridays */}
 
-              <h1 className="text-2xl font-thin text-teal-500 mt-4">
+              <h1 className="text-2xl font-thin text-black mt-4">
                 Fridays: Evenings
               </h1>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Candle Lit Flow:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 6:30pm - 7:30pm
               </p>
               <p className="text-xs font-thin mt-2 text-gray-600">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Finish out your week at the studio moving through a warm flow
                 that has you leaving feeling both replenished and relaxed. This
                 is an All Levels class that helps you build your own heat and
                 finish with a relaxing savasana.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Power 45:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 7:45pm - 8:30pm
               </p>
               <p className="text-xs font-thin mt-2 text-gray-600">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Finish out your week feeling strong and empowered. This class is
                 45 minutes of building up your strength and finishing with a 5
                 minute savasana. This is a class meant to challenge yogis and
@@ -183,37 +183,37 @@ export default function Calendar() {
 
               {/* Sundays */}
 
-              <h1 className="text-2xl font-thin text-teal-500 mt-4">
+              <h1 className="text-2xl font-thin text-black mt-4">
                 Sundays: Evenings
               </h1>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Mindful Movement:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 4:00pm - 5:00pm
               </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
+              <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Start the week off slow and steady. Our slow flow is a Vinyasa
                 Flow that focuses on stretching and lengthening the body. We may
                 linger in poses longer and slow things down when needed. All
                 levels welcome.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
-              <p className="flex text-xl mt-2 font-thin text-gray-400 tracking-wide">
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
                 Fire Flow:
               </p>
-              <p className="flex text-sm font-thin text-gray-400  tracking-wide">
+              <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
                 5:30pm - 6:30pm
               </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
+              <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-gray-500  pb-2">
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Start the week of strong! Challenge yourself in this evening
                 class. Grow your practice both in mind and body. You will
                 quickly build heat moving through more challenging poses and

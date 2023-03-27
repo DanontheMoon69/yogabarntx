@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
@@ -37,8 +38,9 @@
     "framer-motion": "^8.5.0",
     "fullcalendar": "^6.0.2",
     "jquery": "^3.6.3",
-    "next": "^13.1.2",
+    "next": "^13.2.4",
     "next-sanity-image": "^3.2.1",
+    "next-sitemap": "^4.0.6",
     "popper.js": "^1.16.1",
     "react": "^18.2.0",
     "react-bootstrap-modal": "^4.2.0",

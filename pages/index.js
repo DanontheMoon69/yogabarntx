@@ -37,7 +37,7 @@ const Home = () => {
       <div className="">
         <div className=" font-thin max-h-96 pt-20">
           <div className="flex justify-center">
-            <Image src={YBIcon} alt="Yoga Barn Icon" className=" w-16" />
+            <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
           <span className="text-2xl  block text-teal-700 text-center pt-5 ">
             New to Yoga?
@@ -66,7 +66,7 @@ const Home = () => {
             <Link href="/Calendar">
               <button
                 type="button"
-                className="hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 py-2 px-6  hover:bg-gray-400 bg-gray-200   text-gray-800 hover:text-gray-200 w-full transition ease-in duration-200 text-center text-sm font-thin shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg tracking-wide "
+                className="hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 py-2 px-6  hover:bg-gray-400 bg-gray-200   text-gray-800 hover:text-gray-200 w-full transition ease-in duration-200 text-center text-sm font-thin shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg tracking-wide ml-2"
               >
                 View Schedule
               </button>
@@ -80,13 +80,13 @@ const Home = () => {
           AVAILABLE CLASSES
         </div>
         <div className="relative carousel w-full bg-teal-600 pt-8">
-          <div id="item1" className=" carousel-item w-full text-center z-20">
+          <div id="item1" className=" carousel-item w-full text-center">
             <div
               className="absolute left-1/2 -top-12 transform -translate-x-1/2 
- font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45 z-10 text-white "
+ font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45  text-white "
             ></div>
             <div className="text-center w-full ">
-              <div className="relative z-30 flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <div className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 TUESDAY MORNINGS
               </div>
               <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
@@ -113,7 +113,7 @@ const Home = () => {
           <div id="item2" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -144,7 +144,7 @@ const Home = () => {
           <div id="item3" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -175,7 +175,7 @@ const Home = () => {
           <div id="item4" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -206,7 +206,7 @@ const Home = () => {
           <div id="item5" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 z-10 text-gray-300"
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
@@ -236,19 +236,19 @@ const Home = () => {
           </div>
         </div>
         <div className=" text-xs flex justify-center w-full  gap-2 text-gray-400 font-thin tracking-wide pt-2">
-          <a href="#item1" className=" hover:text-gray-500">
+          <a href="#item1" className=" hover:text-gray-500 p-1">
             TUESDAYS
           </a>
-          <a href="#item2" className=" hover:text-gray-500">
+          <a href="#item2" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
-          <a href="#item3" className="hover:text-gray-500">
+          <a href="#item3" className="hover:text-gray-500 p-1">
             THURSDAYS
           </a>
-          <a href="#item4" className=" hover:text-gray-500">
+          <a href="#item4" className=" hover:text-gray-500 p-1">
             FRIDAYS
           </a>
-          <a href="#item5" className="hover:text-gray-500">
+          <a href="#item5" className="hover:text-gray-500 p-1">
             SUNDAYS
           </a>
         </div>
