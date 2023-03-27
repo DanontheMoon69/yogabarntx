@@ -2,11 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 html,
 body, * {
   padding: 0;
   margin: 15;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: Lobster,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   box-sizing: border-box;
  
@@ -34,7 +43,7 @@ width: 100%;
 
 }
 .layout{
-  padding: 10px;
+
 
   display: flex;
   flex-direction: column;
@@ -49,7 +58,6 @@ width: 100%;
 
   position: relative;
 
-  padding: 10px;
 }
 .sign-in-items{
   font-size: x-small;
