@@ -16,7 +16,7 @@ function PricingPage() {
   return (
     <>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-teal-600">
-        PRICING
+        <h1> YOGA PRICING</h1>
         <div className="relative w-full pt-4">
           <Image src={inhale} alt="Yoga Barn" className=" object-cover h-48 " />
         </div>
@@ -24,9 +24,9 @@ function PricingPage() {
           className="absolute  left-1/2 transform -translate-x-1/2 
   text-white text-center w-full flex flex-col bottom-3"
         >
-          <div className=" text-3xl font-thin tracking-wide text-white ">
+          <h2 className=" text-3xl font-thin tracking-wide text-white ">
             Virtual yoga coming soon!
-          </div>
+          </h2>
         </div>
       </div>
       {/*  */}
@@ -38,15 +38,15 @@ function PricingPage() {
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="  w-16 h-14" />
           </div>
-          <div className="flex justify-center tracking-widest items-center text-4xl font-thin text-teal-600  px-4  rounded-2xl pt-2">
+          <h3 className="flex justify-center tracking-widest items-center text-4xl font-thin text-teal-600  px-4  rounded-2xl pt-2">
             WORKSHOPS
-          </div>
+          </h3>
           <div className="flex justify-center">
             {/*  */}
             {/* workshops container */}
             {/*  */}
             <div className="flex-wrap justify-center sm:flex ">
-              {/* BLESSINGS OF SPRING EQUINOX */}
+              {/* APRIL 29TH WORKSHOP*/}
 
               <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
                 <div className="p-2 text-lg font-thin tracking-wide text-black">
@@ -59,25 +59,17 @@ function PricingPage() {
                         alt="Yoga Barn"
                       />
                     </div>
-                    Blessings of Spring Equinox
+                    YOGA WORKSHOP - April 29th
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Welcome Spring Equinox at the Yoga Barn. We will be moving
-                    through 108 Sun Salutations to welcome this new season. This
-                    is a challenging practice that helps strengthen body and
-                    mind. Leave feeling refreshed and ready for what ever life
-                    offers you in this new season. Mat, Water and Small Towel
-                    recommended. Workshop is $25 - Space is limited purchase
-                    tickets as soon as possible!
+                    More info to come.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $25</div>
+                    <div> $TBD</div>
                     {user && (
-                      <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                          Pay
-                        </button>
-                      </Link>
+                      <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                        Pay
+                      </button>
                     )}
                     {!user && (
                       <Link href="/signUpPage">
@@ -114,9 +106,9 @@ function PricingPage() {
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
-        <div className="flex justify-center tracking-wider items-center text-4xl font-thin text-teal-600  px-4 rounded-2xl text-center pt-2">
+        <h3 className="flex justify-center tracking-wider items-center text-4xl font-thin text-teal-600  px-4 rounded-2xl text-center pt-2">
           SPECIALS & EXTRAS
-        </div>
+        </h3>
         {/* NEW STUDENT SPECIAL */}
         <div className="flex justify-center">
           <div className="flex-wrap sm:flex justify-center items-center gap-3">
@@ -217,9 +209,9 @@ function PricingPage() {
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
-          <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4  rounded-2xl">
+          <h3 className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4  rounded-2xl">
             SINGLE CLASS
-          </div>
+          </h3>
           <div className="flex justify-center">
             <div className="flex justify-center items-center">
               <div className=" flex justify-center bg-white border-2 border-gray-100 shadow-md  rounded-lg mt-2 pt-2 font-thin  px-2">
@@ -284,9 +276,9 @@ function PricingPage() {
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
-        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
+        <h3 className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
           MONTHLY PACKS
-        </div>
+        </h3>
         <div className="flex sm: flex-wrap justify-center gap-3 items-center">
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">
@@ -351,18 +343,18 @@ function PricingPage() {
                   No Monthly Commitment
                 </span>
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $125</div>
                 {user && (
                   <Link href="https://buy.stripe.com/00gdUdcjaekq15C14l">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -385,7 +377,7 @@ function PricingPage() {
           {/* ENLIGHTENED FAMILY PACK */}
 
           <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -398,18 +390,18 @@ function PricingPage() {
                 unlimited classes with. - Includes 2 Members and expires after
                 30 days from first attended class. Each Additional member is $40
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $165</div>
                 {user && (
                   <Link href="https://buy.stripe.com/4gw7vP96Y6RY01y28o">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -451,13 +443,13 @@ function PricingPage() {
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
-        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl">
+        <h3 className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl">
           CLASS PACKS
-        </div>
+        </h3>
         <div className="flex flex-wrap justify-center gap-3">
           {/* ZEN PACK*/}
           <div className="flex bg-gray-50 flex-wrap items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex text-black ">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2  ">
@@ -467,20 +459,20 @@ function PricingPage() {
               </div>
 
               <p className="text-xs font-normal bg-gray-100 text-black py-2 px-2 rounded-xl">
-                5 Classes at Yoga Barn - Expires after 30 Days
+                5 Classes at Yoga Barn - Expires after 60 Days
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
-                <div className="text-black"> $65</div>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div className="text-black"> $75</div>
                 {user && (
                   <Link href="https://buy.stripe.com/eVa7vP3MEa4adSodR9">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -502,7 +494,7 @@ function PricingPage() {
           </div>
           {/* WARRIOR PACK */}
           <div className="flex bg-gray-50 flex-wrap items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex text-black">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -511,20 +503,20 @@ function PricingPage() {
                 Warrior Pack
               </div>
               <p className="text-xs text-black font-normal bg-gray-100 py-2 px-2 rounded-xl">
-                10 Classes at the Yoga Barn - Expires after 60 Days
+                10 Classes at the Yoga Barn - Expires after 90 Days
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
-                <div className="text-black"> $135</div>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div className="text-black"> $140</div>
                 {user && (
                   <Link href="https://buy.stripe.com/7sIcQ94QIa4a6pW00i">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-emerald-600 py-1 px-4 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -555,15 +547,15 @@ function PricingPage() {
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
-        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
+        <h3 className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl ">
           PRIVATE SESSIONS
-        </div>
+        </h3>
       </div>
       {/* SINGLE PRIVATE SESSIONS */}
       <div className="flex justify-center">
         <div className="flex-wrap gap-3 sm:flex justify-center text-black">
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -576,18 +568,18 @@ function PricingPage() {
                 Contact studio for scheduling - In Home Sessions available upon
                 request for additional charge. (Local to Whitesboro)
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $65</div>
                 {user && (
                   <Link href="https://buy.stripe.com/eVaaI16YQ0tA15C8wQ">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -599,7 +591,7 @@ function PricingPage() {
           {/* 5 PRIVATE SESSIONS */}
 
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -612,19 +604,19 @@ function PricingPage() {
                 Contact studio for scheduling - In Home Sessions available upon
                 request for additional charge. (Local to Whitesboro)
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $300</div>
-                <span className="text-xs ml-1 font-semibold"> ($25 Off)</span>
+                <span className="text-xs ml-1 font-normal"> ($25 Off)</span>
                 {user && (
                   <Link href="https://buy.stripe.com/6oEdUd96Y0tAaGc8wR">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -636,7 +628,7 @@ function PricingPage() {
           {/* 10 PRIVATE SESSIONS */}
 
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
-            <div className="p-2 text-lg font-bold">
+            <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
@@ -649,19 +641,19 @@ function PricingPage() {
                 Contact studio for scheduling - In Home Sessions available upon
                 request for additional charge. (Local to Whitesboro)
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $550</div>
-                <span className="text-xs ml-1 font-semibold"> ($100 Off)</span>
+                <span className="text-xs ml-1 font-normal"> ($100 Off)</span>
                 {user && (
                   <Link href="https://buy.stripe.com/cN2eYh1Ewekqg0wfZk">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
                   </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Sign-Up to Purchase
                     </button>
                   </Link>
@@ -680,9 +672,9 @@ function PricingPage() {
         <div className="flex justify-center">
           <Image src={fcLogo} alt="Yoga Barn Icon" className=" w-24 h-18" />
         </div>
-        <div className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl text-center ">
+        <h3 className="flex justify-center tracking-wide items-center text-4xl font-thin text-teal-600 px-4 py-2 rounded-2xl text-center ">
           Four Clovers Products
-        </div>
+        </h3>
       </div>
       <div className="flex justify-center">
         <span className="flex justify-center text-xs font-semibold mt-1 text-gray-500 text-center mr-2">
@@ -695,13 +687,13 @@ function PricingPage() {
           {/* ELDERBERRY */}
 
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
-            <div className="p-2 text-lg font-bold text-black">
+            <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={fcLogo} alt="Four Clovers" />
                 </div>
-                Organic Elderberry Elixir
+                <h3>Organic Elderberry Elixir</h3>
               </div>
               <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
                 Immune boosting supplement to help ease cold, flu, and sinus.
@@ -709,7 +701,7 @@ function PricingPage() {
                 is a DIY kit that you can do at home. Add your local raw honey
                 (not included) and water. Yields 32oz.
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div>
                   {" "}
                   $32
@@ -719,7 +711,7 @@ function PricingPage() {
                 </div>
 
                 <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                     Pay
                   </button>
                 </Link>
@@ -740,13 +732,13 @@ function PricingPage() {
           {/* SOURDOUGH */}
 
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
-            <div className="p-2 text-lg font-bold text-black">
+            <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center">
                 {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={fcLogo} alt="Four Clovers" />
                 </div>
-                Organic Sourdough Starter
+                <h3>Organic Sourdough Starter</h3>
               </div>
               <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
                 This is a very well loved and nurtured organic starter. Make
@@ -754,7 +746,7 @@ function PricingPage() {
                 started with a very active healthy starter. Great gift for those
                 you love. It&apos;s the gift that keeps giving.
               </p>
-              <div className="flex p-2 items-center text-2xl font-black">
+              <div className="flex p-2 items-center text-2xl font-thin">
                 <div>
                   {" "}
                   $15
@@ -764,7 +756,7 @@ function PricingPage() {
                 </div>
 
                 <Link href="https://buy.stripe.com/bIYg2l2IAb8e3dK8wG">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-emerald-600 py-2 px-8 ml-4 text-white rounded-full">
+                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                     Pay
                   </button>
                 </Link>
