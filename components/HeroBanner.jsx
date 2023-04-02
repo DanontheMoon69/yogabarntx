@@ -30,14 +30,14 @@ const HeroBanner = ({ props }) => {
                 />
               </div>
               <div className="absolute top-1/2 left-10 lg:left-48  transform  -translate-y-1/2 text-teal-500   ">
-                <div className="font-thin tracking-widest text-2xl pt-12 sm:text-3xl">
+                <h1 className="font-thin tracking-widest text-2xl pt-12 sm:text-3xl">
                   NEW STUDENT SPECIAL
-                </div>
-                <div className=" text-3xl font-bold sm:text-4xl ">
+                </h1>
+                <h2 className=" text-3xl font-bold sm:text-4xl ">
                   2 Weeks <br />
                   Unlimited <br />
                   for $30
-                </div>
+                </h2>
                 <Link href="/signUpPage">
                   <button className="bg-teal-500 px-4 py-2 mt-4 rounded-full text-white">
                     JOIN NOW
