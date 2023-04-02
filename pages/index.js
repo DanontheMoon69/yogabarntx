@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import { useStateContext } from "../context/StateContext";
+import Head from "next/head";
 const Home = () => {
   // Subscribe Logic
   const { showSchedule, setShowSchedule } = useStateContext();
@@ -33,15 +34,30 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Yoga Barn - Whitesboro, Tx</title>
+        <meta
+          name="description"
+          content="Best Yoga Studio in Texoma"
+          key="desc"
+        />
+      </Head>
       <HeroBanner />
-      <div className="">
+      <div className=" w-full">
         <div className=" font-thin max-h-96 pt-20">
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
-          <span className="text-2xl  block text-teal-700 text-center pt-5 ">
+          <div className="text-lg  block text-teal-700 text-center pt-5 tracking-widest ">
+            JOIN US FOR
+          </div>
+          <h1 className=" capitalize text-3xl  block text-teal-700 text-center pt-5 tracking-widest">
+            Yoga in Whitesboro, TX
+          </h1>
+          <div className=" border-b-2 mt-6"></div>
+          <h2 className="text-2xl  block text-teal-700 text-center pt-5 pb-4">
             New to Yoga?
-          </span>
+          </h2>
         </div>
         <p className=" text-md  text-teal-600  tracking-wide leading-6 font-thin text-center px-12 sm:px-48">
           Yoga is a great way to improve your physical and mental health. It can
@@ -76,9 +92,9 @@ const Home = () => {
       </div>
 
       <div className=" text-center mt-20">
-        <div className="text-md tracking-widest text-gray-400 font-thin pb-2">
+        <h3 className="text-md tracking-widest text-gray-400 font-thin pb-2">
           AVAILABLE CLASSES
-        </div>
+        </h3>
         <div className="relative carousel w-full bg-teal-600 pt-8">
           <div id="item1" className=" carousel-item w-full text-center">
             <div
@@ -86,22 +102,22 @@ const Home = () => {
  font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45  text-white "
             ></div>
             <div className="text-center w-full ">
-              <div className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <h3 className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 TUESDAY MORNINGS
-              </div>
+              </h3>
               <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
                 Power 30
               </p>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:00am - 6:30am
+                6:30am - 7:00am
               </p>
               <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Rise & Shine:
+                Rise & Shine 30:
               </p>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:45am - 7:45am
+                7:15am - 7:45am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -117,22 +133,15 @@ const Home = () => {
             ></div>
             <div className="text-center w-full">
               {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 WEDNESDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Power 30
+              </h3>
+              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Candle Lit Flow
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:00am - 6:30am
-              </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Rise & Shine:
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                6:45am - 7:45am
+                6:30am - 7:30am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -148,22 +157,22 @@ const Home = () => {
             ></div>
             <div className="text-center w-full">
               {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 THURSDAY MORNINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Candle Lit Flow
+              </h3>
+              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Power 30
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:30pm - 7:30pm
+                6:30am - 7:00am
               </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Power 45
+              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Rise & Shine 30:
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                7:45pm - 8:30pm
+                7:15am - 7:45am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -179,22 +188,15 @@ const Home = () => {
             ></div>
             <div className="text-center w-full">
               {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                FRIDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                FRIDAY MORNINGS
+              </h3>
+              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
                 Mindful Movement
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                4:00pm - 5:00pm
-              </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Fire Flow
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                5:30pm - 6:30pm
+                8:00am - 9:00am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -210,20 +212,20 @@ const Home = () => {
             ></div>
             <div className="text-center w-full">
               {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 SUNDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
+              </h3>
+              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
                 Mindful Movement
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
                 4:00pm - 5:00pm
               </p>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
+              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
                 Fire Flow
               </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
                 5:30pm - 6:30pm
               </p>
