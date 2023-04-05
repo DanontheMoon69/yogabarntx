@@ -69,12 +69,12 @@ export default function Calendar() {
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Join us for yoga at Lavender Ridge Farms in Gainesville. It's
-                  a beautiful time to enjoy the Spring season and move through
-                  an energizing yoga flow. After class enjoy a refreshing
-                  lavender lemonade and walk around the beautiful property of
-                  Lavender Ridge Farms. The Cafe is open for lunch. Please bring
-                  your own water, yoga mat and props you may need.
+                  Join us for yoga at Lavender Ridge Farms in Gainesville.
+                  It&apos;s a beautiful time to enjoy the Spring season and move
+                  through an energizing yoga flow. After class enjoy a
+                  refreshing lavender lemonade and walk around the beautiful
+                  property of Lavender Ridge Farms. The Cafe is open for lunch.
+                  Please bring your own water, yoga mat and props you may need.
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
