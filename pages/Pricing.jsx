@@ -10,11 +10,19 @@ import clouds from "../components/assets/images/dominik-schroder-FIKD9t5_5zQ-uns
 import sunset from "../components/assets/images/tim-johnson-430Ad4CRkhk-unsplash.jpg";
 import mountains from "../components/assets/images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg";
 import YBIcon from "../components/assets/images/ybIcon.png";
-
+import Head from "next/head";
 function PricingPage() {
   const [user, loading] = useAuthState(auth);
   return (
     <>
+      <Head>
+        <title>Yoga Barn - Pricing</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Yoga Studio Pricing in Whitesboro"
+          key="desc"
+        />
+      </Head>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-teal-600">
         <h1> YOGA PRICING</h1>
         <div className="relative w-full pt-4">
@@ -307,7 +315,7 @@ function PricingPage() {
               <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $110</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/00gdUdcjaekq15C14l">
+                  <Link href="https://buy.stripe.com/3cs6rLcja9067u000f">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
