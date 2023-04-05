@@ -59,17 +59,25 @@ function PricingPage() {
                         alt="Yoga Barn"
                       />
                     </div>
-                    YOGA WORKSHOP - April 29th
+                    Lavender Ridge Farms - April 30th
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    More info to come.
+                    Join us for yoga at Lavender Ridge Farms in Gainesville.
+                    It&apos;s a beautiful time to enjoy the Spring season and
+                    move through an energizing yoga flow. After class enjoy a
+                    refreshing lavender lemonade and walk around the beautiful
+                    property of Lavender Ridge Farms. The Cafe is open for
+                    lunch. Please bring your own water, yoga mat and props you
+                    may need.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $TBD</div>
+                    <div> $35</div>
                     {user && (
-                      <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                        Pay
-                      </button>
+                      <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
                     )}
                     {!user && (
                       <Link href="/signUpPage">
@@ -299,7 +307,7 @@ function PricingPage() {
               <div className="flex p-2 items-center text-2xl font-thin">
                 <div> $110</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/3cs6rLcja9067u000f">
+                  <Link href="https://buy.stripe.com/00gdUdcjaekq15C14l">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>

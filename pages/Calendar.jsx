@@ -56,26 +56,32 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday April 29th
+                  Sunday April 30th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Yoga Workshop
+                  Lavender Ridge Farms
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  Time: To be Determined
+                  10:00am - 11:00am
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  More details to come. Please check back soon daily for
-                  updates.
+                  Join us for yoga at Lavender Ridge Farms in Gainesville. It's
+                  a beautiful time to enjoy the Spring season and move through
+                  an energizing yoga flow. After class enjoy a refreshing
+                  lavender lemonade and walk around the beautiful property of
+                  Lavender Ridge Farms. The Cafe is open for lunch. Please bring
+                  your own water, yoga mat and props you may need.
                 </p>
                 {user && (
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                    Buy Ticket
-                  </button>
+                  <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
                 )}
                 {!user && (
                   <Link href="/signUpPage">
