@@ -6,6 +6,8 @@ import { WiSunrise, WiSunset } from "react-icons/wi";
 import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
+import AprilCalendar from "../components/assets/images/April2023.png";
+
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
 const Home = () => {
@@ -90,10 +92,19 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <div className="flex justify-center">
+        <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4">
+          <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
+            APRIL CALENDAR
+          </div>
+          <div className="flex justify-center">
+            <Image src={AprilCalendar} className=" w-full sm:max-w-lg p-2" />
+          </div>
+        </div>
+      </div>
       <div className=" text-center mt-20">
         <h3 className="text-md tracking-widest text-gray-400 font-thin pb-2">
-          AVAILABLE CLASSES
+          SCHEDULED YOGA CLASSES
         </h3>
         <div className="relative carousel w-full bg-teal-600 pt-8">
           <div id="item1" className=" carousel-item w-full text-center">
