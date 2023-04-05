@@ -8,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../utils/firebase";
 import { useStateContext } from "../context/StateContext";
 import Schedule from "../components/Schedule";
+import Head from "next/head";
 
 const schedule = [
   {
@@ -28,11 +29,20 @@ export default function Calendar() {
   const [selectDate, setSelectDate] = useState(currentDate);
   return (
     <>
+      <Head>
+        <title>Yoga Barn - Schedule</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Yoga Studio Schedule in Whitesboro"
+          key="desc"
+        />
+      </Head>
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <h1 className="flex justify-center text-2xl font-thin tracking-wider pt-24  text-black  ">
-            SCHEDULED YOGA CLASSES
+          <h1 className="flex justify-center text-2xl font-thin tracking-wider pt-24 text-center text-black  ">
+            YOGA BARN <br />
+            SCHEDULED CLASSES
           </h1>
           <div className="flex justify-center">
             <button

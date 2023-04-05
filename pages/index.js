@@ -50,9 +50,9 @@ const Home = () => {
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
-          <div className="text-lg  block text-teal-700 text-center pt-5 tracking-widest ">
-            JOIN US FOR
-          </div>
+          <h2 className="text-lg  block text-teal-700 text-center pt-5 tracking-widest ">
+            JOIN US AT THE YOGA BARN FOR
+          </h2>
           <h1 className=" capitalize text-3xl  block text-teal-700 text-center pt-5 tracking-widest">
             Yoga in Whitesboro, TX
           </h1>
@@ -93,12 +93,12 @@ const Home = () => {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4">
+        <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
           <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
             APRIL CALENDAR
           </div>
-          <div className="flex justify-center">
-            <Image src={AprilCalendar} className=" w-full sm:max-w-lg p-2" />
+          <div className="flex justify-center bg-white">
+            <Image src={AprilCalendar} className=" w-full sm:max-w-lg" />
           </div>
         </div>
       </div>

@@ -23,8 +23,8 @@ function PricingPage() {
           key="desc"
         />
       </Head>
-      <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-teal-600">
-        <h1> YOGA PRICING</h1>
+      <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-black">
+        <h1> YOGA BARN PRICING</h1>
         <div className="relative w-full pt-4">
           <Image src={inhale} alt="Yoga Barn" className=" object-cover h-48 " />
         </div>
