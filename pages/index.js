@@ -166,7 +166,7 @@ const Home = () => {
               </p>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:30am - 7:30am
+                6:30pm - 7:30pm
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
