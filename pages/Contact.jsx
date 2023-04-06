@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { send } from "emailjs-com";
 import { useRouter } from "next/router";
+import Head from "next/head";
+import Script from "next/script";
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
