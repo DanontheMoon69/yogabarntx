@@ -11,6 +11,7 @@ import sunset from "../components/assets/images/tim-johnson-430Ad4CRkhk-unsplash
 import mountains from "../components/assets/images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import Head from "next/head";
+import Script from "next/script";
 function PricingPage() {
   const [user, loading] = useAuthState(auth);
   return (
@@ -23,6 +24,20 @@ function PricingPage() {
           key="desc"
         />
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-black">
         <h1> YOGA BARN PRICING</h1>
         <div className="relative w-full pt-4">

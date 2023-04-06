@@ -9,7 +9,7 @@ import { auth } from "../utils/firebase";
 import { useStateContext } from "../context/StateContext";
 import Schedule from "../components/Schedule";
 import Head from "next/head";
-
+import Script from "next/script";
 const schedule = [
   {
     id: 1,
@@ -37,6 +37,20 @@ export default function Calendar() {
           key="desc"
         />
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
-
+import Head from "next/head";
+import Script from "next/script";
 import { useRouter } from "next/router";
 
 // import { AiOutlineLeft } from "react-icons/ai";
@@ -71,6 +72,28 @@ const Login = () => {
   };
   return (
     <>
+      <Head>
+        <title>Yoga Barn - Login</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Login to your Yoga Barn Account"
+          key="desc"
+        />
+      </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       {!user && (
         <section className="h-screen pt-24">
           <div className=" text-gray-800">

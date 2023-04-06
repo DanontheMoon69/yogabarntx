@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import AprilCalendar from "../components/assets/images/April2023.png";
-
+import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
 const Home = () => {
@@ -40,10 +40,24 @@ const Home = () => {
         <title>Yoga Barn - Whitesboro, Tx</title>
         <meta
           name="description"
-          content="Best Yoga Studio in Texoma"
+          content="Yoga Barn - Yoga Studio in Texoma"
           key="desc"
         />
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       <HeroBanner />
       <div className=" w-full">
         <div className=" font-thin max-h-96 pt-20">

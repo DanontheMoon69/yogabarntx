@@ -7,7 +7,8 @@ import * as Yup from "yup";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { send } from "emailjs-com";
-
+import Head from "next/head";
+import Script from "next/script";
 function UserProfile() {
   const [user, loading] = useAuthState(auth);
   const route = useRouter();
@@ -123,6 +124,28 @@ function UserProfile() {
 
   return (
     <>
+      <Head>
+        <title>Yoga Barn - User Profile</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Edit your Yoga Barn User Profile"
+          key="desc"
+        />
+      </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       {!user && route.push("/")}
       <div className="flex justify-center">
         {user && (
