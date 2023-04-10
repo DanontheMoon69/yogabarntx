@@ -146,7 +146,7 @@ function UserProfile() {
     });
         `}
       </Script>
-      {!user && route.push("/")}
+      {!user && route.push("/Pricing")}
       <div className="flex justify-center">
         {user && (
           <section className="w-3/4 mt-24 mb-15">
