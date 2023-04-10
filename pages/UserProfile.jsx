@@ -149,7 +149,7 @@ function UserProfile() {
       {!user && route.push("/")}
       <div className="flex justify-center">
         {user && (
-          <section className="w-3/4 mt-10 mb-15">
+          <section className="w-3/4 mt-24 mb-15">
             <div className="text-xl font-bold flex items-center align-middle justify-center text-gray-600 mb-10">
               Edit Personal Profile
             </div>
