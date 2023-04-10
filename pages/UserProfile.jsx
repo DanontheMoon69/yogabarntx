@@ -79,7 +79,7 @@ function UserProfile() {
         alert(err);
       });
     alert("Thank you! Your information has been saved!");
-    route.push("/");
+    route.push("/Pricing");
   };
 
   // const formik = useFormik({
@@ -150,7 +150,7 @@ function UserProfile() {
       <div className="flex justify-center">
         {user && (
           <section className="w-3/4 mt-10 mb-15">
-            <div className="text-xl font-bold mb-5 flex items-center align-middle justify-center text-gray-600 mb-10">
+            <div className="text-xl font-bold flex items-center align-middle justify-center text-gray-600 mb-10">
               Edit Personal Profile
             </div>
             <p className="flex items-center justify-center font-semibold text-xs mb-2">
