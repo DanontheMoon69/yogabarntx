@@ -76,8 +76,9 @@ gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
 });
     `}
       </Script>
+
       <div className="">
-        <div className=" flex justify-center text-xl  font-bold mt-5 sm:mt-10 text-gray-600">
+        <div className=" flex justify-center text-xl  font-bold  pt-24 text-gray-600">
           Create an Account
         </div>
 
