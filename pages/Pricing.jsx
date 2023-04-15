@@ -48,7 +48,7 @@ function PricingPage() {
   text-white text-center w-full flex flex-col bottom-3"
         >
           <h2 className=" text-3xl font-thin tracking-wide text-white ">
-            Virtual yoga coming soon!
+            Virtual Yoga Now Available!
           </h2>
         </div>
       </div>
@@ -416,7 +416,7 @@ function PricingPage() {
                 </div>
                 Enlightened Family Pack
               </div>
-              <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
+              <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl">
                 Bring a friend or family member with you to enjoy your monthly
                 unlimited classes with. - Includes 2 Members and expires after
                 30 days from first attended class. Each Additional member is $40
@@ -448,6 +448,43 @@ function PricingPage() {
                     </span>
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+          {/*  */}
+          {/* VIRTUAL YOGA */}
+          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+            <div className="p-2 text-lg font-thin tracking-wide text-black">
+              <div className="flex items-center mb-1">
+                {" "}
+                <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                  <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                </div>
+                Virtual Yoga
+                <div className="flex ml-3 py-1 px-4  text-center justify-center font-bold  items-center bg-teal-700 text-white    rounded-full tracking-wide   text-xs animate-pulse ">
+                  NEW PACK
+                </div>
+              </div>
+              <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl">
+                Monthly Unlimited Virtual Yoga with Auto-Renewal
+              </p>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div> $40</div>
+                {user && (
+                  <Link href="https://buy.stripe.com/3cs6rLcja9067u000f">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+                <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100"></div>
               </div>
             </div>
           </div>
@@ -563,6 +600,42 @@ function PricingPage() {
                     </span>
                   </Link>
                 </div>
+              </div>
+            </div>
+          </div>
+          {/* VIRTUAL YOGA */}
+          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+            <div className="p-2 text-lg font-thin tracking-wide text-black">
+              <div className="flex items-center mb-1">
+                {" "}
+                <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                  <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                </div>
+                Virtual Yoga
+                <div className="flex ml-3 py-1 px-4  text-center justify-center font-bold  items-center bg-teal-700 text-white    rounded-full tracking-wide   text-xs animate-pulse ">
+                  NEW PACK
+                </div>
+              </div>
+              <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl">
+                Monthly Unlimited Virtual Yoga with No Commitment
+              </p>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div> $50</div>
+                {user && (
+                  <Link href="https://buy.stripe.com/3cs6rLcja9067u000f">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+                <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100"></div>
               </div>
             </div>
           </div>
