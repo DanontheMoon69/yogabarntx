@@ -40,8 +40,8 @@ const VirtualYoga = () => {
               </div>
             </div>
             <div className="text-white py-8 px-4 font-thin tracking-wider text-center bg-teal-400">
-              Below you'll find videos listed by Length to give you the option
-              to do a short class or a longer class.
+              Below you&apos;ll find videos listed by Length to give you the
+              option to do a short class or a longer class.
             </div>{" "}
             {/*  */}
             {/* 10 MINUTE VIDEOS */}
