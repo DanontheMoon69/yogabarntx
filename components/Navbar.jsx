@@ -68,7 +68,7 @@ const Navbar = () => {
 
         <ul
           style={{ color: `${textColor}` }}
-          className="hidden sm:flex text-xs tracking-widest"
+          className="hidden lg:flex text-xs tracking-widest"
         >
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/">HOME</Link>
@@ -79,6 +79,12 @@ const Navbar = () => {
 
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/Pricing">PRICING</Link>
+          </li>
+          <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+            <Link href="/VirtualYoga">VIRTUAL YOGA</Link>
+          </li>
+          <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+            <Link href="/Apparel">APPAREL</Link>
           </li>
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/Contact">CONTACT</Link>
@@ -124,7 +130,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={handleNav}
-          className="block sm:hidden z-10 cursor-pointer hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 hover:shadow-lg"
+          className="block lg:hidden z-10 cursor-pointer hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 hover:shadow-lg"
         >
           {nav ? (
             <AiOutlineClose size={30} style={{ color: `${textColor}` }} />
@@ -138,8 +144,8 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
-              : " sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
+              ? " lg:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
+              : " lg:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
           }
         >
           <ul className="font-thin">
@@ -161,6 +167,18 @@ const Navbar = () => {
               onClick={handleNav}
             >
               <Link href="/Pricing">PRICING</Link>
+            </li>
+            <li
+              className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
+              onClick={handleNav}
+            >
+              <Link href="/VirtualYoga">VIRTUAL YOGA</Link>
+            </li>
+            <li
+              className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
+              onClick={handleNav}
+            >
+              <Link href="/Apparel">APPAREL</Link>
             </li>
             <li
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
