@@ -195,8 +195,12 @@ function PricingPage() {
                   4 Week Series - May 23rd - June 17 <br />
                   <span className=" font-normal">
                     {" "}
-                    Tuesdays 6:30pm - 7:30pm & Saturdays 10:00am - 11:00am
+                    Tuesdays 6:30pm - 7:30pm <br />
+                    Saturdays 10:00am - 11:00am
                   </span>
+                  <br />
+                  <br />
+                  Partners Attend Free!
                   <br />
                   <br />
                   Specialized classes for women preparing for pregnancy and
@@ -205,6 +209,12 @@ function PricingPage() {
                   reduce stress and anxiety. Improves sleep quality. Increases
                   strength and flexibility. Tones muscles needed for child
                   birth. Decreases back pain, nausea, and headaches.
+                  <br />
+                  <br />
+                  <span className=" font-normal">
+                    Mamas may attend any of the other classes during this 4 week
+                    series.
+                  </span>
                 </p>
                 <div className="flex p-2 items-center text-2xl font-thin">
                   <div> $170</div>
