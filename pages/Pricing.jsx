@@ -112,7 +112,7 @@ function PricingPage() {
                     <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
                       <Link href="/Contact">
                         <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                          Class Packs Include $5 Off
+                          Class Packs & Monthly Members get $5 Off
                         </div>
 
                         <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
@@ -123,6 +123,116 @@ function PricingPage() {
                   </div>
                 </div>
               </div>
+              {/* YOGA PLAYSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Yoga Playshop - May 6th
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Enjoy time on your mat. Exploring and challenging yourself
+                    in new poses. Whether you are a beginner or an advanced
+                    yogi, this class will break down yoga poses teaching you
+                    modifications and encouraging you to find your challenging
+                    point.
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $20</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/6oEeYheri6RY3dK14w">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $10 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* MALA MAKING WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Mala Making Workshop - May 20th
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Learn about the history and significance of malas. We will
+                    take a moment to set personal intentions, prayers, and then
+                    create your own 108 hand knotted mala necklace. Everyone is
+                    welcome. Yogis and non-yogis alike. We will keep the energy
+                    light and learning simple so that everyone may feel
+                    welcomed. You will leave with a personally charged mala to
+                    carry with you and guide you through your deepest
+                    intentions.
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $45</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/5kA5nHeri2BIg0w9B1">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* END WORKSHOPS */}
             </div>
           </div>
         </div>
