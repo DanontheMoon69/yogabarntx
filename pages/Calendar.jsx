@@ -127,17 +127,19 @@ export default function Calendar() {
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  4:00pm - 5:30pm
+                  10:00am - 12:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Enjoy time on your mat. Exploring and challenging yourself in
-                  new poses. Whether you are a beginner or an advanced yogi,
-                  this class will break down yoga poses teaching you
-                  modifications and encouraging you to find your challenging
-                  point.
+                  Learn about the history and significance of malas. We will
+                  take a moment to set personal intentions, prayers, and then
+                  create your own 108 hand knotted mala necklace. Everyone is
+                  welcome. Yogis and non-yogis alike. We will keep the energy
+                  light and learning simple so that everyone may feel welcomed.
+                  You will leave with a personally charged mala to carry with
+                  you and guide you through your deepest intentions.
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/5kA5nHeri2BIg0w9B1">
@@ -167,39 +169,21 @@ export default function Calendar() {
                 Tuesdays and Thursdays: Mornings
               </h3>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Power 30:
+                Power 45:
               </p>
               <p className="flex text-sm font-thin text-black  tracking-wide">
                 {" "}
-                6:30am - 7:00am
+                6:30am - 7:15am
               </p>
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Can&apos;t fit an hour class into your schedule? This 30 minute
+                Can&apos;t fit an hour class into your schedule? This 45 minute
                 class is just right for you. Wake up, get in, sweat and go! This
-                is a quick 30 minute power flow. All levels welcome but this
+                is a quick 45 minute power flow. All levels welcome but this
                 will challenge you. If you give anything to yourself in a day,
-                let it be 30 minutes of activity.
-              </p>
-              <div className="border-b-2 border-gray-100 mt-4"></div>
-              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Rise & Shine 30:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                7:15am - 7:45am
-              </p>
-              <p className="text-xs font-thin mt-2 text-black">
-                Class Description:
-              </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start your day right in this 30 minute Yoga Class. Whether
-                it&apos;s before work, a day running the kids around, or before
-                household chores, start your day at the studio. This is an All
-                Levels class that you will build up your own heat and strength
-                and then slowly cool the body.
+                let it be 45 minutes of activity.
               </p>
 
               {/* Wednesdays */}
@@ -223,28 +207,6 @@ export default function Calendar() {
                 that leaves you feeling both replenished and relaxed. This is an
                 All Levels class that helps you build your own heat and finish
                 with a relaxing savasana.
-              </p>
-
-              {/* Fridays */}
-              <div className="border-b-4 mt-4"></div>
-
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Fridays: Mornings
-              </h3>
-              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Mindful Movement:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                8:00am - 9:00am
-              </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
-                Class Description:
-              </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Our Mindful Movement is a Vinyasa Flow that focuses on
-                stretching and lengthening the body. We may linger in poses
-                longer and slow things down when needed. All levels welcome.
               </p>
 
               {/* Sundays */}
