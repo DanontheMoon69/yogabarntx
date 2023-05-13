@@ -76,45 +76,6 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* YOGA PLAYSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday May 6th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Yoga Playshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  4:00pm - 5:30pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Enjoy time on your mat. Exploring and challenging yourself in
-                  new poses. Whether you are a beginner or an advanced yogi,
-                  this class will break down yoga poses teaching you
-                  modifications and encouraging you to find your challenging
-                  point.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/6oEeYheri6RY3dK14w">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
               {/* MALA MAKING WORKSHOP */}
 
               <div className="border-b-2 mt-4"></div>
