@@ -78,7 +78,6 @@ export default function Calendar() {
 
               {/* MALA MAKING WORKSHOP */}
 
-              <div className="border-b-2 mt-4"></div>
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
                   Saturday May 20th
