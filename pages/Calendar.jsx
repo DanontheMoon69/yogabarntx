@@ -76,33 +76,63 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* MALA MAKING WORKSHOP */}
+              {/* LAVENDER RIDGE WORKSHOP */}
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday May 20th
+                  Sunday June 11th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Mala Making Workshop
+                  Lavender Ridge Farms II - Workshop
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  10:00am - 12:00pm
+                  10:00am - 11:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Learn about the history and significance of malas. We will
-                  take a moment to set personal intentions, prayers, and then
-                  create your own 108 hand knotted mala necklace. Everyone is
-                  welcome. Yogis and non-yogis alike. We will keep the energy
-                  light and learning simple so that everyone may feel welcomed.
-                  You will leave with a personally charged mala to carry with
-                  you and guide you through your deepest intentions.
+                  Enjoy outdoor yoga at the Lavender Ridge Farms in Gainesville,
+                  TX. a Lavender Lemonade will be included.
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/5kA5nHeri2BIg0w9B1">
+                  <Link href="https://buy.stripe.com/4gw4jD96Ycci4hO00v">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+              {/* SUMMER SOLSTICE WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Friday June 23rd
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Summer Soltice - 108 Sun Salutions
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Bring in the new season with 108 Sun Salutions at the Yoga
+                  Barn
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
