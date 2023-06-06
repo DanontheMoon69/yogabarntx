@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 import { AiOutlineLeft } from "react-icons/ai";
-import mayCal from "components/assets/images/May2023.png";
+import juneCal from "components/assets/images/June2023.png";
 
 import { useStateContext } from "../context/StateContext";
 import Link from "next/link";
@@ -26,7 +26,7 @@ const Schedule = () => {
               <span className="text-white font-bold ml-1"></span>
             </button>
           </div>
-          <Image src={mayCal} alt="Yoga Barn - May 2023 Schedule" />
+          <Image src={juneCal} alt="Yoga Barn - May 2023 Schedule" />
         </div>
       </div>
     </>
