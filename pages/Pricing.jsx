@@ -9,6 +9,7 @@ import inhale from "../components/assets/images/inhaleExhale.jpeg";
 import clouds from "../components/assets/images/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg";
 import sunset from "../components/assets/images/tim-johnson-430Ad4CRkhk-unsplash.jpg";
 import mountains from "../components/assets/images/rohit-tandon-9wg5jCEPBsw-unsplash.jpg";
+import mala01 from "../components/assets/images/AfricanJadeMala2.jpg";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import Head from "next/head";
 import Script from "next/script";
@@ -85,8 +86,12 @@ function PricingPage() {
                     Lavender Ridge Workshop - June 11th
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Join us for outdoor yoga at Lavender Ridge Farms in
-                    Gainesville, TX. Lavender Lemonade Included
+                    We will start with a Yoga Flow and enjoy our Yoga Community
+                    afterwards, Walking through Lavender Ridge Flowers & Gift
+                    Shop. Grab a friend and stay for lunch at the cafe. This
+                    event is weather permitting. Bring your own Yoga Mat, Water
+                    and Small Towel. Each ticket includes a Free Lavender
+                    Lemonade.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
                     <div> $35</div>
@@ -135,8 +140,15 @@ function PricingPage() {
                     108 Sun Salutations - June 23rd
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Bring in the new season with 108 Sun Salutations at the Yoga
-                    Barn
+                    Summer Solstice is a wonderful time to move from one phase
+                    to the next. We will move through 108 Sun Salutations with a
+                    gradual build up and slowly coming back down. Both
+                    challenging and refreshing, this is your chance to let go of
+                    what does not serve you anymore and welcome the light and
+                    energy of what is to come. Set your goals for class and the
+                    season. Bring your Yoga Mat, Water and Small Towel (You will
+                    sweat). Tell your friends and family and let's enjoy
+                    bringing in the new season.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
                     <div> $40</div>
@@ -225,7 +237,60 @@ function PricingPage() {
                 </div>
               </div>
             </div>
-            {/* PRENATAL YOGA */}
+            {/* AFRICAN JADE MALA NECKLACE*/}
+            <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+              <div className="p-2 text-lg font-thin tracking-wide text-black">
+                <div className="flex items-center mb-1">
+                  {" "}
+                  <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                    <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                  </div>
+                  Afircan Jade Mala
+                </div>
+                <div>
+                  <Image
+                    src={mala01}
+                    alt="Yoga Barn"
+                    className=" object-cover align-baseline h-48 "
+                  />
+                </div>
+                <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl max-w-sm">
+                  White Howlite Beads. Marker and Guru bread African Jade.
+                  African Jade is a gentle natured stone. Loving, soothing,
+                  caring and uplifting. Gives support in time of need and a hand
+                  of hope. Offers protection and energy shields. <br />
+                  Use: Malas are great for meditation. Grab when needed on the
+                  run or set aside time to meditate and enhance your yoga
+                  practice. Beautiful enough to be worn as a necklace or
+                  bracelet.
+                </p>
+                <div className="flex p-2 items-center text-2xl font-thin">
+                  <div>
+                    {" "}
+                    $60{" "}
+                    <div className="flex text-center text-xs font-normal">
+                      + Shipping: $5
+                    </div>
+                  </div>
+
+                  <Link href="https://buy.stripe.com/5kA5nHgzqdgm3dK5kN">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay
+                    </button>
+                  </Link>
+                  <div className="flex-col ml-3 justify-center">
+                    <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                      Local Pick-Up Available
+                    </div>
+
+                    <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                      Use Code: whitesboro
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* PRENATAL YOGA
             <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
               <div className="p-2 text-lg font-thin tracking-wide text-black">
                 <div className="flex items-center mb-1">
@@ -279,7 +344,7 @@ function PricingPage() {
                   <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100"></div>
                 </div>
               </div>
-            </div>
+            </div> */}
             {/*  */}
             {/* MAT RENTAL */}
             {/*  */}

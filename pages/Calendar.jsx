@@ -65,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View May Calendar
+              View June Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -87,14 +87,17 @@ export default function Calendar() {
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  10:00am - 11:00pm
+                  10:00am - 11:00am
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Enjoy outdoor yoga at the Lavender Ridge Farms in Gainesville,
-                  TX. a Lavender Lemonade will be included.
+                  We will start with a Yoga Flow and enjoy our Yoga Community
+                  afterwards, Walking through Lavender Ridge Flowers & Gift
+                  Shop. Grab a friend and stay for lunch at the cafe. This event
+                  is weather permitting. Bring your own Yoga Mat, Water and
+                  Small Towel. Each ticket includes a Free Lavender Lemonade.
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/4gw4jD96Ycci4hO00v">
@@ -118,7 +121,7 @@ export default function Calendar() {
                   Friday June 23rd
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Summer Soltice - 108 Sun Salutions
+                  Summer Solstice - 108 Sun Salutions
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
@@ -128,8 +131,14 @@ export default function Calendar() {
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Bring in the new season with 108 Sun Salutions at the Yoga
-                  Barn
+                  Summer Solstice is a wonderful time to move from one phase to
+                  the next. We will move through 108 Sun Salutations with a
+                  gradual build up and slowly coming back down. Both challenging
+                  and refreshing, this is your chance to let go of what does not
+                  serve you anymore and welcome the light and energy of what is
+                  to come. Set your goals for class and the season. Bring your
+                  Yoga Mat, Water and Small Towel (You will sweat). Tell your
+                  friends and family and let's enjoy bringing in the new season.
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">

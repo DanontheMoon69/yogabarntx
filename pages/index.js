@@ -6,7 +6,7 @@ import { WiSunrise, WiSunset } from "react-icons/wi";
 import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
-import MayCalendar from "../components/assets/images/May2023.png";
+import JuneCalendar from "../components/assets/images/June2023.png";
 import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
@@ -109,10 +109,10 @@ const Home = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
           <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
-            MAY CALENDAR
+            JUNE CALENDAR
           </div>
           <div className="flex justify-center bg-white">
-            <Image src={MayCalendar} className=" w-full sm:max-w-lg" />
+            <Image src={JuneCalendar} className=" w-full sm:max-w-lg" />
           </div>
         </div>
       </div>
@@ -201,21 +201,21 @@ const Home = () => {
             <div className="text-center w-full">
               {" "}
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                SUNDAY EVENINGS
+                SATURDAY MORNINGS
               </h3>
               <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
                 Mindful Movement
               </p>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                4:00pm - 5:00pm
+                8:30am - 9:30am
               </p>
               <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
                 Fire Flow
               </p>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                5:30pm - 6:30pm
+                10:00am - 11:00am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -236,7 +236,7 @@ const Home = () => {
             THURSDAYS
           </a>
           <a href="#item5" className="hover:text-gray-500 p-1">
-            SUNDAYS
+            SATURDAYS
           </a>
         </div>
       </div>
