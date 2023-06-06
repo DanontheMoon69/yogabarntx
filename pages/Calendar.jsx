@@ -138,7 +138,8 @@ export default function Calendar() {
                   serve you anymore and welcome the light and energy of what is
                   to come. Set your goals for class and the season. Bring your
                   Yoga Mat, Water and Small Towel (You will sweat). Tell your
-                  friends and family and let's enjoy bringing in the new season.
+                  friends and family and let&apos;s enjoy bringing in the new
+                  season.
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">

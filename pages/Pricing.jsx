@@ -147,7 +147,7 @@ function PricingPage() {
                     what does not serve you anymore and welcome the light and
                     energy of what is to come. Set your goals for class and the
                     season. Bring your Yoga Mat, Water and Small Towel (You will
-                    sweat). Tell your friends and family and let's enjoy
+                    sweat). Tell your friends and family and let&apos;s enjoy
                     bringing in the new season.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
