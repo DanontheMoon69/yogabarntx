@@ -135,8 +135,10 @@ export default function Calendar() {
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Specialized classes for women preparing for pregnancy and
-                  during pregnancy
+                  Finding Movement As Your Body Changes Building community with
+                  other mamas Reduce stress and anxiety Improve Sleep Quality
+                  Increase strength and Flexibility Decrease back pain, nausea
+                  and headaches Tones muscles needed for child birth
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/fZe9DXbf6b8e29G14A">
