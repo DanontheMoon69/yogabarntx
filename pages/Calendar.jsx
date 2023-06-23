@@ -76,44 +76,6 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* LAVENDER RIDGE WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Sunday June 11th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Lavender Ridge Farms II - Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  10:00am - 11:00am
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  We will start with a Yoga Flow and enjoy our Yoga Community
-                  afterwards, Walking through Lavender Ridge Flowers & Gift
-                  Shop. Grab a friend and stay for lunch at the cafe. This event
-                  is weather permitting. Bring your own Yoga Mat, Water and
-                  Small Towel. Each ticket includes a Free Lavender Lemonade.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/4gw4jD96Ycci4hO00v">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
               {/* SUMMER SOLSTICE WORKSHOP */}
 
               <div>
@@ -145,6 +107,41 @@ export default function Calendar() {
                   <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+              {/* PRENATAL WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  July 8th - August 5th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Prenatal Yoga - Series
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  Saturdays - 12:00pm - 1:00pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Specialized classes for women preparing for pregnancy and
+                  during pregnancy
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/fZe9DXbf6b8e29G14A">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Series
                     </button>
                   </Link>
                 )}
