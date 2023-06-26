@@ -70,64 +70,7 @@ function PricingPage() {
             {/* workshops container */}
             {/*  */}
             <div className="flex-wrap justify-center sm:flex ">
-              {/* SUMMER SOLSTICE - SUN SALUTATIONS*/}
-
-              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
-                <div className="p-2 text-lg font-thin tracking-wide text-black">
-                  <div className="flex ">
-                    {" "}
-                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
-                      <Image
-                        className="h-6 w-10"
-                        src={ybLogo}
-                        alt="Yoga Barn"
-                      />
-                    </div>
-                    108 Sun Salutations - June 23rd
-                  </div>
-                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Summer Solstice is a wonderful time to move from one phase
-                    to the next. We will move through 108 Sun Salutations with a
-                    gradual build up and slowly coming back down. Both
-                    challenging and refreshing, this is your chance to let go of
-                    what does not serve you anymore and welcome the light and
-                    energy of what is to come. Set your goals for class and the
-                    season. Bring your Yoga Mat, Water and Small Towel (You will
-                    sweat). Tell your friends and family and let&apos;s enjoy
-                    bringing in the new season.
-                  </p>
-                  <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $40</div>
-                    {user && (
-                      <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                          Pay
-                        </button>
-                      </Link>
-                    )}
-                    {!user && (
-                      <Link href="/signUpPage">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                          Sign-Up to Purchase
-                        </button>
-                      </Link>
-                    )}
-                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
-                      <Link href="/Contact">
-                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                          Class Packs & Monthly Members get $5 Off
-                        </div>
-
-                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                          Click to Contact for Code
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* LAVENDER RIDGE WORKSHOP*/}
+              {/* PRENATAL WORKSHOP*/}
 
               <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
                 <div className="p-2 text-lg font-thin tracking-wide text-black">
@@ -173,6 +116,65 @@ function PricingPage() {
                       <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
                         $120 After July 1st
                       </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* SUNSET BEACH YOGA - RAY ROBERTS LAKE*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Sunset Beach Yoga
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Summer time is the best time to enjoy the great outdoors!
+                    Join us for a beautiful Sunset Yoga on the sand near the
+                    water. At Ray Roberts Lake State Park Isle Du Bois. Come in
+                    your swim suit or light yoga wear. Let's move on our mats
+                    while we watch the Sunset! To Bring: Yoga Mat, Water, Towel,
+                    Bug Spray. <br />
+                    To purchase, you must go online to the state park asap a nd
+                    reserve a day use pass. This is the only way to ensure
+                    access to the beach. it is $7 per car and can be purchased
+                    ahead of time and you must also purchase this workshop
+                    online. (You may not pay in person)
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $30</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
                     </div>
                   </div>
                 </div>

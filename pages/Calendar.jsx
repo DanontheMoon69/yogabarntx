@@ -76,48 +76,6 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* SUMMER SOLSTICE WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Friday June 23rd
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Summer Solstice - 108 Sun Salutions
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  6:30pm - 8:30pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Summer Solstice is a wonderful time to move from one phase to
-                  the next. We will move through 108 Sun Salutations with a
-                  gradual build up and slowly coming back down. Both challenging
-                  and refreshing, this is your chance to let go of what does not
-                  serve you anymore and welcome the light and energy of what is
-                  to come. Set your goals for class and the season. Bring your
-                  Yoga Mat, Water and Small Towel (You will sweat). Tell your
-                  friends and family and let&apos;s enjoy bringing in the new
-                  season.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/9AQbM582U2BI4hO00u">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
               {/* PRENATAL WORKSHOP */}
 
               <div>
@@ -144,6 +102,59 @@ export default function Calendar() {
                   <Link href="https://buy.stripe.com/fZe9DXbf6b8e29G14A">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Series
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+              {/* Sunset Beach Yoga */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Friday July 13th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Sunset Beach Yoga @ Ray Roberts Lake
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  7:30pm - 9:00pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Summer time is the best time to enjoy the great outdoors! Join
+                  us for a beautiful Sunset Yoga on the sand near the water. At
+                  Ray Roberts Lake State Park Isle Du Bois. Come in your swim
+                  suit or light yoga wear. Let's move on our mats while we watch
+                  the Sunset! To Bring: Yoga Mat, Water, Towel, Bug Spray.{" "}
+                  <br />
+                  To purchase, you must go online to the state park asap a nd
+                  reserve a day use pass. This is the only way to ensure access
+                  to the beach. it is $7 per car and can be purchased ahead of
+                  time and you must also purchase this workshop online. (You may
+                  not pay in person)
+                  <br />
+                  <br />
+                  <Link
+                    href="https://texasstateparks.reserveamerica.com/camping/ray-roberts-lake-state-park-isle-du-bois/r/deDetails.do?contractCode=TX&parkId=1200123"
+                    target="_blank"
+                    className="text-md font-bold text-teal-500"
+                  >
+                    Click here to go to purchase day pass at Ray Roberts Website
+                  </Link>
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
                     </button>
                   </Link>
                 )}
