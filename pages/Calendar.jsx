@@ -133,8 +133,8 @@ export default function Calendar() {
                   Summer time is the best time to enjoy the great outdoors! Join
                   us for a beautiful Sunset Yoga on the sand near the water. At
                   Ray Roberts Lake State Park Isle Du Bois. Come in your swim
-                  suit or light yoga wear. Let's move on our mats while we watch
-                  the Sunset! To Bring: Yoga Mat, Water, Towel, Bug Spray.{" "}
+                  suit or light yoga wear. Let&apos;s move on our mats while we
+                  watch the Sunset! To Bring: Yoga Mat, Water, Towel, Bug Spray.{" "}
                   <br />
                   To purchase, you must go online to the state park asap a nd
                   reserve a day use pass. This is the only way to ensure access
