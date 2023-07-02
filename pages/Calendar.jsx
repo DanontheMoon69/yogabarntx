@@ -99,7 +99,7 @@ export default function Calendar() {
                   and headaches Tones muscles needed for child birth
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/fZe9DXbf6b8e29G14A">
+                  <Link href="https://buy.stripe.com/14k4jDerib8e4hO4gP">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Series
                     </button>
@@ -136,7 +136,7 @@ export default function Calendar() {
                   suit or light yoga wear. Let&apos;s move on our mats while we
                   watch the Sunset! To Bring: Yoga Mat, Water, Towel, Bug Spray.{" "}
                   <br />
-                  To purchase, you must go online to the state park asap a nd
+                  To purchase, you must go online to the state park ASAP and
                   reserve a day use pass. This is the only way to ensure access
                   to the beach. it is $7 per car and can be purchased ahead of
                   time and you must also purchase this workshop online. (You may

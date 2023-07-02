@@ -93,9 +93,9 @@ function PricingPage() {
                     muscles needed for child birth
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $100</div>
+                    <div> $120</div>
                     {user && (
-                      <Link href="https://buy.stripe.com/fZe9DXbf6b8e29G14A">
+                      <Link href="https://buy.stripe.com/14k4jDerib8e4hO4gP">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>
@@ -108,15 +108,6 @@ function PricingPage() {
                         </button>
                       </Link>
                     )}
-                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
-                      <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                        Early Bird Special
-                      </div>
-
-                      <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                        $120 After July 1st
-                      </span>
-                    </div>
                   </div>
                 </div>
               </div>
