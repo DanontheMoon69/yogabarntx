@@ -65,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View June Calendar
+              View July Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -80,14 +80,14 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  July 8th - August 5th
+                  Saturdays - July 8th - August 5th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Prenatal Yoga - Series
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  Saturdays - 12:00pm - 1:00pm
+                  12:00pm - 1:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
@@ -166,6 +166,46 @@ export default function Calendar() {
                   </Link>
                 )}
               </div>
+              {/* YOGA Play Shop */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Thursday July 27th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Yoga Play Shop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Alright Yogis, its time to test your strength. We will learn
+                  and work through arm balances/inversions or poses that help
+                  challenge us while also learning transitions you can connect
+                  with and bring to your practice. Have something you want to
+                  break down on work on? Share what it is and we can all join
+                  in. Love this class to learn, grow and expand your practice.
+                  All curious yogis welcome! Bring yoga mat and water.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/fZe03ngzqfou15C4gO">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
             </div>
 
             <div className="w-full sm: px-5 sm:max-w-lg ">
@@ -175,90 +215,66 @@ export default function Calendar() {
 
               {/* Tuesdays and Thursdays */}
 
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Tuesdays and Thursdays: Mornings
-              </h3>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Power 45:
+                Sunrise Vinyasa:
               </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                6:30am - 7:15am
-              </p>
+
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
                 Can&apos;t fit an hour class into your schedule? This 45 minute
                 class is just right for you. Wake up, get in, sweat and go! This
-                is a quick 45 minute power flow. All levels welcome but this
-                will challenge you. If you give anything to yourself in a day,
-                let it be 45 minutes of activity.
+                is a quick 45 minute power vinyasa flow. This class will
+                challenge you. If you give anything to yourself in a day, let it
+                be 45 minutes of activity.
+              </p>
+              <div className="border-b-2 border-gray-100 mt-4"></div>
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
+                Slow Flow:
+              </p>
+
+              <p className="text-xs font-thin mt-2 text-black">
+                Class Description:
+              </p>
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
+                Our Slow Flow is a Vinyasa Flow that focuses on stretching and
+                lengthening the body. We may linger in poses longer and slow
+                things down when needed. All levels welcome.
               </p>
 
               {/* Wednesdays */}
               <div className="border-b-4 mt-4"></div>
 
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Wednesdays: Evenings
-              </h3>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Candle Lit Flow:
+                Stretch & Flow:
               </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                6:30pm - 7:30pm
-              </p>
+
               <p className="text-xs font-thin mt-2 text-gray-600">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Break up your week at the studio moving through a Vinyasa flow
-                that leaves you feeling both replenished and relaxed. This is an
-                All Levels class that helps you build your own heat and finish
-                with a relaxing savasana.
-              </p>
-
-              {/* Sundays */}
-              <div className="border-b-4 mt-4"></div>
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Sundays: Evenings
-              </h3>
-              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Mindful Movement:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                4:00pm - 5:00pm
-              </p>
-              <p className="text-xs font-thin mt-2 text-black">
-                Class Description:
-              </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start the week off slow and steady. Our Mindful Movement is a
-                Vinyasa Flow that focuses on stretching and lengthening the
-                body. We may linger in poses longer and slow things down when
-                needed. All levels welcome.
+                Stretch & Flow is a great class for beginners or yogis wanting
+                to linger a little longer in poses while finding a light flow.
+                It will leave you feeling both replenished and relaxed. This is
+                an All Levels class that helps you build your own heat and
+                finish with a relaxing savasana.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Fire Flow:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                5:30pm - 6:30pm
+                Vinyasa Flow:
               </p>
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start the week off strong! Challenge yourself in this evening
-                class. Grow your practice both in mind and body. You will
-                quickly build heat moving through more challenging poses and
-                transitions. Leave feeling cleansed and renewed, ready to start
-                your week! Best for yogis who are wanting to challenge their
-                practice.
+                Challenge yourself in this energizing vinyasa flow. Grow your
+                practice both in mind and body. You will quickly build heat
+                moving through more challenging poses and transitions. Leave
+                feeling cleansed and renewed, ready to finish your week! Best
+                for yogis who are wanting to challenge their practice.
               </p>
+
               {/* <h1 className=" font-semibold">
             Schedule for {selectDate.toDate().toDateString()}
           </h1>

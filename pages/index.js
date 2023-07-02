@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import JuneCalendar from "../components/assets/images/June2023.png";
+import JulyCalendar from "../components/assets/images/July2023_wBackground.png";
 import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
@@ -109,10 +110,10 @@ const Home = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
           <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
-            JUNE CALENDAR
+            JULY CALENDAR
           </div>
           <div className="flex justify-center bg-white">
-            <Image src={JuneCalendar} className=" w-full sm:max-w-lg" />
+            <Image src={JulyCalendar} className=" w-full sm:max-w-lg" />
           </div>
         </div>
       </div>
@@ -130,12 +131,19 @@ const Home = () => {
               <h3 className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 TUESDAY MORNINGS
               </h3>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Power 45
-              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Sunrise Vinyasa
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
                 6:30am - 7:15am
+              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Slow Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                8:30am - 9:30am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -154,12 +162,19 @@ const Home = () => {
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 WEDNESDAY EVENINGS
               </h3>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Candle Lit Flow
-              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Stretch & Flow
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:30pm - 7:30pm
+                6:00pm - 7:00pm
+              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Vinyasa Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                7:30pm - 8:30pm
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -178,12 +193,19 @@ const Home = () => {
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 THURSDAY MORNINGS
               </h3>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Power 45
-              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Sunrise Vinyasa
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
                 6:30am - 7:15am
+              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Slow Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                8:30am - 9:30am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -203,19 +225,19 @@ const Home = () => {
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 SATURDAY MORNINGS
               </h3>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Mindful Movement
-              </p>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Slow Flow
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                8:30am - 9:30am
+                9:00am - 10:00am
               </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Fire Flow
-              </p>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Vinyasa Flow
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                10:00am - 11:00am
+                10:30am - 11:30am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
