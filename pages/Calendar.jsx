@@ -173,6 +173,49 @@ export default function Calendar() {
                   Thursday July 27th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
+                  "Back To School" Kids Yoga Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  2:00pm - 4:00pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  For Ages 4 to 13 <br />
+                  This class will encourage mindfulness, creative expression;
+                  develop fine motor skills, coordination and patience. Your
+                  child will gain skills to self regulate big emotions with
+                  strategies and mindful coping skills. This workshop is also an
+                  opportunity for making friends as we come together in a
+                  creative environment. <br />
+                  *Every workshop is unique with circle time, breathing
+                  exercise, yoga poses, creative movements, story time, games,
+                  meditation and mindfulness craft project.
+                </p>
+                {user && (
+                  <Link href="">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+              {/* YOGA Play Shop */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Thursday July 27th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
                   Yoga Play Shop
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
@@ -206,6 +249,8 @@ export default function Calendar() {
                   </Link>
                 )}
               </div>
+
+              {/* END WORKSHOPS */}
             </div>
 
             <div className="w-full sm: px-5 sm:max-w-lg ">
