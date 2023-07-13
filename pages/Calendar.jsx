@@ -173,7 +173,7 @@ export default function Calendar() {
                   Thursday July 27th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  "Back To School" Kids Yoga Workshop
+                  &quot;Back To School&quot; Kids Yoga Workshop
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}

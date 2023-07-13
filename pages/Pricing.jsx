@@ -184,7 +184,7 @@ function PricingPage() {
                         alt="Yoga Barn"
                       />
                     </div>
-                    "Back To School" Kids Yoga Workshop
+                    &quot;Back To School&quot; Kids Yoga Workshop
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
                     For Ages 4 to 13 <br />
