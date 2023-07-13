@@ -25,7 +25,7 @@ const Footer = () => {
       </ul>
 
       <p className="text-xs tracking-wider font-thin">
-        501 N Union St. Whitesboro Texas
+        109 E. Main St. Whitesboro Texas
       </p>
       <p className="text-xs tracking-wider font-thin">
         2023 Yoga Barn All rights reservered

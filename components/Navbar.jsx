@@ -74,7 +74,7 @@ const Navbar = () => {
             <Link href="/">HOME</Link>
           </li>
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
-            <Link href="/Calendar">CLASS DECRIPTIONS</Link>
+            <Link href="/Calendar">CLASS DESCRIPTIONS</Link>
           </li>
 
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
@@ -159,7 +159,7 @@ const Navbar = () => {
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
               onClick={handleNav}
             >
-              <Link href="/Calendar">CLASS DECRIPTIONS</Link>
+              <Link href="/Calendar">CLASS DESCRIPTIONS</Link>
             </li>
 
             <li
