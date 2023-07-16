@@ -112,65 +112,6 @@ function PricingPage() {
                 </div>
               </div>
 
-              {/* SUNSET BEACH YOGA - RAY ROBERTS LAKE*/}
-
-              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
-                <div className="p-2 text-lg font-thin tracking-wide text-black">
-                  <div className="flex ">
-                    {" "}
-                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
-                      <Image
-                        className="h-6 w-10"
-                        src={ybLogo}
-                        alt="Yoga Barn"
-                      />
-                    </div>
-                    Sunset Beach Yoga
-                  </div>
-                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Summer time is the best time to enjoy the great outdoors!
-                    Join us for a beautiful Sunset Yoga on the sand near the
-                    water. At Ray Roberts Lake State Park Isle Du Bois. Come in
-                    your swim suit or light yoga wear. Let&apos;s move on our
-                    mats while we watch the Sunset! To Bring: Yoga Mat, Water,
-                    Towel, Bug Spray. <br />
-                    To purchase, you must go online to the state park asap a nd
-                    reserve a day use pass. This is the only way to ensure
-                    access to the beach. it is $7 per car and can be purchased
-                    ahead of time and you must also purchase this workshop
-                    online. (You may not pay in person)
-                  </p>
-                  <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $30</div>
-                    {user && (
-                      <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                          Pay
-                        </button>
-                      </Link>
-                    )}
-                    {!user && (
-                      <Link href="/signUpPage">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                          Sign-Up to Purchase
-                        </button>
-                      </Link>
-                    )}
-                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
-                      <Link href="/Contact">
-                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                          Class Packs & Monthly Members get $5 Off
-                        </div>
-
-                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                          Click to Contact for Code
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* BACK TO SCHOOL WORKSHOP*/}
 
               <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
@@ -201,7 +142,7 @@ function PricingPage() {
                   <div className="flex p-2 items-center text-2xl font-thin">
                     <div> $50</div>
                     {user && (
-                      <Link href="">
+                      <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>
@@ -484,9 +425,53 @@ function PricingPage() {
                 </div>
               </div>
             </div>
+
+            {/*  */}
+            {/* PRE-NATAL DROP IN CLASS */}
+            {/*  */}
+            <div className=" bg-white border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 font-thin tracking-wide">
+              <div className="p-2 text-lg font-thin text-black">
+                <div className="flex">
+                  {" "}
+                  <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                    <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                  </div>
+                  Prenatal Drop-In Class
+                </div>
+                <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
+                  July 8th to August 5th - Prenatal Single Class - Finding
+                  Movement As Your Body Changes Building community with other
+                  mamas Reduce stress and anxiety Improve Sleep Quality Increase
+                  strength and Flexibility Decrease back pain, nausea and
+                  headaches Tones muscles needed for child birth
+                </p>
+                <div className="flex p-2 items-center text-2xl font-thin">
+                  <div> $30</div>
+                  {user && (
+                    <Link href="https://buy.stripe.com/eVa9DXbf60tA15CaFg">
+                      <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                        Pay
+                      </button>
+                    </Link>
+                  )}
+                  {!user && (
+                    <Link href="/signUpPage">
+                      <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                        Sign-Up to Purchase
+                      </button>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* END PACK SPECIALS INDIVIDUALS */}
           </div>
         </div>
       </div>
+
+      {/*   END SPECIALS MAIN */}
+
       <div className="relative">
         <div className="relative">
           <Image
@@ -724,6 +709,42 @@ function PricingPage() {
               </div>
             </div>
           </div>
+
+          {/* ADDITIONAL FAMILY MEMBER - ENLIGHTENED FAMILY PACK */}
+
+          <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+            <div className="p-2 text-lg font-thin tracking-wide">
+              <div className="flex">
+                {" "}
+                <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                  <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                </div>
+                Enlightened Family Pack - Family Member Add-On
+              </div>
+              <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl">
+                This is for an Additional Family Member you would like to add to
+                your existing Enlightened Family Pack.
+              </p>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div> $40</div>
+                {user && (
+                  <Link href="https://buy.stripe.com/4gw9DXfvmcci5lS9Bb">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
+
           {/*  */}
           {/* VIRTUAL YOGA */}
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">

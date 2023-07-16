@@ -113,60 +113,8 @@ export default function Calendar() {
                   </Link>
                 )}
               </div>
-              {/* Sunset Beach Yoga */}
 
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday July 13th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Sunset Beach Yoga @ Ray Roberts Lake
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  7:30pm - 9:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Summer time is the best time to enjoy the great outdoors! Join
-                  us for a beautiful Sunset Yoga on the sand near the water. At
-                  Ray Roberts Lake State Park Isle Du Bois. Come in your swim
-                  suit or light yoga wear. Let&apos;s move on our mats while we
-                  watch the Sunset! To Bring: Yoga Mat, Water, Towel, Bug Spray.{" "}
-                  <br />
-                  To purchase, you must go online to the state park ASAP and
-                  reserve a day use pass. This is the only way to ensure access
-                  to the beach. it is $7 per car and can be purchased ahead of
-                  time and you must also purchase this workshop online. (You may
-                  not pay in person)
-                  <br />
-                  <br />
-                  <Link
-                    href="https://texasstateparks.reserveamerica.com/camping/ray-roberts-lake-state-park-isle-du-bois/r/deDetails.do?contractCode=TX&parkId=1200123"
-                    target="_blank"
-                    className="text-md font-bold text-teal-500"
-                  >
-                    Click here to go to purchase day pass at Ray Roberts Website
-                  </Link>
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-              {/* YOGA Play Shop */}
+              {/* BACK TO SCHOOL - KIDS YOGA WORKSHOP */}
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
@@ -183,6 +131,7 @@ export default function Calendar() {
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
+                  With Gena from Grow and Glow Yoga <br />
                   For Ages 4 to 13 <br />
                   This class will encourage mindfulness, creative expression;
                   develop fine motor skills, coordination and patience. Your
@@ -192,10 +141,13 @@ export default function Calendar() {
                   creative environment. <br />
                   *Every workshop is unique with circle time, breathing
                   exercise, yoga poses, creative movements, story time, games,
-                  meditation and mindfulness craft project.
+                  and meditation. Everyone makes and leaves with a mindful
+                  craft.
+                  <br />
+                  Pack Water and Light Snack.
                 </p>
                 {user && (
-                  <Link href="">
+                  <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
@@ -236,6 +188,54 @@ export default function Calendar() {
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/fZe03ngzqfou15C4gO">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* BACK TO SCHOOL - KIDS YOGA WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Wednesday August 2nd
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  &quot;Back To School&quot; Kids Yoga Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  2:00pm - 4:00pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  With Gena from Grow and Glow Yoga <br />
+                  For Ages 4 to 13 <br />
+                  This class will encourage mindfulness, creative expression;
+                  develop fine motor skills, coordination and patience. Your
+                  child will gain skills to self regulate big emotions with
+                  strategies and mindful coping skills. This workshop is also an
+                  opportunity for making friends as we come together in a
+                  creative environment. <br />
+                  *Every workshop is unique with circle time, breathing
+                  exercise, yoga poses, creative movements, story time, games,
+                  and meditation. Everyone makes and leaves with a mindful
+                  craft.
+                  <br />
+                  Pack Water and Light Snack.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
