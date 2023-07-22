@@ -114,53 +114,6 @@ export default function Calendar() {
                 )}
               </div>
 
-              {/* BACK TO SCHOOL - KIDS YOGA WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday July 27th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  &quot;Back To School&quot; Kids Yoga Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  2:00pm - 4:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  With Gena from Grow and Glow Yoga <br />
-                  For Ages 4 to 13 <br />
-                  This class will encourage mindfulness, creative expression;
-                  develop fine motor skills, coordination and patience. Your
-                  child will gain skills to self regulate big emotions with
-                  strategies and mindful coping skills. This workshop is also an
-                  opportunity for making friends as we come together in a
-                  creative environment. <br />
-                  *Every workshop is unique with circle time, breathing
-                  exercise, yoga poses, creative movements, story time, games,
-                  and meditation. Everyone makes and leaves with a mindful
-                  craft.
-                  <br />
-                  Pack Water and Light Snack.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
               {/* YOGA Play Shop */}
 
               <div>
@@ -188,54 +141,6 @@ export default function Calendar() {
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/fZe03ngzqfou15C4gO">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
-              {/* BACK TO SCHOOL - KIDS YOGA WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Wednesday August 2nd
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  &quot;Back To School&quot; Kids Yoga Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  2:00pm - 4:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  With Gena from Grow and Glow Yoga <br />
-                  For Ages 4 to 13 <br />
-                  This class will encourage mindfulness, creative expression;
-                  develop fine motor skills, coordination and patience. Your
-                  child will gain skills to self regulate big emotions with
-                  strategies and mindful coping skills. This workshop is also an
-                  opportunity for making friends as we come together in a
-                  creative environment. <br />
-                  *Every workshop is unique with circle time, breathing
-                  exercise, yoga poses, creative movements, story time, games,
-                  and meditation. Everyone makes and leaves with a mindful
-                  craft.
-                  <br />
-                  Pack Water and Light Snack.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
