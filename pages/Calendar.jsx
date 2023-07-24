@@ -155,6 +155,49 @@ export default function Calendar() {
                 )}
               </div>
 
+              {/* FULL MOON RECHARGE WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Tuesday August 1st
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Full Moon Recharge Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Join us for a cleansing Moon Yoga Flow and Meditation. Now is
+                  the time to cleanse your space of low vibrations and and
+                  stagnate energy. Use the Moon energy to feel renewed and
+                  release all that does not serve you. We will move through a
+                  cleansing Moon flow and finish with Mediation and breath work.
+                  Grab your Malas to help you through your meditation, if you
+                  don&apos;t have a Mala no problem you can do without or grab
+                  one for purchase at the studio! Bring water, yoga mat,
+                  anything you like for meditation!
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/3csaI1ab20tAbKg3cP">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
               {/* END WORKSHOPS */}
             </div>
 
