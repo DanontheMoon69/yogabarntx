@@ -112,64 +112,6 @@ function PricingPage() {
                 </div>
               </div>
 
-              {/* BACK TO SCHOOL WORKSHOP*/}
-
-              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
-                <div className="p-2 text-lg font-thin tracking-wide text-black">
-                  <div className="flex ">
-                    {" "}
-                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
-                      <Image
-                        className="h-6 w-10"
-                        src={ybLogo}
-                        alt="Yoga Barn"
-                      />
-                    </div>
-                    &quot;Back To School&quot; Kids Yoga Workshop
-                  </div>
-                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    For Ages 4 to 13 <br />
-                    This class will encourage mindfulness, creative expression;
-                    develop fine motor skills, coordination and patience. Your
-                    child will gain skills to self regulate big emotions with
-                    strategies and mindful coping skills. This workshop is also
-                    an opportunity for making friends as we come together in a
-                    creative environment. <br />
-                    *Every workshop is unique with circle time, breathing
-                    exercise, yoga poses, creative movements, story time, games,
-                    meditation and mindfulness craft project.
-                  </p>
-                  <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $50</div>
-                    {user && (
-                      <Link href="https://buy.stripe.com/7sI03ncja906g0w6oY">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                          Pay
-                        </button>
-                      </Link>
-                    )}
-                    {!user && (
-                      <Link href="/signUpPage">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                          Sign-Up to Purchase
-                        </button>
-                      </Link>
-                    )}
-                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
-                      <Link href="/Contact">
-                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                          Class Packs & Monthly Members get $5 Off
-                        </div>
-
-                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                          Click to Contact for Code
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* YOGA PLAY SHOP*/}
 
               <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
@@ -198,6 +140,63 @@ function PricingPage() {
                     <div> $30</div>
                     {user && (
                       <Link href="https://buy.stripe.com/fZe03ngzqfou15C4gO">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* BACK TO SCHOOL WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Full Moon Recharge Workshop
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Join us for a cleansing Moon Yoga Flow and Meditation. Now
+                    is the time to cleanse your space of low vibrations and and
+                    stagnate energy. Use the Moon energy to feel renewed and
+                    release all that does not serve you. We will move through a
+                    cleansing Moon flow and finish with Mediation and breath
+                    work. Grab your Malas to help you through your meditation,
+                    if you don&apos;t have a Mala no problem you can do without
+                    or grab one for purchase at the studio! Bring water, yoga
+                    mat, anything you like for meditation!
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $50</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/3csaI1ab20tAbKg3cP">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>
