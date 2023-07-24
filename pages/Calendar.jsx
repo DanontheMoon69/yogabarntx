@@ -183,7 +183,54 @@ export default function Calendar() {
                   anything you like for meditation!
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/3csaI1ab20tAbKg3cP">
+                  <Link href="https://buy.stripe.com/6oE4jD5UM906dSo28M">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* Raindrop Technique Demo */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Thursday August 24th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Raindrop Technique Demo
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Dr. Kayla Richer will be joining us for yoga and after demoing
+                  the Raindrop Technique that she offers at her Chiropractic
+                  Office in Pilot Point. Raindrop is a combination of 100%
+                  natural Young Living essential oils strategically placed and
+                  massaged along the body. It brings harmony and balance to the
+                  body by combining targeted massage and distinctive energy
+                  approaches. We will move through an hour of Vinyasa Yoga Flow
+                  and finish with a Raindrop Demo. You will have the opportunity
+                  to book an appointment at $10 off if booked this day for a
+                  later date at her Office. You will leave with a Raindrop Oil
+                  Roller to help balance the body even when you are not
+                  receiving an actual Raindrop! Bring yoga mat, water, and good
+                  energy. Come learn with us all about the Raindrop Technique
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/3cs8zTgzq9064hO14J">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
