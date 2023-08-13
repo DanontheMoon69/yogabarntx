@@ -65,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View July Calendar
+              View August Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -75,85 +75,6 @@ export default function Calendar() {
               <h2 className="flex justify-center text-2xl font-thin tracking-wider text-black border-b-2 pb-2">
                 Upcoming Workshops
               </h2>
-
-              {/* PRENATAL WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturdays - July 8th - August 5th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Prenatal Yoga - Series
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  12:00pm - 1:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Finding Movement As Your Body Changes Building community with
-                  other mamas Reduce stress and anxiety Improve Sleep Quality
-                  Increase strength and Flexibility Decrease back pain, nausea
-                  and headaches Tones muscles needed for child birth
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/14k4jDerib8e4hO4gP">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Series
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
-              {/* YOGA Play Shop */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday July 27th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Yoga Play Shop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  6:30pm - 8:30pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Alright Yogis, its time to test your strength. We will learn
-                  and work through arm balances/inversions or poses that help
-                  challenge us while also learning transitions you can connect
-                  with and bring to your practice. Have something you want to
-                  break down on work on? Share what it is and we can all join
-                  in. Love this class to learn, grow and expand your practice.
-                  All curious yogis welcome! Bring yoga mat and water.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/fZe03ngzqfou15C4gO">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
 
               {/* FULL MOON RECHARGE WORKSHOP */}
 

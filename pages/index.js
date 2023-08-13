@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import JuneCalendar from "../components/assets/images/June2023.png";
-import JulyCalendar from "../components/assets/images/July2023_wBackground.png";
+import JulyCalendar from "../components/assets/images/August2023_wBackground.png";
 import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
