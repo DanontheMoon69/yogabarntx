@@ -9,7 +9,7 @@ import { auth } from "../utils/firebase";
 import { useStateContext } from "../context/StateContext";
 import Schedule from "../components/Schedule";
 import Head from "next/head";
-
+import Script from "next/script";
 const schedule = [
   {
     id: 1,
@@ -37,11 +37,26 @@ export default function Calendar() {
           key="desc"
         />
       </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <h1 className="flex justify-center text-2xl font-thin tracking-wider pt-24  text-black  ">
-            SCHEDULED YOGA CLASSES
+          <h1 className="flex justify-center text-2xl font-thin tracking-wider pt-24 text-center text-black  ">
+            YOGA BARN <br />
+            SCHEDULED CLASSES
           </h1>
           <div className="flex justify-center">
             <button
@@ -50,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View April Calendar
+              View August Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -61,32 +76,39 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* Blessings of Spring Equinox */}
+              {/* Raindrop Technique Demo */}
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Sunday April 30th
+                  Thursday August 24th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Lavender Ridge Farms
+                  Raindrop Technique Demo
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  10:00am - 11:00am
+                  6:30pm - 8:30pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Join us for yoga at Lavender Ridge Farms in Gainesville.
-                  It&apos;s a beautiful time to enjoy the Spring season and move
-                  through an energizing yoga flow. After class enjoy a
-                  refreshing lavender lemonade and walk around the beautiful
-                  property of Lavender Ridge Farms. The Cafe is open for lunch.
-                  Please bring your own water, yoga mat and props you may need.
+                  Dr. Kayla Richer will be joining us for yoga and after demoing
+                  the Raindrop Technique that she offers at her Chiropractic
+                  Office in Pilot Point. Raindrop is a combination of 100%
+                  natural Young Living essential oils strategically placed and
+                  massaged along the body. It brings harmony and balance to the
+                  body by combining targeted massage and distinctive energy
+                  approaches. We will move through an hour of Vinyasa Yoga Flow
+                  and finish with a Raindrop Demo. You will have the opportunity
+                  to book an appointment at $10 off if booked this day for a
+                  later date at her Office. You will leave with a Raindrop Oil
+                  Roller to help balance the body even when you are not
+                  receiving an actual Raindrop! Bring yoga mat, water, and good
+                  energy. Come learn with us all about the Raindrop Technique
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
+                  <Link href="https://buy.stripe.com/3cs8zTgzq9064hO14J">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
@@ -100,6 +122,58 @@ export default function Calendar() {
                   </Link>
                 )}
               </div>
+              {/* FULL MOON RECHARGE WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Thursday August 31st
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Full Moon Recharge Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Join us for a cleansing Moon Yoga Flow and Meditation. Now is
+                  the time to cleanse your space of low vibrations and and
+                  stagnate energy. Use the Moon energy to feel renewed and
+                  release all that does not serve you. We will move through a
+                  cleansing Moon flow and finish with Mediation and breath work.
+                  Grab your Malas to help you through your meditation, if you
+                  don&apos;t have a Mala no problem you can do without or grab
+                  one for purchase at the studio! Bring water, yoga mat,
+                  anything you like for meditation! We will also be providing
+                  iTOVi scans.
+                  <span className=" text-xs">
+                    {" "}
+                    (What is iTOVI? It is a handheld device that uses subtle
+                    electrical frequencies and GSR Technology to test and record
+                    your body&apos;s realtime responses to natural wellness
+                    products)
+                  </span>
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/6oE4jD5UM906dSo28M">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* END WORKSHOPS */}
             </div>
 
             <div className="w-full sm: px-5 sm:max-w-lg ">
@@ -109,130 +183,66 @@ export default function Calendar() {
 
               {/* Tuesdays and Thursdays */}
 
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Tuesdays and Thursdays: Mornings
-              </h3>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Power 30:
+                Sunrise Vinyasa:
               </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                6:30am - 7:00am
-              </p>
+
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Can&apos;t fit an hour class into your schedule? This 30 minute
+                Can&apos;t fit an hour class into your schedule? This 45 minute
                 class is just right for you. Wake up, get in, sweat and go! This
-                is a quick 30 minute power flow. All levels welcome but this
-                will challenge you. If you give anything to yourself in a day,
-                let it be 30 minutes of activity.
+                is a quick 45 minute power vinyasa flow. This class will
+                challenge you. If you give anything to yourself in a day, let it
+                be 45 minutes of activity.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Rise & Shine 30:
+                Slow Flow:
               </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                7:15am - 7:45am
-              </p>
+
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start your day right in this 30 minute Yoga Class. Whether
-                it&apos;s before work, a day running the kids around, or before
-                household chores, start your day at the studio. This is an All
-                Levels class that you will build up your own heat and strength
-                and then slowly cool the body.
+                Our Slow Flow is a Vinyasa Flow that focuses on stretching and
+                lengthening the body. We may linger in poses longer and slow
+                things down when needed. All levels welcome.
               </p>
 
               {/* Wednesdays */}
               <div className="border-b-4 mt-4"></div>
 
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Wednesdays: Evenings
-              </h3>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Candle Lit Flow:
+                Stretch & Flow:
               </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                6:30pm - 7:30pm
-              </p>
+
               <p className="text-xs font-thin mt-2 text-gray-600">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Break up your week at the studio moving through a Vinyasa flow
-                that leaves you feeling both replenished and relaxed. This is an
-                All Levels class that helps you build your own heat and finish
-                with a relaxing savasana.
-              </p>
-
-              {/* Fridays */}
-              <div className="border-b-4 mt-4"></div>
-
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Fridays: Mornings
-              </h3>
-              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Mindful Movement:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                8:00am - 9:00am
-              </p>
-              <p className="text-xs font-thin mt-2 text-gray-600">
-                Class Description:
-              </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Our Mindful Movement is a Vinyasa Flow that focuses on
-                stretching and lengthening the body. We may linger in poses
-                longer and slow things down when needed. All levels welcome.
-              </p>
-
-              {/* Sundays */}
-              <div className="border-b-4 mt-4"></div>
-              <h3 className="text-2xl font-thin text-black mt-4">
-                Sundays: Evenings
-              </h3>
-              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Mindful Movement:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                4:00pm - 5:00pm
-              </p>
-              <p className="text-xs font-thin mt-2 text-black">
-                Class Description:
-              </p>
-              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start the week off slow and steady. Our Mindful Movement is a
-                Vinyasa Flow that focuses on stretching and lengthening the
-                body. We may linger in poses longer and slow things down when
-                needed. All levels welcome.
+                Stretch & Flow is a great class for beginners or yogis wanting
+                to linger a little longer in poses while finding a light flow.
+                It will leave you feeling both replenished and relaxed. This is
+                an All Levels class that helps you build your own heat and
+                finish with a relaxing savasana.
               </p>
               <div className="border-b-2 border-gray-100 mt-4"></div>
               <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
-                Fire Flow:
-              </p>
-              <p className="flex text-sm font-thin text-black  tracking-wide">
-                {" "}
-                5:30pm - 6:30pm
+                Vinyasa Flow:
               </p>
               <p className="text-xs font-thin mt-2 text-black">
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Start the week off strong! Challenge yourself in this evening
-                class. Grow your practice both in mind and body. You will
-                quickly build heat moving through more challenging poses and
-                transitions. Leave feeling cleansed and renewed, ready to start
-                your week! Best for yogis who are wanting to challenge their
-                practice.
+                Challenge yourself in this energizing vinyasa flow. Grow your
+                practice both in mind and body. You will quickly build heat
+                moving through more challenging poses and transitions. Leave
+                feeling cleansed and renewed, ready to finish your week! Best
+                for yogis who are wanting to challenge their practice.
               </p>
+
               {/* <h1 className=" font-semibold">
             Schedule for {selectDate.toDate().toDateString()}
           </h1>
