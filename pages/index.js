@@ -110,7 +110,7 @@ const Home = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
           <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
-            JULY CALENDAR
+            AUGUST CALENDAR
           </div>
           <div className="flex justify-center bg-white">
             <Image src={JulyCalendar} className=" w-full sm:max-w-lg" />

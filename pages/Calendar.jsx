@@ -126,7 +126,7 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Tuesday August 31st
+                  Thursday August 31st
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Full Moon Recharge Workshop
@@ -151,7 +151,7 @@ export default function Calendar() {
                   iTOVi scans.
                   <span className=" text-xs">
                     {" "}
-                    (What is iTOVI? It is a handheld device that uses sudtle
+                    (What is iTOVI? It is a handheld device that uses subtle
                     electrical frequencies and GSR Technology to test and record
                     your body&apos;s realtime responses to natural wellness
                     products)
