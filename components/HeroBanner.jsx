@@ -20,7 +20,7 @@ const HeroBanner = ({ props }) => {
       {showSchedule && <Schedule />}
       {!showSchedule && (
         <>
-          <div className="flex justify-center">
+          <div className="flex justify-center mb-12">
             <div className=" relative pt-24 ">
               <div className="relative ">
                 <Image
