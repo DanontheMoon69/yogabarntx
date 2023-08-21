@@ -71,7 +71,7 @@ const Contact = () => {
                 ></iframe>
 
                 <div className="flex items-center justify-center text-xs sm:text-sm font-semibold mt-2 text-center text-gray-600">
-                  Address: 501 N. Union St, Whitesboro, TX 76273
+                  Address: 109 E. Main St. #202, Whitesboro, TX 76273
                 </div>
                 <div className="flex justify-center mt-3">
                   <form onSubmit={onSubmit} className="w-full ">

@@ -256,9 +256,179 @@ function PricingPage() {
                     mat, anything you like for meditation!
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $35</div>
+                    <div> $25</div>
                     {user && (
                       <Link href="https://buy.stripe.com/6oE4jD5UM906dSo28M">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* RAY ROBERTS - SUNSET WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Ray Roberts - Sunset Yoga
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Summer Time is the best time to enjoy the great outdoors!
+                    Join us for a beautiful Sunset Yoga on the sand near the
+                    water. At Ray Roberts Lake State Park Isle Du Bois. Come in
+                    your swim suit or light yoga wear. And let&apos;s move on
+                    our mats while we watch the Sunset! To bring: yoga mat,
+                    water, towel, bug spray.
+                    <br /> To purchase you must go online to the state park asap
+                    and reserve a day use pass. This is the only way to ensure
+                    access to the Beach. It is $7 per car. And can be purchased
+                    ahead of time And you must also purchase this workshop
+                    online, (You may not pay in person).
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $30</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* AUTUMN EQUINOX WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Autum Equinox - Workshop
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Autumn is a time of transformation and reflection. Take time
+                    to reflect on your life and where you are going in it. With
+                    grace, let go of anything that is not serving you positively
+                    and make way for new blessings. 108 Sun Salutations helps to
+                    cleanse and bring in this new season. We will move through
+                    sets of sun salutes starting slow and increasing intensity.
+                    Finishing with a much needed Savasana adjustmenet. Bring
+                    water, yoga mat, small towel. This is a challenging
+                    workshop. Expect to sweat.
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $35</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/9AQ3fz2IA7W28y4fZE">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* AUTUMN EQUINOX KIDS YOGA WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex ">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Autumn Equinox - Kids Yoga
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Through our fun and interactive workshop, your child will
+                    learn yoga poses, breathing exercises, partner work, guided
+                    visualization and relaxation with a seasonal themed craft.
+                    The focus is the teach mindfulness, self regulation skills,
+                    balance, flexibility, coordination, strength and
+                    self-awareness. All Students will leave with a handmade
+                    beaded wall hanging.
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $45</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/00g03ngzq0tA29G00H">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>
@@ -958,6 +1128,7 @@ function PricingPage() {
               </div>
             </div>
           </div>
+
           {/* VIRTUAL YOGA */}
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">

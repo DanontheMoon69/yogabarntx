@@ -61,6 +61,13 @@ const Home = () => {
       </Script>
       <HeroBanner />
       <div className=" w-full">
+        <div className="flex justify-center">
+          <Link href="/Teachers">
+            <div className=" bg-slate-400  max-w-md text-lg font-thin px-8 m-2 rounded-3xl flex justify-center tracking-widest py-2 transform hover:scale-105 transition ease-in duration-200 text-gray-100">
+              MEET OUR TEACHERS
+            </div>
+          </Link>
+        </div>
         <div className=" font-thin max-h-96 pt-20">
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
