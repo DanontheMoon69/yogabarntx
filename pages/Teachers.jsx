@@ -65,9 +65,9 @@ const Teachers = () => {
                 Rebecca Aguilera, Owner and Teacher at the Yoga Barn, has been
                 passionate about yoga for over a decade. Her passion has led her
                 to build a yoga studio that brings the community together to
-                find relaxation, movement and strength. Outside of yoga, you'll
-                find her with her husband and four boys, working on their
-                homestead and baking bread.
+                find relaxation, movement and strength. Outside of yoga,
+                you&apos;ll find her with her husband and four boys, working on
+                their homestead and baking bread.
               </p>
               <p className=" text-xs max-w-md px-4 lg:px-0  pt-2 leading-5">
                 Her teaching style is a Vinyasa flow that warms the body as you
