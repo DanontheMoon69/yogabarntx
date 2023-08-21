@@ -439,11 +439,9 @@ export default function Calendar() {
                 Class Description:
               </p>
               <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-                Challenge yourself in this energizing vinyasa flow. Grow your
-                practice both in mind and body. You will quickly build heat
-                moving through more challenging poses and transitions. Leave
-                feeling cleansed and renewed, ready to finish your week! Best
-                for yogis who are wanting to challenge their practice.
+                Kids yoga class is for ages 4-12. Enjoy finding movement through
+                a fun yoga flow. Kids will learn breath work, meditation and
+                yoga poses, while having fun with new friends.
               </p>
 
               {/* <h1 className=" font-semibold">

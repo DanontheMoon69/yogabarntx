@@ -95,7 +95,7 @@ const KidsYoga = () => {
               Saturday September 23rd
             </h3>
             <p className="text-2xl font-thin text-black mt-4">
-              Fall Equinox - Kids Yoga Workshop
+              Autumn Equinox - Kids Yoga Workshop
             </p>
             <p className="flex text-sm font-thin text-black  tracking-wide">
               {" "}
@@ -105,22 +105,12 @@ const KidsYoga = () => {
               Class Description:
             </p>
             <p className="text-sm mt-1 text-gray-500  pb-2">
-              Join us for a cleansing Moon Yoga Flow and Meditation. Now is the
-              time to cleanse your space of low vibrations and and stagnate
-              energy. Use the Moon energy to feel renewed and release all that
-              does not serve you. We will move through a cleansing Moon flow and
-              finish with Mediation and breath work. Grab your Malas to help you
-              through your meditation, if you don&apos;t have a Mala no problem
-              you can do without or grab one for purchase at the studio! Bring
-              water, yoga mat, anything you like for meditation! We will also be
-              providing iTOVi scans.
-              <span className=" text-xs">
-                {" "}
-                (What is iTOVI? It is a handheld device that uses subtle
-                electrical frequencies and GSR Technology to test and record
-                your body&apos;s realtime responses to natural wellness
-                products)
-              </span>
+              Through our fun and interactive workshop, your child will learn
+              yoga poses, breathing exercises, partner work, guided
+              visualization and relaxation with a seasonal themed craft. The
+              focus is the teach mindfulness, self regulation skills, balance,
+              flexibility, coordination, strength and self-awareness. All
+              Students will leave with a handmade beaded wall hanging.
             </p>
             {user && (
               <Link href="https://buy.stripe.com/00g03ngzq0tA29G00H">
@@ -156,11 +146,9 @@ const KidsYoga = () => {
             5:00pm - 5:45pm
           </p>
           <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
-            Can&apos;t fit an hour class into your schedule? This 45 minute
-            class is just right for you. Wake up, get in, sweat and go! This is
-            a quick 45 minute power vinyasa flow. This class will challenge you.
-            If you give anything to yourself in a day, let it be 45 minutes of
-            activity.
+            Kids yoga class is for ages 4-12. Enjoy finding movement through a
+            fun yoga flow. Kids will learn breath work, meditation and yoga
+            poses, while having fun with new friends.
           </p>
 
           {/* <h1 className=" font-semibold">
