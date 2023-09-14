@@ -65,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View August Calendar
+              View September Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -76,39 +76,76 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* Raindrop Technique Demo */}
+              {/* AUTUMN EQUINOX WORKSHOP */}
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday August 24th
+                  Saturday September 23rd
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Raindrop Technique Demo
+                  Autumn Equinox Workshop
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  6:30pm - 8:30pm
+                  10:00am - 12:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Dr. Kayla Richer will be joining us for yoga and after demoing
-                  the Raindrop Technique that she offers at her Chiropractic
-                  Office in Pilot Point. Raindrop is a combination of 100%
-                  natural Young Living essential oils strategically placed and
-                  massaged along the body. It brings harmony and balance to the
-                  body by combining targeted massage and distinctive energy
-                  approaches. We will move through an hour of Vinyasa Yoga Flow
-                  and finish with a Raindrop Demo. You will have the opportunity
-                  to book an appointment at $10 off if booked this day for a
-                  later date at her Office. You will leave with a Raindrop Oil
-                  Roller to help balance the body even when you are not
-                  receiving an actual Raindrop! Bring yoga mat, water, and good
-                  energy. Come learn with us all about the Raindrop Technique
+                  Autumn is a time of transformation and reflection. Take time
+                  to reflect on your life and where you are going in it. With
+                  grace, let go of anything that is not serving you positively
+                  and make way for new blessings. 108 Sun Salutations helps to
+                  cleanse and bring in this new season. We will move through
+                  sets of sun salutes starting slow and increasing intensity.
+                  Finishing with a much needed Savasana adjustmenet. Bring
+                  water, yoga mat, small towel. This is a challenging workshop.
+                  Expect to sweat.
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/3cs8zTgzq9064hO14J">
+                  <Link href="https://buy.stripe.com/9AQ3fz2IA7W28y4fZE">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* FALL EQUINOX KIDS YOGA WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Saturday September 23rd
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Autumn Equinox - Kids Yoga Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  1:30pm - 3:00pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Through our fun and interactive workshop, your child will
+                  learn yoga poses, breathing exercises, partner work, guided
+                  visualization and relaxation with a seasonal themed craft. The
+                  focus is the teach mindfulness, self regulation skills,
+                  balance, flexibility, coordination, strength and
+                  self-awareness. All Students will leave with a handmade beaded
+                  wall hanging.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/00g03ngzq0tA29G00H">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
@@ -126,7 +163,7 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday August 31st
+                  Friday September 29th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Full Moon Recharge Workshop
@@ -158,7 +195,7 @@ export default function Calendar() {
                   </span>
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/6oE4jD5UM906dSo28M">
+                  <Link href="https://buy.stripe.com/eVa9DX2IA3FM01y5l9">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
@@ -241,6 +278,18 @@ export default function Calendar() {
                 moving through more challenging poses and transitions. Leave
                 feeling cleansed and renewed, ready to finish your week! Best
                 for yogis who are wanting to challenge their practice.
+              </p>
+              <div className="border-b-2 border-gray-100 mt-4"></div>
+              <p className="flex text-xl mt-2 font-thin text-black tracking-wide">
+                Kids Yoga:
+              </p>
+              <p className="text-xs font-thin mt-2 text-black">
+                Class Description:
+              </p>
+              <p className="text-xs font-thin tracking-wide mt-1 text-black  pb-2">
+                Kids yoga class is for ages 4-12. Enjoy finding movement through
+                a fun yoga flow. Kids will learn breath work, meditation and
+                yoga poses, while having fun with new friends.
               </p>
 
               {/* <h1 className=" font-semibold">
