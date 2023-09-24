@@ -92,28 +92,28 @@ const KidsYoga = () => {
 
           <div>
             <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-              Saturday September 23rd
+              Saturday October 7th
             </h3>
             <p className="text-2xl font-thin text-black mt-4">
-              Autumn Equinox - Kids Yoga Workshop
+              Spooky Spider - Kids Yoga Workshop
             </p>
             <p className="flex text-sm font-thin text-black  tracking-wide">
               {" "}
-              1:30pm - 3:00pm
+              4:00pm - 5:30pm
             </p>
             <p className="text-xs font-semibold mt-2 text-gray-500">
               Class Description:
             </p>
             <p className="text-sm mt-1 text-gray-500  pb-2">
-              Through our fun and interactive workshop, your child will learn
-              yoga poses, breathing exercises, partner work, guided
-              visualization and relaxation with a seasonal themed craft. The
-              focus is the teach mindfulness, self regulation skills, balance,
-              flexibility, coordination, strength and self-awareness. All
-              Students will leave with a handmade beaded wall hanging.
+              During this workshop we will complete a Halloween themed flow with
+              poses that will surely encourage students to dive deeper into
+              their imagination. Each child will make their own spider web using
+              natural materials while building fine motor skills as we practice
+              building patience and mindfulness through our weaving technique.
+              Students bring your yoga mat and a bottle of water.
             </p>
             {user && (
-              <Link href="https://buy.stripe.com/00g03ngzq0tA29G00H">
+              <Link href="https://buy.stripe.com/4gw3fzfvmfou5lS6pg">
                 <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                   Buy Ticket
                 </button>

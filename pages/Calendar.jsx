@@ -76,144 +76,6 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* RAY ROBERTS WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Thursday September 7th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Ray Roberts - Sunset Yoga Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  7:30pm - 9:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Summer Time is the best time to enjoy the great outdoors! Join
-                  us for a beautiful Sunset Yoga on the sand near the water. At
-                  Ray Roberts Lake State Park Isle Du Bois. Come in your swim
-                  suit or light yoga wear. And let&apos;s move on our mats while
-                  we watch the Sunset! To bring: yoga mat, water, towel, bug
-                  spray.
-                  <br /> To purchase you must go online to the state park asap
-                  and reserve a day use pass. This is the only way to ensure
-                  access to the Beach. It is $7 per car. Passes can be purchased
-                  ahead of time. You must also purchase this workshop online,
-                  (You may not pay in person).
-                  <br />
-                  <br />
-                  <Link
-                    href="https://texasstateparks.reserveamerica.com/camping/ray-roberts-lake-state-park-isle-du-bois/r/deDetails.do?contractCode=TX&parkId=1200123"
-                    target="0"
-                  >
-                    <div className=" ease-in transform hover:scale-105 transition duration-100 bg-slate-300 flex justify-center rounded-full max-w-sm text-slate-600 tracking-wide mb-4">
-                      Click here to get your Ray Roberts Day Use Pass
-                    </div>
-                  </Link>
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/5kAcQ93ME4JQg0w3cJ">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
-              {/* AUTUMN EQUINOX WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday September 23rd
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Autumn Equinox Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  10:00am - 12:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Autumn is a time of transformation and reflection. Take time
-                  to reflect on your life and where you are going in it. With
-                  grace, let go of anything that is not serving you positively
-                  and make way for new blessings. 108 Sun Salutations helps to
-                  cleanse and bring in this new season. We will move through
-                  sets of sun salutes starting slow and increasing intensity.
-                  Finishing with a much needed Savasana adjustmenet. Bring
-                  water, yoga mat, small towel. This is a challenging workshop.
-                  Expect to sweat.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/9AQ3fz2IA7W28y4fZE">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
-              {/* FALL EQUINOX KIDS YOGA WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday September 23rd
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Autumn Equinox - Kids Yoga Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  1:30pm - 3:00pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Through our fun and interactive workshop, your child will
-                  learn yoga poses, breathing exercises, partner work, guided
-                  visualization and relaxation with a seasonal themed craft. The
-                  focus is the teach mindfulness, self regulation skills,
-                  balance, flexibility, coordination, strength and
-                  self-awareness. All Students will leave with a handmade beaded
-                  wall hanging.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/00g03ngzq0tA29G00H">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
               {/* FULL MOON RECHARGE WORKSHOP */}
 
               <div>
@@ -251,6 +113,145 @@ export default function Calendar() {
                 </p>
                 {user && (
                   <Link href="https://buy.stripe.com/eVa9DX2IA3FM01y5l9">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* SPOOKY SPIDER - KIDS YOGA WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Saturday October 7th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Spooky Spider - Kids Yoga Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  4:00pm - 5:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  During this workshop we will complete a Halloween themed flow
+                  with poses that will surely encourage students to dive deeper
+                  into their imagination. Each child will make their own spider
+                  web using natural materials while building fine motor skills
+                  as we practice building patience and mindfulness through our
+                  weaving technique. Students bring your yoga mat and a bottle
+                  of water.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/4gw3fzfvmfou5lS6pg">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+              {/* SUCCULENT PUMPKIN - WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Friday October 13th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Succulent Pumpkin Social Workshop @ Eucalyptus Room
+                  Gainesville
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  6:30pm - 8:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Join us at Eucalyptus Room in Gainesville for a fun Fall
+                  Craft. We will be putting together beautiful succulent pumpkin
+                  arrangements. There will be two sizes to choose from, small
+                  and large. Great date night or girls night out. Grab a friend
+                  or make some new friends with us. Light snacks and beverages
+                  will be provided.
+                </p>
+                {user && (
+                  <>
+                    <div className="flex gap-2">
+                      <div className="flex flex-col justify-center items-center">
+                        <p className=" text-sm tracking-wider ">
+                          Small Pumpkin
+                        </p>
+                        <Link href="https://buy.stripe.com/3cs4jDcja5NU5lS4h6">
+                          <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                            Buy Ticket
+                          </button>
+                        </Link>
+                      </div>
+                      <div className="flex flex-col justify-center items-center">
+                        <p className=" text-sm tracking-wider ">
+                          Large Pumpkin
+                        </p>
+                        <Link href="https://buy.stripe.com/dR69DXgzqa4a3dK00R">
+                          <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                            Buy Ticket
+                          </button>
+                        </Link>
+                      </div>
+                    </div>
+                  </>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
+
+              {/* LAVENDER RIDGE - YOGA WORKSHOP */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Sunday October 22nd
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Outdoor Yoga Workshop @ Lavender Ridge Farms
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  10:30pm - 11:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Join us for yoga at Lavender Ridge Farms in Gainesville. After
+                  class enjoy a refreshing lavender lemonade and walk around the
+                  beautiful property of Lavender Ridge Farms. The Cafe is open
+                  for lunch. Please bring water, yoga mat and props you may
+                  need.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
