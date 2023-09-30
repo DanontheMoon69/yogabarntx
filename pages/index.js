@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import JuneCalendar from "../components/assets/images/June2023.png";
-import Calendar from "../components/assets/images/September2023_wBackground.png";
+import Calendar from "../components/assets/images/October2023_wBackground.png";
 import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
@@ -117,7 +117,7 @@ const Home = () => {
       <div className="flex justify-center">
         <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
           <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
-            AUGUST CALENDAR
+            YOGA CALENDAR
           </div>
           <div className="flex justify-center bg-white">
             <Image src={Calendar} className=" w-full sm:max-w-lg" />
@@ -136,21 +136,21 @@ const Home = () => {
             ></div>
             <div className="text-center w-full ">
               <h3 className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                TUESDAY MORNINGS
+                MONDAY EVENINGS
               </h3>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Sunrise Vinyasa
+                Kids Yoga
               </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:30am - 7:15am
+                5:00pm - 5:45pm
               </p>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Slow Flow
+                Stretch & Flow
               </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                8:30am - 9:30am
+                6:30pm - 7:30pm
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -170,18 +170,18 @@ const Home = () => {
                 WEDNESDAY EVENINGS
               </h3>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Kids Yoga
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                5:00pm - 5:45pm
+              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
                 Stretch & Flow
               </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:00pm - 7:00pm
-              </p>
-              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Vinyasa Flow
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                7:30pm - 8:30pm
+                6:30pm - 7:30pm
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -198,21 +198,14 @@ const Home = () => {
             <div className="text-center w-full">
               {" "}
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                THURSDAY MORNINGS
+                FRIDAY EVENINGS
               </h3>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Sunrise Vinyasa
+                Stretch & Flow
               </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                6:30am - 7:15am
-              </p>
-              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Slow Flow
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                8:30am - 9:30am
+                6:30pm - 7:30pm
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -256,13 +249,13 @@ const Home = () => {
         </div>
         <div className=" text-xs flex justify-center w-full  gap-2 text-gray-400 font-thin tracking-wide pt-2">
           <a href="#item1" className=" hover:text-gray-500 p-1">
-            TUESDAYS
+            MONDAYS
           </a>
           <a href="#item2" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
           <a href="#item3" className="hover:text-gray-500 p-1">
-            THURSDAYS
+            FRIDAYS
           </a>
           <a href="#item5" className="hover:text-gray-500 p-1">
             SATURDAYS

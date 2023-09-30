@@ -65,7 +65,7 @@ export default function Calendar() {
               }}
               className="ease-in transform hover:scale-105 transition duration-100 text-sm font-semibold  bg-teal-600 py-1 px-4 text-white rounded-full mt-2 animate-pulse"
             >
-              View September Calendar
+              View Calendar
             </button>
           </div>
           <div className="flex sm: flex-wrap gap-10 sm:divide-x justify-center sm:w-full mx-auto   mt-10  pb-10 mb-10 ">
@@ -75,57 +75,6 @@ export default function Calendar() {
               <h2 className="flex justify-center text-2xl font-thin tracking-wider text-black border-b-2 pb-2">
                 Upcoming Workshops
               </h2>
-
-              {/* FULL MOON RECHARGE WORKSHOP */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Friday September 29th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Full Moon Recharge Workshop
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  6:30pm - 8:30pm
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Join us for a cleansing Moon Yoga Flow and Meditation. Now is
-                  the time to cleanse your space of low vibrations and and
-                  stagnate energy. Use the Moon energy to feel renewed and
-                  release all that does not serve you. We will move through a
-                  cleansing Moon flow and finish with Mediation and breath work.
-                  Grab your Malas to help you through your meditation, if you
-                  don&apos;t have a Mala no problem you can do without or grab
-                  one for purchase at the studio! Bring water, yoga mat,
-                  anything you like for meditation! We will also be providing
-                  iTOVi scans.
-                  <span className=" text-xs">
-                    {" "}
-                    (What is iTOVI? It is a handheld device that uses subtle
-                    electrical frequencies and GSR Technology to test and record
-                    your body&apos;s realtime responses to natural wellness
-                    products)
-                  </span>
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/eVa9DX2IA3FM01y5l9">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
 
               {/* SPOOKY SPIDER - KIDS YOGA WORKSHOP */}
 
