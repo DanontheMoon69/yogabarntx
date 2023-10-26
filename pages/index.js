@@ -129,7 +129,7 @@ const Home = () => {
           SCHEDULED YOGA CLASSES
         </h3>
         <div className="relative carousel w-full bg-teal-600 pt-8">
-          <div id="item1" className=" carousel-item w-full text-center">
+          <div id="mondays" className=" carousel-item w-full text-center">
             <div
               className="absolute left-1/2 -top-12 transform -translate-x-1/2 
  font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45  text-white "
@@ -159,7 +159,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div id="item2" className="relative carousel-item w-full">
+          <div id="wednesdays" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
  font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
@@ -190,7 +190,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div id="item3" className="relative carousel-item w-full">
+          <div id="fridays" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
  font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
@@ -215,7 +215,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div id="item5" className="relative carousel-item w-full">
+          <div id="saturdays" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
  font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
@@ -246,19 +246,50 @@ const Home = () => {
               </Link>
             </div>
           </div>
+
+          <div id="sundays" className="relative carousel-item w-full">
+            <div
+              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
+            ></div>
+            <div className="text-center w-full">
+              {" "}
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                SUNDAY EVENINGS
+              </h3>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Donation Class
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                4:00pm - 5:00pm
+              </p>
+              <p className="flex justify-center text-lg pt-2  font-thin tracking-widest text-gray-200">
+                $5 Minimum
+              </p>
+              <Link href="/Calendar">
+                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
+                  View Full Schedule
+                </button>
+              </Link>
+            </div>
+          </div>
         </div>
         <div className=" text-xs flex justify-center w-full  gap-2 text-gray-400 font-thin tracking-wide pt-2">
-          <a href="#item1" className=" hover:text-gray-500 p-1">
+          <a href="#mondays" className=" hover:text-gray-500 p-1">
             MONDAYS
           </a>
-          <a href="#item2" className=" hover:text-gray-500 p-1">
+          <a href="#wednesdays" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
-          <a href="#item3" className="hover:text-gray-500 p-1">
+          <a href="#fridays" className="hover:text-gray-500 p-1">
             FRIDAYS
           </a>
-          <a href="#item5" className="hover:text-gray-500 p-1">
+          <a href="#saturdays" className="hover:text-gray-500 p-1">
             SATURDAYS
+          </a>
+          <a href="#sundays" className="hover:text-gray-500 p-1">
+            SUNDAYS
           </a>
         </div>
       </div>
