@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
 import JuneCalendar from "../components/assets/images/June2023.png";
-import Calendar from "../components/assets/images/October2023_wBackground.png";
+import Calendar from "../components/assets/images/November2023_wBackground.png";
 import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
 import Head from "next/head";
@@ -138,13 +138,7 @@ const Home = () => {
               <h3 className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
                 MONDAY EVENINGS
               </h3>
-              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Kids Yoga
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                5:00pm - 5:45pm
-              </p>
+
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
                 Stretch & Flow
               </h3>
@@ -176,30 +170,6 @@ const Home = () => {
                 {" "}
                 5:00pm - 5:45pm
               </p>
-              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Stretch & Flow
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                6:30pm - 7:30pm
-              </p>
-              <Link href="/Calendar">
-                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
-                  View Full Schedule
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div id="fridays" className="relative carousel-item w-full">
-            <div
-              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
-            ></div>
-            <div className="text-center w-full">
-              {" "}
-              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                FRIDAY EVENINGS
-              </h3>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
                 Stretch & Flow
               </h3>
@@ -281,9 +251,6 @@ const Home = () => {
           </a>
           <a href="#wednesdays" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
-          </a>
-          <a href="#fridays" className="hover:text-gray-500 p-1">
-            FRIDAYS
           </a>
           <a href="#saturdays" className="hover:text-gray-500 p-1">
             SATURDAYS
