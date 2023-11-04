@@ -99,7 +99,7 @@ export default function Calendar() {
                   with and bring to your practice.
                 </p>
                 {user && (
-                  <Link href="https://buy.stripe.com/dR68zTgzq4JQ4hO14X">
+                  <Link href="/Pricing/#workshops">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>

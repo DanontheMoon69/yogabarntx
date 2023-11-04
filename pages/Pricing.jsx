@@ -50,35 +50,77 @@ function PricingPage() {
       </Script>
       <div className="relative text-center pt-24 font-thin text-2xl tracking-wider text-black">
         <h1> YOGA BARN PRICING</h1>
-        <div className="flex text-xs tracking-widest items-center">
-          <div className="hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2 hover:cursor-pointer">
-            WORKSHOPS
-          </div>
-          |
-          <div className="hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
-            SPECIALS & EXTRAS
-          </div>
-          | SINGLE CLASS | MONTHLY PACKS | CLASS PACKS | PRIVATE SESSIONS | FOUR
-          CLOVER PRODUCTS
-        </div>
         <div className="relative w-full pt-4">
           <Image src={inhale} alt="Yoga Barn" className=" object-cover h-48 " />
-        </div>
-        <div
-          className="absolute  left-1/2 transform -translate-x-1/2 
+
+          <div
+            className="absolute  left-1/2 transform -translate-x-1/2 
   text-white text-center w-full flex flex-col bottom-3"
-        >
-          <h2 className=" text-3xl font-thin tracking-wide text-white ">
-            Virtual Yoga Now Available!
-          </h2>
+          >
+            <h2 className=" text-3xl font-thin tracking-wide text-white ">
+              Virtual Yoga Now Available!
+            </h2>
+          </div>
+        </div>
+        {/*  */}
+        {/* WORKSHOPS */}
+        {/*  */}
+        {/*  */}
+        {/* ANCHOR LINKS START */}
+        {/*  */}
+        <div className="flex text-xs tracking-widest items-center px-4 justify-center text-slate-500 pt-5">
+          <Link href="#workshops">
+            <div className="hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2 hover:cursor-pointer">
+              WORKSHOPS
+            </div>
+          </Link>
+          |
+          <Link href="#specialsandextras">
+            <div className="flex hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              SPECIALS & EXTRAS
+            </div>
+          </Link>
+          |
+          <Link href="#singleclass">
+            <div className="hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              SINGLE CLASS
+            </div>
+          </Link>
+        </div>{" "}
+        <div className="flex text-xs tracking-widest items-center px-4 justify-center text-slate-500">
+          <Link href="#monthlypacks">
+            <div className="flex hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              MONTHLY PACKS
+            </div>
+          </Link>
+          |
+          <Link href="#classpacks">
+            <div className="flex hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              CLASS PACKS
+            </div>
+          </Link>
+          |
+          <Link href="#privatesessions">
+            <div className="flex hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              PRIVATE SESSIONS
+            </div>
+          </Link>
+        </div>
+        <div className="flex text-xs tracking-widest items-center px-4 justify-center text-slate-500">
+          <Link href="#fourcloverproducts">
+            <div className="flex hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2  hover:cursor-pointer min-w-fit">
+              FOUR CLOVER PRODUCTS
+            </div>
+          </Link>
         </div>
       </div>
-      {/*  */}
-      {/* WORKSHOPS */}
-      {/*  */}
 
+      {/* ANCHOR LINKS END */}
       <div className=" flex justify-center">
-        <div className="text-3xl text-center font-bold   w-full   pt-16 px-3">
+        <div
+          className="text-3xl text-center font-bold   w-full   pt-16 px-3"
+          id="workshops"
+        >
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="  w-16 h-14" />
           </div>
@@ -361,7 +403,7 @@ function PricingPage() {
       {/* SPECIALS & EXTRAS */}
       {/*  */}
       {/*  */}
-      <div className=" pt-16  px-3">
+      <div className=" pt-16  px-3" id="specialsandextras">
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -622,7 +664,10 @@ function PricingPage() {
         Ages 55 and up qualify for Senior Discount.
       </div>
       <div className="flex justify-center">
-        <div className="text-3xl text-center font-bold    w-full   pt-16 px-3">
+        <div
+          className="text-3xl text-center font-bold    w-full   pt-16 px-3"
+          id="singleclass"
+        >
           <div className="flex sm-flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
@@ -778,7 +823,7 @@ function PricingPage() {
       {/*  */}
 
       {/* BLISS PACK */}
-      <div className="pt-16  px-3">
+      <div className="pt-16  px-3" id="monthlypacks">
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -1018,7 +1063,7 @@ function PricingPage() {
       {/*  */}
       {/*  */}
 
-      <div className="py-4  px-3 pt-16">
+      <div className="py-4  px-3 pt-16" id="classpacks">
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -1159,7 +1204,7 @@ function PricingPage() {
       {/*  */}
       {/*  */}
 
-      <div className="pt-16  px-3">
+      <div className="pt-16  px-3" id="privatesessions">
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -1284,7 +1329,7 @@ function PricingPage() {
       {/*  */}
       {/* FOUR CLOVER PRODUCTS */}
       {/*  */}
-      <div className="pt-16  px-3">
+      <div className="pt-16  px-3" id="fourcloverproducts">
         <div className="flex justify-center">
           <Image src={fcLogo} alt="Yoga Barn Icon" className=" w-24 h-18" />
         </div>
