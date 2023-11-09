@@ -166,6 +166,24 @@ function PricingPage() {
       {/* END TEST */}
       {/*  */}
       {/*  */}
+      <div className=" w-full flex-col text-center justify-center items-center  pt-5">
+        <div className=" text-md font-semibold text-slate-600 tracking-wider pt-2 pb-2">
+          NOW UNTIL NOVEMBER 25TH
+        </div>
+        <div className="flex justify-center">
+          <div className=" rounded-full py-1 bg-slate-600 w-auto text-2xl font-bold text-slate-200 px-8 tracking-widest">
+            BLACK FRIDAY SALE
+          </div>
+        </div>
+        <div className=" text-md font-semibold text-slate-600 tracking-wider pt-2">
+          30% OFF{" "}
+          <Link href="#classpacks">
+            <span className=" text-slate-500 hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-md font-semibold   hover:cursor-pointer min-w-fit">
+              CLASS PACKS
+            </span>{" "}
+          </Link>
+        </div>
+      </div>
       <div className=" flex justify-center">
         <div
           className="text-3xl text-center font-bold   w-full   pt-16 px-3"
