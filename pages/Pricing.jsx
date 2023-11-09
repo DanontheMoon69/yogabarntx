@@ -6,6 +6,8 @@ import fcLogo from "../components/assets/images/fourClover_logo.png";
 import ybLogo from "../components/assets/images/YB_Logo.png";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../utils/firebase";
+import { db } from "../utils/firebase";
+import { getDocs, getDoc, collection, doc } from "firebase/firestore";
 import inhale from "../components/assets/images/inhaleExhale.jpeg";
 // import clouds from "../components/assets/images/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg";
 import sunset from "../components/assets/images/tim-johnson-430Ad4CRkhk-unsplash.jpg";
@@ -15,8 +17,34 @@ import YBIcon from "../components/assets/images/ybIcon.png";
 import Head from "next/head";
 import Script from "next/script";
 
+// collection ref
+
 function PricingPage() {
   const [user, loading] = useAuthState(auth);
+
+  // fetch data
+  const [userData, setUserData] = useState([]);
+
+  // state of first names
+  const [firstName, setFirstName] = useState("");
+  const [docId, setdocId] = useState();
+  useEffect(() => {
+    (async () => {
+      const colRef = collection(db, "user");
+
+      const snapshots = await getDocs(colRef);
+
+      const docs = snapshots.docs.map((doc) => {
+        const data = doc.data();
+        data.id = doc.id;
+
+        return data;
+      });
+
+      setUserData(docs);
+      console.log(docs);
+    })();
+  }, []);
 
   const [donateValue, setDonateValue] = useState("0");
 
@@ -24,6 +52,7 @@ function PricingPage() {
     console.log(donateValue);
   }
 
+  const [shipElixir, setShipElixir] = useState("ship");
   return (
     <>
       <Head>
@@ -68,7 +97,10 @@ function PricingPage() {
         {/*  */}
         {/* ANCHOR LINKS START */}
         {/*  */}
-        <div className="flex text-xs tracking-widest items-center px-4 justify-center text-slate-500 pt-5">
+        <div className="flex justify-center text-xs pt-5 tracking-widest pb-1">
+          JUMP TO SECTION
+        </div>
+        <div className="flex text-xs tracking-widest items-center px-4 justify-center text-slate-700">
           <Link href="#workshops">
             <div className="hover:scale-105 ease-in transform hover:text-teal-500 transition duration-100 text-xs px-2 hover:cursor-pointer">
               WORKSHOPS
@@ -116,6 +148,24 @@ function PricingPage() {
       </div>
 
       {/* ANCHOR LINKS END */}
+      {/*  */}
+      {/*  */}
+      {/* DATA FETCH TEST */}
+      {/*  */}
+      {/*  */}
+      {/* <div>
+        {user && <div>{user.email}</div>}
+        {!user && <div>Please Log In.</div>}
+
+        {userData.map((yogi) => (
+          <div key={yogi.id}>{yogi.id}</div>
+        ))}
+      </div> */}
+      {/*  */}
+      {/*  */}
+      {/* END TEST */}
+      {/*  */}
+      {/*  */}
       <div className=" flex justify-center">
         <div
           className="text-3xl text-center font-bold   w-full   pt-16 px-3"
@@ -403,7 +453,10 @@ function PricingPage() {
       {/* SPECIALS & EXTRAS */}
       {/*  */}
       {/*  */}
-      <div className=" pt-16  px-3" id="specialsandextras">
+      <div
+        className=" pt-16  px-3 flex-wrap justify-center"
+        id="specialsandextras"
+      >
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -803,7 +856,7 @@ function PricingPage() {
                     {!user && (
                       <Link href="/signUpPage">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
-                          Sign-Up to Purchase
+                          Sign-Up to Donate
                         </button>
                       </Link>
                     )}
@@ -848,9 +901,9 @@ function PricingPage() {
                 <span className="font-semibold">Includes Virtual Yoga</span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $110</div>
+                <div> $98</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/3cs6rLcja9067u000f">
+                  <Link href="https://buy.stripe.com/6oE17rfvmgsyg0wbJI">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -879,7 +932,7 @@ function PricingPage() {
           </div>
 
           {/* ENLIGHTENED PACK */}
-          <div className="items-center justify-center bg-white text-black  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+          <div className="items-center justify-center bg-white text-black  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg w-96  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex items-center mb-1">
                 {" "}
@@ -895,9 +948,9 @@ function PricingPage() {
                 </span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $125</div>
+                <div> $110</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/00gdUdcjaekq15C14l">
+                  <Link href="https://buy.stripe.com/7sIbM51Ew7W201y5ln">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -927,7 +980,7 @@ function PricingPage() {
 
           {/* ENLIGHTENED FAMILY PACK */}
 
-          <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+          {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
@@ -970,11 +1023,11 @@ function PricingPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* ADDITIONAL FAMILY MEMBER - ENLIGHTENED FAMILY PACK */}
 
-          <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+          {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
@@ -1005,11 +1058,11 @@ function PricingPage() {
                 )}
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/*  */}
           {/* VIRTUAL YOGA */}
-          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 w-96 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center mb-1">
                 {" "}
@@ -1080,15 +1133,23 @@ function PricingPage() {
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
                 Zen Pack
+                <div className="flex ml-3 py-1 px-4  text-center justify-center font-bold  items-center bg-teal-700 text-white    rounded-full tracking-wide   text-xs animate-pulse ">
+                  ON SALE 30% Off
+                </div>
               </div>
 
               <p className="text-xs font-normal bg-gray-100 text-black py-2 px-2 rounded-xl">
                 5 Classes at Yoga Barn - Expires after 60 Days
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div className="text-black"> $75</div>
+                <div>
+                  <div className="text-black text-center"> $52.50</div>
+                  <div className=" text-center text-black text-xs tracking-widest">
+                    Regular $75
+                  </div>
+                </div>
                 {user && (
-                  <Link href="https://buy.stripe.com/eVa7vP3MEa4adSodR9">
+                  <Link href="https://buy.stripe.com/14k17r96Y2BIdSo7tt">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -1101,8 +1162,12 @@ function PricingPage() {
                     </button>
                   </Link>
                 )}
+                <div className="flex ml-2 mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                  {" "}
+                  BLACK FRIDAY SALE ENDS NOVEMBER 25
+                </div>
 
-                <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                {/* <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
                   <Link href="/Contact">
                     <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
                       Senior Discount Available
@@ -1112,7 +1177,7 @@ function PricingPage() {
                       Click to Contact for Code
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -1125,14 +1190,22 @@ function PricingPage() {
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
                 Warrior Pack
+                <div className="flex ml-3 py-1 px-4  text-center justify-center font-bold  items-center bg-teal-700 text-white    rounded-full tracking-wide   text-xs animate-pulse ">
+                  ON SALE 30% Off
+                </div>
               </div>
               <p className="text-xs text-black font-normal bg-gray-100 py-2 px-2 rounded-xl">
                 10 Classes at the Yoga Barn - Expires after 90 Days
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div className="text-black"> $140</div>
+                <div>
+                  <div className="text-black text-center"> $98</div>
+                  <div className=" text-center text-black text-xs tracking-widest">
+                    Regular $140
+                  </div>
+                </div>
                 {user && (
-                  <Link href="https://buy.stripe.com/7sIcQ94QIa4a6pW00i">
+                  <Link href="https://buy.stripe.com/9AQ03n1Ewa4a6pW7tu">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -1145,7 +1218,11 @@ function PricingPage() {
                     </button>
                   </Link>
                 )}
-                <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                <div className="flex ml-2 mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                  {" "}
+                  BLACK FRIDAY SALE ENDS NOVEMBER 25
+                </div>
+                {/* <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
                   <Link href="/Contact">
                     <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
                       Senior Discount Available
@@ -1155,7 +1232,7 @@ function PricingPage() {
                       Click to Contact for Code
                     </span>
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -1344,7 +1421,7 @@ function PricingPage() {
         </span>
       </div>
       <div className="flex justify-center">
-        <div className="flex-wrap gap-3 sm:flex ">
+        <div className="flex-wrap gap-3 sm:flex justify-center ">
           {/* ELDERBERRY */}
 
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 mr-3">
@@ -1371,20 +1448,38 @@ function PricingPage() {
                   </div>
                 </div>
 
-                <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
-                  <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                    Pay
-                  </button>
-                </Link>
+                {shipElixir === "ship" ? (
+                  <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay $37
+                    </button>
+                  </Link>
+                ) : null}
+                {shipElixir === "local" ? (
+                  <Link href="https://buy.stripe.com/4gwdUd96Y7W2cOkaEF">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay $32
+                    </button>
+                  </Link>
+                ) : null}
 
                 <div className="flex-col ml-3 justify-center">
                   <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
                     Local Pick-Up Available
                   </div>
-
-                  <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                    Use Code: whitesboro
-                  </span>
+                  <div>
+                    <select
+                      id="elixirShip"
+                      className=" w-min text-start ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-4  text-white rounded-full tracking-widest"
+                      value={shipElixir}
+                      onChange={(e) => {
+                        setShipElixir(e.target.value);
+                      }}
+                    >
+                      <option value="ship">Ship</option>
+                      <option value="local">Local Pickup</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
