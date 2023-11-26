@@ -80,23 +80,21 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Friday November 17th
+                  Saturday December 16th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Yoga Playshop
+                  Winter Solstice - 108 Sun Salutations
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  6:30pm - 8:30pm
+                  11:00am - 1:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Alright Yogis, its time to test your strength. We will learn
-                  and work through arm balances/inversions or poses that help
-                  challenge us while also learning transitions you can connect
-                  with and bring to your practice.
+                  Alright Yogis, its time to bring in the winter season with 108
+                  Sun Salutations. Bring your yoga mat, water and towel.
                 </p>
                 {user && (
                   <Link href="/Pricing/#workshops">
