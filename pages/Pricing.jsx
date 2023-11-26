@@ -412,8 +412,8 @@ function PricingPage() {
                     Winter Solstice - 108 Sun Salutations
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Join us at the studio and let's start this new season with
-                    108 Sun Salutations. Bring your yoga mat and a water.
+                    Join us at the studio and let&apos;s start this new season
+                    with 108 Sun Salutations. Bring your yoga mat and a water.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
                     <div> $30</div>
