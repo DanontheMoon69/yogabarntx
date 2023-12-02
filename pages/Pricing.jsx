@@ -416,9 +416,9 @@ function PricingPage() {
                     with 108 Sun Salutations. Bring your yoga mat and a water.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $30</div>
+                    <div> $25</div>
                     {user && (
-                      <Link href="https://buy.stripe.com/fZeeYh96Y7W2bKg014">
+                      <Link href="https://buy.stripe.com/00g3fz82U7W28y44hm">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>
@@ -502,59 +502,6 @@ function PricingPage() {
                       </button>
                     </Link>
                   )}
-                </div>
-              </div>
-            </div>
-            {/* AFRICAN JADE MALA NECKLACE*/}
-            <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
-              <div className="p-2 text-lg font-thin tracking-wide text-black">
-                <div className="flex items-center mb-1">
-                  {" "}
-                  <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
-                    <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
-                  </div>
-                  Afircan Jade Mala
-                </div>
-                <div>
-                  <Image
-                    src={mala01}
-                    alt="Yoga Barn"
-                    className=" object-cover align-baseline h-48 "
-                  />
-                </div>
-                <p className="text-xs font-thin tracking-wider bg-gray-100 py-2 px-2 rounded-xl max-w-sm">
-                  White Howlite Beads. Marker and Guru bread African Jade.
-                  African Jade is a gentle natured stone. Loving, soothing,
-                  caring and uplifting. Gives support in time of need and a hand
-                  of hope. Offers protection and energy shields. <br />
-                  Use: Malas are great for meditation. Grab when needed on the
-                  run or set aside time to meditate and enhance your yoga
-                  practice. Beautiful enough to be worn as a necklace or
-                  bracelet.
-                </p>
-                <div className="flex p-2 items-center text-2xl font-thin">
-                  <div>
-                    {" "}
-                    $60{" "}
-                    <div className="flex text-center text-xs font-normal">
-                      + Shipping: $5
-                    </div>
-                  </div>
-
-                  <Link href="https://buy.stripe.com/5kA5nHgzqdgm3dK5kN">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                      Pay
-                    </button>
-                  </Link>
-                  <div className="flex-col ml-3 justify-center">
-                    <div className="flex mt-1  text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                      Local Pick-Up Available
-                    </div>
-
-                    <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                      Use Code: whitesboro
-                    </span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -905,9 +852,9 @@ function PricingPage() {
                 <span className="font-semibold">Includes Virtual Yoga</span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $98</div>
+                <div> $90</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/6oE17rfvmgsyg0wbJI">
+                  <Link href="https://buy.stripe.com/00g4jD5UMb8e29Gg03">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
