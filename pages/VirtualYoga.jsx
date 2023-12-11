@@ -44,44 +44,44 @@ const VirtualYoga = () => {
               option to do a short class or a longer class.
             </div>{" "}
             {/*  */}
-            {/* 10 MINUTE VIDEOS */}
+            {/* Yoga Setup*/}
             <h2 className=" text-3xl text-black font-thin tracking-wider flex justify-center pt-10">
-              10 Minute Yoga Classes
+              Yoga Setup
             </h2>
             {/*  */}
-            {/* 10 MINUTE VIDEOS CONTAINER */}
+            {/* Yoga Setup */}
             <div className="flex flex-wrap justify-center gap-3 pt-2">
               {/*  */}
-              {/* 10 MINUTE - BALANCE */}
+              {/* yoga Setup */}
               <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
                 <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
                   Level: All Levels
                   <br />
-                  Practice: Balance
+                  Yoga Setup
                 </h3>
                 <YouTube
-                  videoId="sTnm5jvjgjM"
+                  videoId="gY3e5_9G6Pg"
                   autoplay="1"
                   className="flex justify-center  p-2"
                 />
               </div>
-              {/* END 10 MINUTE STRETCHING */}
+              {/* END Yoga Setup */}
               {/*  */}
               {/*  */}
-              {/* 10 MINUTE - Stretching */}
+              {/* Breaking Down: Sun Salutations */}
               <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
                 <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
                   Level: All Levels
                   <br />
-                  Practice: Stretching
+                  Breaking Down: 1/2 Sun Salute
                 </h3>
                 <YouTube
-                  videoId="sTnm5jvjgjM"
+                  videoId="vDqBW9KhXFM"
                   autoplay="1"
                   className="flex justify-center  p-2"
                 />
               </div>
-              {/* END 10 MINUTE STRETCHING */}
+              {/* END Breaking Down: Sun Salutations */}
               {/*  */}
             </div>
             {/*  */}
@@ -101,22 +101,6 @@ const VirtualYoga = () => {
                   Level: All Levels
                   <br />
                   Practice: Balance
-                </h3>
-                <YouTube
-                  videoId="sTnm5jvjgjM"
-                  autoplay="1"
-                  className="flex justify-center  p-2"
-                />
-              </div>
-              {/* END 15 MINUTE STRETCHING */}
-              {/*  */}
-              {/*  */}
-              {/* 15 MINUTE - Stretching */}
-              <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
-                <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
-                  Level: All Levels
-                  <br />
-                  Practice: Stretching
                 </h3>
                 <YouTube
                   videoId="sTnm5jvjgjM"
