@@ -83,6 +83,21 @@ const VirtualYoga = () => {
               </div>
               {/* END Breaking Down: Sun Salutations */}
               {/*  */}
+              {/* Breaking Down: VINYAS */}
+              <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
+                <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
+                  Level: All Levels
+                  <br />
+                  Breaking Down: Vinyasa
+                </h3>
+                <YouTube
+                  videoId="jM0MhXTUtqI"
+                  autoplay="1"
+                  className="flex justify-center  p-2"
+                />
+              </div>
+              {/* END Breaking Down: Sun Salutations */}
+              {/*  */}
             </div>
             {/*  */}
             {/* END 10 MINUTE VIDEOS CONTAINER */}
@@ -103,7 +118,7 @@ const VirtualYoga = () => {
                   Practice: Balance
                 </h3>
                 <YouTube
-                  videoId="sTnm5jvjgjM"
+                  videoId="ixjmnjq2nfI"
                   autoplay="1"
                   className="flex justify-center  p-2"
                 />
@@ -113,6 +128,60 @@ const VirtualYoga = () => {
             </div>
             {/*  */}
             {/* END 15 MINUTE VIDEOS CONTAINER */}
+            {/*  */}
+            {/*  */}
+            {/* 30 MINUTE VIDEOS */}
+            <h2 className=" text-3xl text-black font-thin tracking-wider flex justify-center pt-8">
+              30 Minute Yoga Classes
+            </h2>
+            {/*  */}
+            {/* 30 MINUTE VIDEOS CONTAINER */}
+            <div className="flex flex-wrap justify-center gap-3 pt-2">
+              {/*  */}
+              {/* 30 MINUTE - POWER */}
+              <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
+                <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
+                  Level: All Levels
+                  <br />
+                  Practice: Power
+                </h3>
+                <YouTube
+                  videoId="qcA3ZehFx3w"
+                  autoplay="1"
+                  className="flex justify-center  p-2"
+                />
+              </div>
+              {/* END 30 MINUTE POWER FLOW */}
+              {/*  */}
+            </div>
+            {/*  */}
+            {/* END 30 MINUTE VIDEOS CONTAINER */}
+            {/* 45 MINUTE VIDEOS */}
+            <h2 className=" text-3xl text-black font-thin tracking-wider flex justify-center pt-8">
+              45 Minute Yoga Classes
+            </h2>
+            {/*  */}
+            {/* 45 MINUTE VIDEOS CONTAINER */}
+            <div className="flex flex-wrap justify-center gap-3 pt-2">
+              {/*  */}
+              {/* 45 MINUTE - POWER */}
+              <div className="flex flex-col bg-teal-600 justify-center w-full sm:w-3/4 md:w-1/2 lg:w-1/3 sm:rounded-lg">
+                <h3 className=" text-xl flex justify-center font-thin tracking-widest text-white text-center">
+                  Level: All Levels
+                  <br />
+                  Practice: Stretch
+                </h3>
+                <YouTube
+                  videoId="9A5KR79gimA"
+                  autoplay="1"
+                  className="flex justify-center  p-2"
+                />
+              </div>
+              {/* END 45 MINUTE POWER FLOW */}
+              {/*  */}
+            </div>
+            {/*  */}
+            {/* END 45 MINUTE VIDEOS CONTAINER */}
           </div>
         </>
       ) : (
