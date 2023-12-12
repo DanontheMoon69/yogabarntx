@@ -852,9 +852,9 @@ function PricingPage() {
                 <span className="font-semibold">Includes Virtual Yoga</span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $90</div>
+                <div> $85</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/00g4jD5UMb8e29Gg03">
+                  <Link href="https://buy.stripe.com/28ocQ9dne6RY4hOcNT">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -899,9 +899,9 @@ function PricingPage() {
                 </span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $110</div>
+                <div> $100</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/7sIbM51Ew7W201y5ln">
+                  <Link href="https://buy.stripe.com/aEU9DXdneb8e9C89BI">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -1075,6 +1075,53 @@ function PricingPage() {
           CLASS PACKS
         </h3>
         <div className="flex flex-wrap justify-center gap-3">
+          {/* SHANTI PACK*/}
+          <div className="flex bg-gray-50 flex-wrap items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
+            <div className="p-2 text-lg font-thin tracking-wide">
+              <div className="flex text-black ">
+                {" "}
+                <div className="flex justify-end ml-3 mx-3 max-w-1/2  ">
+                  <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                </div>
+                Shanti Pack
+              </div>
+
+              <p className="text-xs font-normal bg-gray-100 text-black py-2 px-2 rounded-xl">
+                3 Classes at Yoga Barn - Expires after 60 Days
+              </p>
+              <div className="flex p-2 items-center text-2xl font-thin">
+                <div>
+                  <div className="text-black text-center"> $55</div>
+                </div>
+                {user && (
+                  <Link href="https://buy.stripe.com/dR6eYhericcibKgdRZ">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                      Pay
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+
+                {/* <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                  <Link href="/Contact">
+                    <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                      Senior Discount Available
+                    </div>
+
+                    <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                      Click to Contact for Code
+                    </span>
+                  </Link>
+                </div> */}
+              </div>
+            </div>
+          </div>
           {/* ZEN PACK*/}
           <div className="flex bg-gray-50 flex-wrap items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 ">
             <div className="p-2 text-lg font-thin tracking-wide">
