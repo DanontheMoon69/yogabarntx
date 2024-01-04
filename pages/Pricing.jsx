@@ -409,16 +409,21 @@ function PricingPage() {
                         alt="Yoga Barn"
                       />
                     </div>
-                    Winter Solstice - 108 Sun Salutations
+                    Yoga Playshop
                   </div>
                   <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    Join us at the studio and let&apos;s start this new season
-                    with 108 Sun Salutations. Bring your yoga mat and a water.
+                    This Playshop is a workshop to break down yoga poses and
+                    enjoy connecting with other yogis. We can break down
+                    anything from beginner yoga to advanced yoga. <br />
+                    <br /> This specific class is geared towards beginners or
+                    those yogis wanting to correct their alignment. Come ready
+                    with questions and poses you would like to break down, ready
+                    to learn and enjoy the yogi environment.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
                     <div> $25</div>
                     {user && (
-                      <Link href="https://buy.stripe.com/00g3fz82U7W28y44hm">
+                      <Link href="https://buy.stripe.com/dR68zTgzq4JQ4hO14X">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
                           Pay
                         </button>

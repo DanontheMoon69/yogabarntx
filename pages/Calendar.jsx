@@ -80,24 +80,29 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday December 16th
+                  Friday January 19th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
-                  Winter Solstice - 108 Sun Salutations
+                  Yoga Playshop
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  11:00am - 1:00pm
+                  6:30pm - 8:30pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
                 </p>
                 <p className="text-sm mt-1 text-gray-500  pb-2">
-                  Alright Yogis, its time to bring in the winter season with 108
-                  Sun Salutations. Bring your yoga mat, water and towel.
+                  This Playshop is a workshop to break down yoga poses and enjoy
+                  connecting with other yogis. We can break down anything from
+                  beginner yoga to advanced yoga. <br />
+                  <br /> This specific class is geared towards beginners or
+                  those yogis wanting to correct their alignment. Come ready
+                  with questions and poses you would like to break down, ready
+                  to learn and enjoy the yogi environment.
                 </p>
                 {user && (
-                  <Link href="/Pricing/#workshops">
+                  <Link href="https://buy.stripe.com/dR68zTgzq4JQ4hO14X">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
                       Buy Ticket
                     </button>
