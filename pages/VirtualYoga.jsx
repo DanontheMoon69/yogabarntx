@@ -163,6 +163,7 @@ const VirtualYoga = () => {
             {/*  */}
             {/* END 15 MINUTE VIDEOS CONTAINER */}
             {/*  */}
+            <div id="30minute"> {""}</div>
             {/*  */}
             {/* 30 MINUTE VIDEOS */}
             <h2 className=" text-3xl text-black font-thin tracking-wider flex justify-center pt-8">
@@ -204,6 +205,7 @@ const VirtualYoga = () => {
             </div>
             {/*  */}
             {/* END 30 MINUTE VIDEOS CONTAINER */}
+            <div id="45minute"> {""}</div>
             {/* 45 MINUTE VIDEOS */}
             <h2 className=" text-3xl text-black font-thin tracking-wider flex justify-center pt-8">
               45 Minute Yoga Classes
