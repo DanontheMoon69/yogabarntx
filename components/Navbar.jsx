@@ -80,7 +80,7 @@ const Navbar = () => {
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/Pricing">PRICING</Link>
           </li>
-          <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+          {/* <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/KidsYoga">
               <div className="flex flex-col justify-center items-center">
                 <div className="px-2 pt-3 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100">
@@ -91,7 +91,7 @@ const Navbar = () => {
                 </div>
               </div>
             </Link>
-          </li>
+          </li> */}
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/VirtualYoga">VIRTUAL YOGA</Link>
           </li>
@@ -132,6 +132,7 @@ const Navbar = () => {
                 </span>
                 <span className="flex justify-center text-sm font-thin tracking-wide">
                   {user.displayName}
+                  {user.email}
                 </span>
               </div>
               <button
@@ -184,7 +185,7 @@ const Navbar = () => {
             >
               <Link href="/Pricing">PRICING</Link>
             </li>
-            <li
+            {/* <li
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
               onClick={handleNav}
             >
@@ -197,7 +198,7 @@ const Navbar = () => {
                   <div className=" text-sm font-thin ">KIDS YOGA</div>
                 </div>
               </Link>
-            </li>
+            </li> */}
             <li
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
               onClick={handleNav}
