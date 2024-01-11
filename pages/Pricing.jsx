@@ -640,7 +640,90 @@ function PricingPage() {
                 </div>
               </div>
             </div>
-
+            {/* start */}
+            <div className=" flex justify-center bg-white border-2 border-gray-100 shadow-md  rounded-lg mt-2 pt-2 font-thin  px-2">
+              <div className=" text-lg font-thin text-black tracking-wide">
+                <div className="flex">
+                  <div className="flex justify-end ml-3 mx-3 max-w-1/2  px-2">
+                    <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
+                  </div>
+                  Teen Add-On
+                </div>
+                <p className="text-xs font-normal bg-gray-100 py-2 px-2 rounded-xl">
+                  Add your teen to your existing membership for the selected
+                  amount of classes.
+                </p>
+                <div className="flex p-2 items-center text-2xl font-thin">
+                  {user && (
+                    <>
+                      <div>
+                        <select
+                          className=" w-15 text-start ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full tracking-widest"
+                          value={donateValue}
+                          onChange={(e) => {
+                            setDonateValue(e.target.value);
+                          }}
+                        >
+                          <option value="0">Select Amount</option>
+                          <option value="10">1 Class - $10</option>
+                          <option value="28">3 Classes - $28</option>
+                          <option value="45">5 Classes - $45</option>
+                          <option value="90">10 Classes - $90</option>
+                        </select>
+                        {donateValue === "10" ? (
+                          <Link href="https://buy.stripe.com/00gdUd96Ya4a3dK8xG">
+                            <button
+                              className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full"
+                              onClick={payDonateValue}
+                            >
+                              Pay $10
+                            </button>
+                          </Link>
+                        ) : null}
+                        {donateValue === "28" ? (
+                          <Link href="https://buy.stripe.com/5kAeYhcja4JQ3dK4hr">
+                            <button
+                              className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full"
+                              onClick={payDonateValue}
+                            >
+                              Pay $28
+                            </button>
+                          </Link>
+                        ) : null}
+                        {donateValue === "45" ? (
+                          <Link href="https://buy.stripe.com/4gweYhfvm4JQ3dKcNY">
+                            <button
+                              className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full"
+                              onClick={payDonateValue}
+                            >
+                              Pay $45
+                            </button>
+                          </Link>
+                        ) : null}
+                        {donateValue === "90" ? (
+                          <Link href="https://buy.stripe.com/3csdUdfvmccig0wg0b">
+                            <button
+                              className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full"
+                              onClick={payDonateValue}
+                            >
+                              Pay $90
+                            </button>
+                          </Link>
+                        ) : null}
+                      </div>
+                    </>
+                  )}
+                  {!user && (
+                    <Link href="/signUpPage">
+                      <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-1 px-4 ml-4 text-white rounded-full">
+                        Sign-Up to Donate
+                      </button>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+            {/* end */}
             {/* END PACK SPECIALS INDIVIDUALS */}
           </div>
         </div>
