@@ -14,11 +14,27 @@ const VirtualYoga = () => {
     // gets the current input value
     const answer = document.getElementById("password").value;
     const virtualPassword = process.env.NEXT_PUBLIC_VIRTUALPASS;
+    const virtualPassword1 = process.env.NEXT_PUBLIC_VIRTUALPASSA;
+    const virtualPassword2 = process.env.NEXT_PUBLIC_VIRTUALPASSB;
+    const virtualPassword3 = process.env.NEXT_PUBLIC_VIRTUALPASSC;
+    const virtualPassword4 = process.env.NEXT_PUBLIC_VIRTUALPASSD;
 
     if (answer === virtualPassword) {
       setIsVerified(true);
     } else if (answer === "") {
       alert("Please Enter an Answer");
+    } else if (answer === virtualPassword1) {
+      setIsVerified(true);
+      alert("welcome!");
+    } else if (answer === virtualPassword2) {
+      setIsVerified(true);
+      alert("welcome!");
+    } else if (answer === virtualPassword3) {
+      setIsVerified(true);
+      alert("welcome!");
+    } else if (answer === virtualPassword4) {
+      setIsVerified(true);
+      alert("welcome!");
     } else {
       alert("Incorrect Password");
     }
