@@ -940,9 +940,9 @@ function PricingPage() {
                 <span className="font-semibold">Includes Virtual Yoga</span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $85</div>
+                <div> $90</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/28ocQ9dne6RY4hOcNT">
+                  <Link href="https://buy.stripe.com/00g4jD5UMb8e29Gg03">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
