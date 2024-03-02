@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 import { AiOutlineLeft, AiOutlineClose } from "react-icons/ai";
-import monthCal from "components/assets/images/ClassCalendar_February2024.png";
+import monthCal from "components/assets/images/March2024.png";
 
 import { useStateContext } from "../context/StateContext";
 import Link from "next/link";
