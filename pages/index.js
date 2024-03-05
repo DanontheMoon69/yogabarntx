@@ -161,10 +161,42 @@ const Home = () => {
             <div className="text-center w-full">
               {" "}
               <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                WEDNESDAY EVENINGS
+                WEDNESDAY MORNINGS
               </h3>
               <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Rise & Shine
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                6:15am - 7:15am
+              </p>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
                 Stretch & Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                7:30pm - 8:30pm
+              </p>
+              <Link href="/Calendar">
+                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
+                  View Full Schedule
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div id="fridays" className="relative carousel-item w-full">
+            <div
+              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
+            ></div>
+            <div className="text-center w-full">
+              {" "}
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                FRIDAY EVENINGS
+              </h3>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Vinyasa Flow
               </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
@@ -195,41 +227,6 @@ const Home = () => {
                 {" "}
                 9:00am - 10:00am
               </p>
-              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Vinyasa Flow
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                10:30am - 11:30am
-              </p>
-              <Link href="/Calendar">
-                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
-                  View Full Schedule
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          <div id="sundays" className="relative carousel-item w-full">
-            <div
-              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
-            ></div>
-            <div className="text-center w-full">
-              {" "}
-              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                SUNDAY EVENINGS
-              </h3>
-              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Donation Class
-              </h3>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                4:00pm - 5:00pm
-              </p>
-              <p className="flex justify-center text-lg pt-2  font-thin tracking-widest text-gray-200">
-                $5 Minimum
-              </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
                   View Full Schedule
@@ -245,11 +242,11 @@ const Home = () => {
           <a href="#wednesdays" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
+          <a href="#fridays" className="hover:text-gray-500 p-1">
+            FRIDAYS
+          </a>
           <a href="#saturdays" className="hover:text-gray-500 p-1">
             SATURDAYS
-          </a>
-          <a href="#sundays" className="hover:text-gray-500 p-1">
-            SUNDAYS
           </a>
         </div>
       </div>
