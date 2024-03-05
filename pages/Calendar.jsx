@@ -80,7 +80,7 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Saturday March 23rd
+                  Tuesday March 19th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Spring Equinox - 108 Sun Salutes
