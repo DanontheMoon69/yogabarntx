@@ -76,44 +76,6 @@ export default function Calendar() {
                 Upcoming Workshops
               </h2>
 
-              {/* SPRING EQUINOX - 108 SUN SALUTES */}
-
-              <div>
-                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Tuesday March 19th
-                </h3>
-                <p className="text-2xl font-thin text-black mt-4">
-                  Spring Equinox - 108 Sun Salutes
-                </p>
-                <p className="flex text-sm font-thin text-black  tracking-wide">
-                  {" "}
-                  9:30am - 11:30am
-                </p>
-                <p className="text-xs font-semibold mt-2 text-gray-500">
-                  Class Description:
-                </p>
-                <p className="text-sm mt-1 text-gray-500  pb-2">
-                  We will be moving through 108 Sun Salutations to welcome this
-                  new season. This is a very challenging practice that help
-                  strengthen body and mind. Leave feeling refreshed and ready
-                  for what ever life offers you in this new season.
-                </p>
-                {user && (
-                  <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
-                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Buy Ticket
-                    </button>
-                  </Link>
-                )}
-                {!user && (
-                  <Link href="/signUpPage">
-                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
-                      Sign-Up to Purchase
-                    </button>
-                  </Link>
-                )}
-              </div>
-
               {/* Full Moon Workshop */}
 
               <div>
@@ -125,7 +87,7 @@ export default function Calendar() {
                 </p>
                 <p className="flex text-sm font-thin text-black  tracking-wide">
                   {" "}
-                  9:30am - 11:30am
+                  6:30pm - 8:00pm
                 </p>
                 <p className="text-xs font-semibold mt-2 text-gray-500">
                   Class Description:
