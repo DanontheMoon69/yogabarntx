@@ -396,58 +396,6 @@ function PricingPage() {
                 </div>
               </div> */}
 
-              {/* OUTDOOR YOGA @ LAVENDER RIDGE*/}
-
-              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
-                <div className="p-2 text-lg font-thin tracking-wide text-black">
-                  <div className="flex text-left">
-                    {" "}
-                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
-                      <Image
-                        className="h-6 w-10"
-                        src={ybLogo}
-                        alt="Yoga Barn"
-                      />
-                    </div>
-                    Spring Equinox - 108 Sun Salutes
-                  </div>
-                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
-                    We will be moving through 108 Sun Salutations to welcome
-                    this new season. This is a very challenging practice that
-                    help strengthen body and mind. Leave feeling refreshed and
-                    ready for what ever life offers you in this new season.
-                  </p>
-                  <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $25</div>
-                    {user && (
-                      <Link href="https://buy.stripe.com/28o7vPbf60tA6pWaER">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
-                          Pay
-                        </button>
-                      </Link>
-                    )}
-                    {!user && (
-                      <Link href="/signUpPage">
-                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
-                          Sign-Up to Purchase
-                        </button>
-                      </Link>
-                    )}
-                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
-                      <Link href="/Contact">
-                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                          Class Packs & Monthly Members get $5 Off
-                        </div>
-
-                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
-                          Click to Contact for Code
-                        </span>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
               {/* FULL MOON WORKSHOP*/}
 
               <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
@@ -988,9 +936,9 @@ function PricingPage() {
                 <span className="font-semibold">Includes Virtual Yoga</span>
               </p>
               <div className="flex p-2 items-center text-2xl font-thin">
-                <div> $90</div>
+                <div> $85</div>
                 {user && (
-                  <Link href="https://buy.stripe.com/00g4jD5UMb8e29Gg03">
+                  <Link href="https://buy.stripe.com/28ocQ9dne6RY4hOcNT">
                     <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
                       Pay
                     </button>
@@ -1006,7 +954,7 @@ function PricingPage() {
                 <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100">
                   <Link href="/Contact">
                     <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                      Senior Discount Available
+                      Includes One Free Workshop
                     </div>
 
                     <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
@@ -1053,7 +1001,7 @@ function PricingPage() {
                 <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100">
                   <Link href="/Contact">
                     <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
-                      Senior Discount Available
+                      Includes One Free Workshop
                     </div>
 
                     <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
