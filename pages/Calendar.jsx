@@ -113,6 +113,43 @@ export default function Calendar() {
                   </Link>
                 )}
               </div>
+              {/* LAVENDER RIDGE Workshop */}
+
+              <div>
+                <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
+                  Sunday May 5th
+                </h3>
+                <p className="text-2xl font-thin text-black mt-4">
+                  Lavender Ridge Farms - Workshop
+                </p>
+                <p className="flex text-sm font-thin text-black  tracking-wide">
+                  {" "}
+                  10:30pm - 11:30pm
+                </p>
+                <p className="text-xs font-semibold mt-2 text-gray-500">
+                  Class Description:
+                </p>
+                <p className="text-sm mt-1 text-gray-500  pb-2">
+                  Join us for a cleansing Moon Yoga Flow and Meditation. Now is
+                  the time to cleanse your space of low vibrations and and
+                  stagnate energy. Use the Moon energy to feel renewed and
+                  release all that does not serve you.
+                </p>
+                {user && (
+                  <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
+                    <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Buy Ticket
+                    </button>
+                  </Link>
+                )}
+                {!user && (
+                  <Link href="/signUpPage">
+                    <button className=" ease-in transform font-bold hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8  text-white rounded-full">
+                      Sign-Up to Purchase
+                    </button>
+                  </Link>
+                )}
+              </div>
 
               {/* END WORKSHOPS */}
             </div>

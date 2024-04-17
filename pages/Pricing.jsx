@@ -447,6 +447,58 @@ function PricingPage() {
                   </div>
                 </div>
               </div>
+              {/* LAVENDER RIDGE WORKSHOP*/}
+
+              <div className=" bg-white  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-full rounded-lg mt-2  ">
+                <div className="p-2 text-lg font-thin tracking-wide text-black">
+                  <div className="flex text-left">
+                    {" "}
+                    <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
+                      <Image
+                        className="h-6 w-10"
+                        src={ybLogo}
+                        alt="Yoga Barn"
+                      />
+                    </div>
+                    Lavender Ridge Farms - Workshop
+                  </div>
+                  <p className="text-xs font-normal text-left bg-gray-100 py-2 px-2 rounded-xl">
+                    Join us for yoga at Lavender Ridge Farms in Gainesville.
+                    After class enjoy a refreshing lavender lemonade and walk
+                    around the beautiful property of Lavender Ridge Farms. The
+                    Cafe is open for lunch. Please bring water, yoga mat and
+                    props you may need.
+                  </p>
+                  <div className="flex p-2 items-center text-2xl font-thin">
+                    <div> $25</div>
+                    {user && (
+                      <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
+                          Pay
+                        </button>
+                      </Link>
+                    )}
+                    {!user && (
+                      <Link href="/signUpPage">
+                        <button className="ease-in transform hover:scale-105 transition duration-100 text-xs bg-teal-600 py-2 px-8 ml-4 text-white rounded-full">
+                          Sign-Up to Purchase
+                        </button>
+                      </Link>
+                    )}
+                    <div className="ease-in transform hover:scale-105 transition duration-100 flex-wrap ml-2 justify-center">
+                      <Link href="/Contact">
+                        <div className="flex mt-1 text-center font-normal justify-center px-2  items-center bg-gray-400 text-white    rounded-full  text-xs ">
+                          Class Packs & Monthly Members get $5 Off
+                        </div>
+
+                        <span className="flex mt-0 text-center font-normal justify-center  items-center text-gray-500      text-xs ">
+                          Click to Contact for Code
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
               {/* END WORKSHOPS */}
             </div>
           </div>
