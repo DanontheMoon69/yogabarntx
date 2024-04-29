@@ -918,7 +918,7 @@ function PricingPage() {
               </div>
               {/* end */}
               {/* start */}
-              <div className=" flex justify-center bg-white border-2 border-gray-100 shadow-md  rounded-lg mt-2 pt-2 font-thin  px-2">
+              {/* <div className=" flex justify-center bg-white border-2 border-gray-100 shadow-md  rounded-lg mt-2 pt-2 font-thin  px-2">
                 <div className=" text-lg font-thin text-black tracking-wide">
                   <div className="flex">
                     <div className="flex justify-end ml-3 mx-3 max-w-1/2  px-2">
@@ -1002,7 +1002,7 @@ function PricingPage() {
                     )}
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* end */}
             </div>
           </div>
@@ -1016,7 +1016,8 @@ function PricingPage() {
       {/*  */}
 
       {/* BLISS PACK */}
-      <div className="pt-16  px-3" id="monthlypacks">
+
+      {/* <div className="pt-16  px-3" id="monthlypacks">
         <div className="flex justify-center">
           <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
         </div>
@@ -1027,7 +1028,6 @@ function PricingPage() {
           <div className="items-center justify-center  border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center mb-1">
-                {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
@@ -1069,20 +1069,20 @@ function PricingPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* ENLIGHTENED PACK */}
-          <div className="items-center justify-center bg-white text-black  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg w-96  ">
+      {/* ENLIGHTENED PACK */}
+      {/* <div className="items-center justify-center bg-white text-black  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg w-96  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex items-center mb-1">
-                {" "}
+                
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
                 Enlightened Pack
               </div>
               <p className=" bg-gray-100 text-xs font-normal py-2 px-2 rounded-xl">
-                Monthly Unlimited -{" "}
+                Monthly Unlimited -
                 <span className="font-bold animate-pulse">
                   No Monthly Commitment
                 </span>
@@ -1116,11 +1116,11 @@ function PricingPage() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          {/* ENLIGHTENED FAMILY PACK */}
+      {/* ENLIGHTENED FAMILY PACK */}
 
-          {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+      {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
@@ -1165,9 +1165,9 @@ function PricingPage() {
             </div>
           </div> */}
 
-          {/* ADDITIONAL FAMILY MEMBER - ENLIGHTENED FAMILY PACK */}
+      {/* ADDITIONAL FAMILY MEMBER - ENLIGHTENED FAMILY PACK */}
 
-          {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
+      {/* <div className="items-center justify-center bg-white text-black border-2 border-gray-100 shadow-md md: max-w-sm sm:w-1/2 rounded-lg  ">
             <div className="p-2 text-lg font-thin tracking-wide">
               <div className="flex">
                 {" "}
@@ -1200,12 +1200,11 @@ function PricingPage() {
             </div>
           </div> */}
 
-          {/*  */}
-          {/* VIRTUAL YOGA */}
-          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 w-96 ">
+      {/*  */}
+      {/* VIRTUAL YOGA */}
+      {/* <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 w-96 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center mb-1">
-                {" "}
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
@@ -1238,7 +1237,7 @@ function PricingPage() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="relative mt-16">
         <div className="relative">
           <Image src={sunset} alt="Yoga Barn" className=" object-cover h-48" />
@@ -1406,10 +1405,10 @@ function PricingPage() {
           </div>
 
           {/* VIRTUAL YOGA */}
-          <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
+          {/* <div className="items-center justify-center  border-2 border-gray-100 shadow-md md:max-w-sm sm:w-1/2 rounded-lg mt-2 bg-gray-200 ">
             <div className="p-2 text-lg font-thin tracking-wide text-black">
               <div className="flex items-center mb-1">
-                {" "}
+               
                 <div className="flex justify-end ml-3 mx-3 max-w-1/2   ">
                   <Image className="h-6 w-10" src={ybLogo} alt="Yoga Barn" />
                 </div>
@@ -1440,7 +1439,7 @@ function PricingPage() {
                 <div className="flex-wrap ml-2 justify-center ease-in transform hover:scale-105 transition duration-100"></div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/*  */}
