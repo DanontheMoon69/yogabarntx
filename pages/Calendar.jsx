@@ -80,7 +80,7 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Sunday May 5th
+                  Sunday May 19th
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Lavender Ridge Farms - Workshop
@@ -118,7 +118,7 @@ export default function Calendar() {
 
               <div>
                 <h3 className="text-3xl font-thin tracking-wider text-teal-600 mt-4">
-                  Monday May 23rd
+                  Thursday May 23rd
                 </h3>
                 <p className="text-2xl font-thin text-black mt-4">
                   Full Moon Workshop
