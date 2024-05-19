@@ -419,7 +419,7 @@ function PricingPage() {
                     props you may need.
                   </p>
                   <div className="flex p-2 items-center text-2xl font-thin">
-                    <div> $25</div>
+                    <div> $35</div>
                     {user && (
                       <Link href="https://buy.stripe.com/dR64jD6YQ7W24hO5kH">
                         <button className="ease-in transform hover:scale-105 transition duration-100 text-sm bg-teal-600 py-2 px-8 ml-4 text-white rounded-full tracking-widest">
