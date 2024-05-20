@@ -68,17 +68,35 @@ const Navbar = () => {
 
         <ul
           style={{ color: `${textColor}` }}
-          className="hidden sm:flex text-xs tracking-widest"
+          className="hidden lg:flex text-xs tracking-widest items-center"
         >
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/">HOME</Link>
           </li>
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
-            <Link href="/Calendar">SCHEDULE</Link>
+            <Link href="/Calendar">CLASS DESCRIPTIONS</Link>
           </li>
 
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/Pricing">PRICING</Link>
+          </li>
+          {/* <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+            <Link href="/KidsYoga">
+              <div className="flex flex-col justify-center items-center">
+                <div className="px-2 pt-3 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100">
+                  GROW & GLOW
+                </div>
+                <div className=" text-xs font-thin hover:ease-in transform hover:scale-105 hover:transition hover:duration-100">
+                  kids yoga
+                </div>
+              </div>
+            </Link>
+          </li> */}
+          <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+            <Link href="/VirtualYoga">VIRTUAL YOGA</Link>
+          </li>
+          <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
+            <Link href="/Apparel">APPAREL</Link>
           </li>
           <li className=" p-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 ">
             <Link href="/Contact">CONTACT</Link>
@@ -89,16 +107,20 @@ const Navbar = () => {
         <div className="flex">
           {!user && (
             <>
-              <Link href="/signUpPage">
-                <button className=" transform hover:scale-105  text-xs flex visible  py-2 px-4  bg-gray-200 hover:bg-gray-300   text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  lg:px-6  rounded-lg">
-                  Join
-                </button>
-              </Link>
-              <Link href="/Login">
-                <button className=" transform hover:scale-105  flex text-xs py-2 px-4  bg-white hover:bg-gray-200  text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  lg:px-6  rounded-lg ml-2">
-                  Sign-In
-                </button>
-              </Link>
+              <div className="flex flex-col items-center justify-center">
+                <div className="flex">
+                  <Link href="/signUpPage">
+                    <button className=" transform hover:scale-105  text-xs flex visible  py-2 px-4  bg-gray-200 hover:bg-gray-300   text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  lg:px-6  rounded-lg">
+                      Join
+                    </button>
+                  </Link>
+                  <Link href="/Login">
+                    <button className=" transform hover:scale-105  flex text-xs py-2 px-4  bg-white hover:bg-gray-200  text-emerald-600 transition ease-in duration-200 text-center  font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  lg:px-6  rounded-lg ml-2">
+                      Sign-In
+                    </button>
+                  </Link>
+                </div>
+              </div>
             </>
           )}
           {user && (
@@ -110,6 +132,7 @@ const Navbar = () => {
                 </span>
                 <span className="flex justify-center text-sm font-thin tracking-wide">
                   {user.displayName}
+                  {user.email}
                 </span>
               </div>
               <button
@@ -124,7 +147,7 @@ const Navbar = () => {
         </div>
         <div
           onClick={handleNav}
-          className="block sm:hidden z-10 cursor-pointer hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 hover:shadow-lg"
+          className="block lg:hidden z-10 cursor-pointer hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 hover:shadow-lg"
         >
           {nav ? (
             <AiOutlineClose size={30} style={{ color: `${textColor}` }} />
@@ -138,11 +161,11 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
-              : " sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
+              ? " lg:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
+              : " lg:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-teal-600 text-center ease-in duration-300"
           }
         >
-          <ul className="font-thin">
+          <ul className="font-thin ">
             <li
               className="p-4  text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
               onClick={handleNav}
@@ -153,7 +176,7 @@ const Navbar = () => {
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
               onClick={handleNav}
             >
-              <Link href="/Calendar">SCHEDULE</Link>
+              <Link href="/Calendar">CLASS DESCRIPTIONS</Link>
             </li>
 
             <li
@@ -161,6 +184,32 @@ const Navbar = () => {
               onClick={handleNav}
             >
               <Link href="/Pricing">PRICING</Link>
+            </li>
+            {/* <li
+              className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
+              onClick={handleNav}
+            >
+              <Link href="/KidsYoga">
+                {" "}
+                <div className="flex flex-col justify-center items-center hover:ease-in transform hover:scale-105 hover:transition hover:duration-100">
+                  <div className=" text-2xl px-2 hover:ease-in transform hover:scale-105 hover:transition hover:duration-100">
+                    GROW & GLOW
+                  </div>
+                  <div className=" text-sm font-thin ">KIDS YOGA</div>
+                </div>
+              </Link>
+            </li> */}
+            <li
+              className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
+              onClick={handleNav}
+            >
+              <Link href="/VirtualYoga">VIRTUAL YOGA</Link>
+            </li>
+            <li
+              className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "
+              onClick={handleNav}
+            >
+              <Link href="/Apparel">APPAREL</Link>
             </li>
             <li
               className="p-4 text-3xl text-white hover:text-gray-400 tracking-widest hover:ease-in transform hover:scale-105 hover:transition hover:duration-100 "

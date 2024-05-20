@@ -7,7 +7,8 @@ import * as Yup from "yup";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { useState, useEffect } from "react";
 import { send } from "emailjs-com";
-
+import Head from "next/head";
+import Script from "next/script";
 function UserProfile() {
   const [user, loading] = useAuthState(auth);
   const route = useRouter();
@@ -78,7 +79,7 @@ function UserProfile() {
         alert(err);
       });
     alert("Thank you! Your information has been saved!");
-    route.push("/");
+    route.push("/Pricing");
   };
 
   // const formik = useFormik({
@@ -123,11 +124,33 @@ function UserProfile() {
 
   return (
     <>
-      {!user && route.push("/")}
+      <Head>
+        <title>Yoga Barn - User Profile</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Edit your Yoga Barn User Profile"
+          key="desc"
+        />
+      </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
+      {/* {!user && route.push("/Pricing")} */}
       <div className="flex justify-center">
         {user && (
-          <section className="w-3/4 mt-10 mb-15">
-            <div className="text-xl font-bold mb-5 flex items-center align-middle justify-center text-gray-600 mb-10">
+          <section className="w-3/4 mt-24 mb-15">
+            <div className="text-xl font-bold flex items-center align-middle justify-center text-gray-600 mb-10">
               Edit Personal Profile
             </div>
             <p className="flex items-center justify-center font-semibold text-xs mb-2">

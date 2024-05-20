@@ -6,7 +6,11 @@ import { WiSunrise, WiSunset } from "react-icons/wi";
 import Image from "next/image";
 import Link from "next/link";
 import YBIcon from "../components/assets/images/ybIcon.png";
+import JuneCalendar from "../components/assets/images/June2023.png";
+import Calendar from "../components/assets/images/May2024.png";
+import Script from "next/script";
 import { useStateContext } from "../context/StateContext";
+import Head from "next/head";
 const Home = () => {
   // Subscribe Logic
   const { showSchedule, setShowSchedule } = useStateContext();
@@ -33,15 +37,51 @@ const Home = () => {
 
   return (
     <>
+      <Head>
+        <title>Yoga Barn - Whitesboro, Tx</title>
+        <meta
+          name="description"
+          content="Yoga Barn - Yoga Studio in Whitesboro Texas that will improve your physical and mental health. It can help you relax and reduce stress, as well as improve your flexibility, balance and strength"
+          key="desc"
+        />
+      </Head>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_MEASUREMENT_ID}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '${process.env.NEXT_PUBLIC_MEASUREMENT_ID}', {
+      page_path: window.location.pathname,
+    });
+        `}
+      </Script>
       <HeroBanner />
-      <div className="">
+      <div className=" w-full">
+        <div className="flex justify-center">
+          <Link href="/Teachers">
+            <div className=" bg-slate-400  max-w-md text-lg font-thin px-8 m-2 rounded-3xl flex justify-center tracking-widest py-2 transform hover:scale-105 transition ease-in duration-200 text-gray-100">
+              MEET OUR TEACHERS
+            </div>
+          </Link>
+        </div>
         <div className=" font-thin max-h-96 pt-20">
           <div className="flex justify-center">
             <Image src={YBIcon} alt="Yoga Barn Icon" className="w-16 h-14" />
           </div>
-          <span className="text-2xl  block text-teal-700 text-center pt-5 ">
+          <h2 className="text-lg  block text-teal-700 text-center pt-5 tracking-widest ">
+            JOIN US AT THE YOGA BARN FOR
+          </h2>
+          <h1 className=" capitalize text-3xl  block text-teal-700 text-center pt-5 tracking-widest">
+            Yoga in Whitesboro, TX
+          </h1>
+          <div className=" border-b-2 mt-6"></div>
+          <h2 className="text-2xl  block text-teal-700 text-center pt-5 pb-4">
             New to Yoga?
-          </span>
+          </h2>
         </div>
         <p className=" text-md  text-teal-600  tracking-wide leading-6 font-thin text-center px-12 sm:px-48">
           Yoga is a great way to improve your physical and mental health. It can
@@ -74,97 +114,38 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className=" text-center mt-20">
-        <div className="text-md tracking-widest text-gray-400 font-thin pb-2">
-          AVAILABLE CLASSES
+      <div className="flex justify-center">
+        <div className="flex flex-col justify-center bg-teal-600  w-md  md:rounded-xl mt-16 m-0 sm:mx-4 p-2">
+          <div className="flex justify-center text-center w-full md:w-lg pt-3 text-3xl text-white tracking-widest font-thin">
+            YOGA CALENDAR
+          </div>
+          <div className="flex justify-center bg-white">
+            <Image src={Calendar} className=" w-full sm:max-w-lg" />
+          </div>
         </div>
+      </div>
+      <div className=" text-center mt-20">
+        <h3 className="text-md tracking-widest text-gray-400 font-thin pb-2">
+          SCHEDULED YOGA CLASSES
+        </h3>
         <div className="relative carousel w-full bg-teal-600 pt-8">
-          <div id="item1" className=" carousel-item w-full text-center">
+          <div id="mondays" className=" carousel-item w-full text-center">
             <div
               className="absolute left-1/2 -top-12 transform -translate-x-1/2 
  font-extrabold text-5xl bg-gray-50 text-center w-20 h-20 rotate-45  text-white "
             ></div>
             <div className="text-center w-full ">
-              <div className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                TUESDAY MORNINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
-                Power 30
-              </p>
+              <h3 className="relative  flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                MONDAY EVENINGS
+              </h3>
+
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Stretch & Flow
+              </h3>
               <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                6:00am - 6:30am
-              </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
-                Rise & Shine:
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
-                {" "}
-                6:45am - 7:45am
-              </p>
-              <Link href="/Calendar">
-                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
-                  View Full Schedule
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div id="item2" className="relative carousel-item w-full">
-            <div
-              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
-            ></div>
-            <div className="text-center w-full">
-              {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                WEDNESDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Power 30
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                6:00am - 6:30am
-              </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Rise & Shine:
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                6:45am - 7:45am
-              </p>
-              <Link href="/Calendar">
-                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
-                  View Full Schedule
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div id="item3" className="relative carousel-item w-full">
-            <div
-              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
-            ></div>
-            <div className="text-center w-full">
-              {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                THURSDAY MORNINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Candle Lit Flow
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
                 {" "}
                 6:30pm - 7:30pm
               </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Power 45
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                7:45pm - 8:30pm
-              </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
                   View Full Schedule
@@ -172,60 +153,79 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div id="item4" className="relative carousel-item w-full">
-            <div
-              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
- font-extrabold text-5xl  text-center w-20 h-20 rotate-45  text-gray-300"
-            ></div>
-            <div className="text-center w-full">
-              {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                FRIDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Mindful Movement
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                4:00pm - 5:00pm
-              </p>
-              <p className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-400">
-                Fire Flow
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
-                {" "}
-                5:30pm - 6:30pm
-              </p>
-              <Link href="/Calendar">
-                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
-                  View Full Schedule
-                </button>
-              </Link>
-            </div>
-          </div>
-          <div id="item5" className="relative carousel-item w-full">
+          <div id="wednesdays" className="relative carousel-item w-full">
             <div
               className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
  font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
             ></div>
             <div className="text-center w-full">
               {" "}
-              <div className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
-                SUNDAY EVENINGS
-              </div>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Mindful Movement
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                WEDNESDAY MORNINGS
+              </h3>
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Rise & Shine
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                4:00pm - 5:00pm
+                6:15am - 7:15am
               </p>
-              <p className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-400">
-                Fire Flow
-              </p>
-              <p className="flex justify-center text-sm font-thin text-gray-500  tracking-wide">
+              <h3 className="flex justify-center text-2xl pt-4 font-thin tracking-widest text-gray-200">
+                Stretch & Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
                 {" "}
-                5:30pm - 6:30pm
+                7:30pm - 8:30pm
+              </p>
+              <Link href="/Calendar">
+                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
+                  View Full Schedule
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div id="fridays" className="relative carousel-item w-full">
+            <div
+              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
+            ></div>
+            <div className="text-center w-full">
+              {" "}
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                FRIDAY EVENINGS
+              </h3>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Vinyasa Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                6:30pm - 7:30pm
+              </p>
+              <Link href="/Calendar">
+                <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
+                  View Full Schedule
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          <div id="saturdays" className="relative carousel-item w-full">
+            <div
+              className="absolute bg-gray-50 left-1/2 -top-20 transform -translate-x-1/2 
+ font-extrabold text-5xl  text-center w-20 h-20 rotate-45 text-gray-300"
+            ></div>
+            <div className="text-center w-full">
+              {" "}
+              <h3 className="flex justify-center text-2xl font-thin tracking-widest pt-8 text-white">
+                SATURDAY MORNINGS
+              </h3>
+              <h3 className="flex justify-center text-2xl pt-4  font-thin tracking-widest text-gray-200">
+                Slow Flow
+              </h3>
+              <p className="flex justify-center text-sm font-thin text-gray-300  tracking-wide">
+                {" "}
+                9:00am - 10:00am
               </p>
               <Link href="/Calendar">
                 <button className="bg-gray-50 px-4 py-2 rounded-full mt-4 text-xs mb-4">
@@ -236,20 +236,17 @@ const Home = () => {
           </div>
         </div>
         <div className=" text-xs flex justify-center w-full  gap-2 text-gray-400 font-thin tracking-wide pt-2">
-          <a href="#item1" className=" hover:text-gray-500 p-1">
-            TUESDAYS
+          <a href="#mondays" className=" hover:text-gray-500 p-1">
+            MONDAYS
           </a>
-          <a href="#item2" className=" hover:text-gray-500 p-1">
+          <a href="#wednesdays" className=" hover:text-gray-500 p-1">
             WEDNESDAYS
           </a>
-          <a href="#item3" className="hover:text-gray-500 p-1">
-            THURSDAYS
-          </a>
-          <a href="#item4" className=" hover:text-gray-500 p-1">
+          <a href="#fridays" className="hover:text-gray-500 p-1">
             FRIDAYS
           </a>
-          <a href="#item5" className="hover:text-gray-500 p-1">
-            SUNDAYS
+          <a href="#saturdays" className="hover:text-gray-500 p-1">
+            SATURDAYS
           </a>
         </div>
       </div>
